@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Gallery</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@3"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+<div id="app" class="p-8">
+  <h1 class="text-4xl font-bold mb-6 text-center">{{ showDeck ? "My Deck" : "Card Gallery" }}</h1>
+
+  <!-- Filter Section -->
+  <div class="mb-4 flex flex-wrap gap-4 items-center justify-center">
+    <button 
+      @click="toggleDeckView" 
+      class="px-4 py-2 bg-blue-500 text-white rounded shadow">
+      {{ showDeck ? "Back to Gallery" : `View My Deck (${deckSize})` }}
+  </button>
+
+    <select v-model="selectedType" class="px-4 py-2 rounded border">
+      <option value="">All Types</option>
+      <option v-for="type in types" :key="type">{{ type }}</option>
+    </select>
+
+  <!-- This is the Search Bar -->
+   <input
+      v-model="searchQuery" 
+      type="text" 
+      placeholder="Search by name..." 
+      class="px-4 py-2 rounded border"
+    >
+
+    <label class="flex items-center ml-4">
+      <input type="checkbox" v-model="showFavoritesOnly" class="mr-2">
+      Only show favorites
+    </label>
+  </div>
+  <button 
+    v-if="showDeck"
+    @click="openDeckCodeModal" 
+    class="px-4 py-2 bg-green-500 text-white rounded shadow">
+    Generate Deck Code
+  </button>
+  <!-- Guild Filter Buttons with Dynamic Colors -->
+  <div class="flex flex-wrap gap-2 justify-center mb-4">
+    <button 
+      v-for="guild in guilds" 
+      :key="guild" 
+      @click="toggleGuild(guild)"
+      class="px-4 py-2 rounded border shadow flex items-center gap-2 transition-all"
+      :style="{
+        backgroundColor: selectedGuilds.includes(guild) ? guildColors[guild] : '#e5e5e5',
+        color: selectedGuilds.includes(guild) ? 'white' : 'black'
+      }">
+
+      <!-- Non-Clickable Checkbox -->
+      <input 
+        type="checkbox" 
+        :checked="selectedGuilds.includes(guild)" 
+        class="w-4 h-4 pointer-events-none"
+      >
+
+      {{ guild }}
+    </button>
+  </div>
+
+
+<!-- Full Image Modal: Move It Here So It Stays Visible Across Views -->
+<div v-if="showModal" class="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50" @click="closeModal">
+  <div class="relative p-4 bg-white rounded shadow-lg max-w-screen-md" @click.stop>
+    <!-- Close Button -->
+    <button @click="closeModal" class="absolute top-2 right-2 text-gray-600 text-2xl">&times;</button>
+    <!-- Full-size Image -->
+    <img :src="'./' + modalImage" class="max-w-full h-auto rounded">
+  </div>
+</div>
+
+<!-- Card Gallery or My Deck -->
+<div v-if="loading" class="text-center text-gray-500">Loading cards...</div>
+
+<!-- My Deck View -->
+<div v-if="showDeck" class="grid gap-2 grid-cols-[repeat(auto-fit,minmax(250px,1fr))] sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 justify-center">
+  
+  <div v-for="card in myDeckCards" :key="card.id" class="bg-white p-2 rounded shadow relative w-[250px]">
+    
+    <!-- Show thumbnail, open full image on click -->
+    <img 
+      :src="card.thumbnail ? './' + card.thumbnail : './' + card.image" 
+      class="max-w-[225px] h-auto rounded cursor-pointer" 
+      :alt="card.name" 
+      @click="openModal(card.image)"
+      loading="lazy"
+    >
+
+    <h2 class="text-xl font-semibold mt-2">{{ card.name }}</h2>
+    <p class="text-sm text-gray-500">{{ card.guild }} | {{ card.type }} | {{ card.rarity }}</p>
+
+    <div class="mt-2 text-sm">
+      <span>In my deck > </span>
+      <span 
+        v-for="count in getMaxCopies(card.rarity)" 
+        :key="count"
+        @click="setDeckCount(card.id, count)" 
+        class="px-2 py-1 cursor-pointer rounded"
+        :class="{
+          'bg-blue-500 text-white': count !== 0 && getDeckCount(card.id) === count,
+          'bg-gray-500 text-white': count === 0 && getDeckCount(card.id) === 0,
+          'bg-gray-200 text-gray-800': getDeckCount(card.id) !== count
+        }">
+        {{ count }}
+      </span>
+    </div>
+
+    <!-- Favorite Button -->
+    <button
+      @click="toggleFavorite(card.id)"
+      class="absolute top-2 right-2 text-6xl"
+      :class="isFavorite(card.id) ? 'text-red-400' : 'text-gray-300'">
+      ♥
+    </button>
+
+  </div>
+</div>
+
+<!-- Deck Code Popup -->
+<div v-if="showDeckCodeModal" class="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50" @click="closeDeckCodeModal">
+  <div class="relative p-4 bg-white rounded shadow-lg max-w-screen-md text-center" @click.stop>
+    
+    <!-- Close Button -->
+    <button @click="closeDeckCodeModal" class="absolute top-2 right-2 text-gray-600 text-2xl">&times;</button>
+
+    <!-- Deck Code Title -->
+    <h2 class="text-2xl font-semibold mb-4">Your Deck Code</h2>
+
+    <!-- Deck Code Content -->
+    <pre class="p-4 bg-gray-200 rounded text-sm whitespace-pre-wrap select-all text-left leading-snug">
+      {{ deckCode }}
+    </pre>
+
+    <!-- Copy to Clipboard Button -->
+    <button 
+      @click="copyDeckCode" 
+      :disabled="copied" 
+      class="mt-4 px-4 py-2 rounded shadow"
+      :class="copied ? 'bg-gray-400 text-white cursor-not-allowed' : 'bg-blue-500 text-white cursor-pointer'">
+      {{ copied ? "Copied!" : "Copy to Clipboard" }}
+    </button>
+
+  </div>
+</div>
+
+
+<!-- Regular Gallery View -->
+<div v-else :class="{ 'hidden': showDeck }" class="grid gap-2 grid-cols-[repeat(auto-fit,minmax(250px,1fr))] sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 justify-center">
+  <div v-for="card in filteredCards" :key="card.id" class="bg-white p-2 rounded shadow relative w-[250px]">
+    
+    <!-- Show thumbnail, open full image on click -->
+    <img 
+      :src="card.thumbnail ? './' + card.thumbnail : './' + card.image" 
+      class="max-w-[225px] h-auto rounded cursor-pointer" 
+      :alt="card.name" 
+      @click="openModal(card.image)"
+      loading="lazy"
+    >
+
+    <h2 class="text-xl font-semibold mt-2">{{ card.name }}</h2>
+    <p class="text-sm text-gray-500">{{ card.guild }} | {{ card.type }} | {{ card.rarity }}</p>
+    <div class="mt-2 text-sm">
+      <span>In my deck > </span>
+      <span 
+        v-for="count in getMaxCopies(card.rarity)" 
+        :key="count"
+        @click="setDeckCount(card.id, count)" 
+        class="px-2 py-1 cursor-pointer rounded"
+        :class="{
+          'bg-blue-500 text-white': count !== 0 && getDeckCount(card.id) === count,
+          'bg-gray-500 text-white': count === 0 && getDeckCount(card.id) === 0,
+          'bg-gray-200 text-gray-800': getDeckCount(card.id) !== count
+        }">
+        {{ count }}
+      </span>
+    </div>
+    
+    
+
+    <!-- Favorite Button -->
+    <button
+      @click="toggleFavorite(card.id)"
+      class="absolute top-2 right-2 text-6xl"
+      :class="isFavorite(card.id) ? 'text-red-400' : 'text-gray-300'">
+      ♥
+    </button>
+
+</div>
+
+<script>
+const { createApp } = Vue;
+
+createApp({
+  data() {
+    return {
+      copied: false, // ✅ Tracks if the button was clicked
+      deckCode: "",  // Stores generated deck string
+      deckCounts: Vue.reactive(JSON.parse(localStorage.getItem('deckCounts') || '{}')),
+      filteredCards: [],
+      selectedGuilds: [],
+      guildColors: {
+        Axalon: "#1bb829",
+        Burlindor: "#e28416",
+        Coronis: "#ffef03",
+        Flaria: "#ce9dde",
+        Sylvani: "#2c4dea",
+        Veralyn: "#c60757"
+      },
+      selectedType: '',
+      showFavoritesOnly: false,
+      searchQuery: '',
+      showDeck: false,
+      myDeck: JSON.parse(localStorage.getItem('myDeck') || '[]'),
+      cards: [],
+      favorites: JSON.parse(localStorage.getItem('favorites') || '[]'),
+      loading: true,
+      showModal: false,
+      modalCard: {},
+      modalImage: '',
+      showDeckCodeModal: false,  // ✅ Controls whether the popup is visible
+    };
+  },
+  computed: {
+    guilds() {
+      return [...new Set(this.cards.map(card => card.guild))];
+    },
+    types() {
+      return [...new Set(this.cards.map(card => card.type))];
+    },
+    filteredCards() {
+      if (this.selectedGuilds.length === 0) return []; // Show nothing if no Guilds selected
+
+      return this.cards.filter(card => {
+        return this.selectedGuilds.includes(card.guild)
+            && (!this.selectedType || card.type === this.selectedType)
+            && (!this.showFavoritesOnly || this.isFavorite(card.id))
+            && (!this.searchQuery || card.name.toLowerCase().includes(this.searchQuery.toLowerCase()));
+      });
+    },
+    deckSize() {
+      return Object.values(this.deckCounts).reduce((sum, count) => sum + count, 0);
+    },
+    myDeckCards() {
+    return this.cards.filter(card => {
+      const count = this.getDeckCount(card.id) || 0;
+      return count > 0; // ✅ Only include cards with a count > 0
+    });
+  }
+
+  },
+  methods: {
+    toggleGuild(guild) {
+      if (this.selectedGuilds.includes(guild)) {
+        // Remove guild from selection
+        this.selectedGuilds = this.selectedGuilds.filter(g => g !== guild);
+      } else {
+        // Add guild to selection
+        this.selectedGuilds.push(guild);
+      }
+    },
+    copyDeckCode() {
+      if (!this.deckCode) return; // Prevent copying empty text
+
+      navigator.clipboard.writeText(this.deckCode).then(() => {
+        this.copied = true; // ✅ Button is now disabled and greys out
+      }).catch(err => {
+        console.error("Failed to copy: ", err);
+      });
+    },
+    openDeckCodeModal() {
+      this.generateDeckCode();  // Ensure deck code is generated before opening
+      this.showDeckCodeModal = true;
+    },
+    closeDeckCodeModal() {
+      this.showDeckCodeModal = false;
+      this.copied = false; // ✅ Reset button state when closing modal
+    },
+    generateDeckCode() {
+      const deckCards = this.cards.filter(card => this.getDeckCount(card.id) > 0);
+
+      const groupedByGuild = {};
+      deckCards.forEach(card => {
+        if (!groupedByGuild[card.guild]) {
+          groupedByGuild[card.guild] = [];
+        }
+        groupedByGuild[card.guild].push(`- ${card.name} x${this.getDeckCount(card.id)}`);
+      });
+
+      // Add a forced newline before the deck code
+      this.deckCode = "\n" + Object.entries(groupedByGuild)
+        .map(([guild, cards]) => `${guild}\n${cards.join("\n")}`)
+        .join("\n\n");
+
+      console.log("Generated Deck Code:\n" + this.deckCode);
+    },
+    testClick(card) {
+      console.log("Test Click Registered:", card.name);
+      alert("You clicked on " + card.name);
+    },
+    getMaxCopies(rarity) {
+      if (rarity === "Rare") return [0, 1];   // Rare max 1
+      if (rarity === "Uncommon") return [0, 1, 2];  // Uncommon max 2
+      return [0, 1, 2, 3];  // Common max 3
+    },
+    setDeckCount(cardId, count) {
+      this.deckCounts[cardId] = count;
+      localStorage.setItem('deckCounts', JSON.stringify(this.deckCounts));
+    },
+    getDeckCount(cardId) {
+      return this.deckCounts[cardId] ?? 0; // Default to 0 if not set
+    },
+    toggleDeckView() {
+      this.showDeck = !this.showDeck;
+      this.$nextTick(() => { 
+        console.log("Updated myDeckCards:", this.myDeckCards);  // ✅ Ensure Vue updates
+      });
+    },
+    toggleDeck(cardId) {
+      if (this.myDeck.includes(cardId)) {
+        this.myDeck = this.myDeck.filter(id => id !== cardId); // Remove from deck
+      } else {
+        this.myDeck.push(cardId); // Add to deck
+      }
+      localStorage.setItem('myDeck', JSON.stringify(this.myDeck));
+    },
+    isInDeck(cardId) {
+      return this.myDeck.includes(cardId);
+    },
+    toggleFavorite(cardId) {
+      if (this.favorites.includes(cardId)) {
+        this.favorites = this.favorites.filter(id => id !== cardId);
+      } else {
+        this.favorites.push(cardId);
+      }
+      localStorage.setItem('favorites', JSON.stringify(this.favorites));
+    },
+    isFavorite(cardId) {
+      return this.favorites.includes(cardId);
+    },
+    async fetchCards() {
+      try {
+        const response = await fetch('cards.json');  // Fetch JSON
+        this.cards = await response.json();
+      } catch (error) {
+        console.error("Error loading cards.json:", error);
+      } finally {
+        this.loading = false;  // Remove loading state
+      }
+    },
+    openModal(image) {
+      if (!image) {
+        console.error("No image provided to openModal!");
+        return;
+      }
+      console.log("Opening modal with image:", image);
+      this.modalImage = image;
+      this.showModal = true;
+    },
+
+    closeModal() {
+      this.showModal = false;
+      this.modalImage = '';
+    }
+  },
+
+  mounted() {
+    this.fetchCards().then(() => {
+      this.selectedGuilds = [...this.guilds];  // Select all Guilds after cards load
+
+      // Watch for changes in filtering criteria and update filteredCards
+      this.$watch(
+        () => [this.selectedGuilds, this.selectedType, this.showFavoritesOnly, this.searchQuery],
+        () => {
+          this.filteredCards = this.cards.filter(card => {
+            return (this.selectedGuilds.includes(card.guild))
+                && (!this.selectedType || card.type === this.selectedType)
+                && (!this.showFavoritesOnly || this.isFavorite(card.id))
+                && (!this.searchQuery || card.name.toLowerCase().includes(this.searchQuery.toLowerCase()));
+          });
+        },
+        { deep: true, immediate: true } // Reacts to deep changes & runs immediately
+      );
+    });
+  }
+
+  
+}).mount('#app');
+</script>
+
+</body>
+</html>
