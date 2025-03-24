@@ -10,15 +10,20 @@
 <body class="bg-gray-100 font-sans">
 
 <div id="app" class="p-8">
+    
   <h1 class="text-4xl font-bold mb-6 text-center">{{ showDeck ? "My Deck" : "Card Gallery" }}</h1>
 
+  <div class="text-center mb-4">
+    <a href="nommsters.html" class="text-blue-600 hover:underline text-lg">View Nommsters</a>
+  </div>  
+  
   <!-- Filter Section -->
   <div class="mb-4 flex flex-wrap gap-4 items-center justify-center">
     <button 
       @click="toggleDeckView" 
       class="px-4 py-2 bg-blue-500 text-white rounded shadow">
       {{ showDeck ? "Back to Gallery" : `View My Deck (${deckSize})` }}
-  </button>
+    </button>
 
     <select v-model="selectedType" class="px-4 py-2 rounded border">
       <option value="">All Types</option>

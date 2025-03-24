@@ -1,0 +1,182 @@
+[
+  {
+    "name": "Bravalanche",
+    "id": "bravalanche",
+    "guild": "Coronis",
+    "cost": 9,
+    "front": "cards/nommsters/Bravalanche_DC9_thumb.jpg",
+    "back": "cards/nommsters/Bravalanche_EC9_thumb.jpg",
+    "modalFront": "cards/nommsters/Bravalanche_DC9.jpg",
+    "modalBack": "cards/nommsters/Bravalanche_EC9.jpg"
+  },
+  {
+    "name": "Chukmutt",
+    "id": "chukmutt",
+    "guild": "Burlindor",
+    "cost": 9,
+    "front": "cards/nommsters/Chukmutt_DB9_thumb.jpg",
+    "back": "cards/nommsters/Chukmutt_EB9_thumb.jpg",
+    "modalFront": "cards/nommsters/Chukmutt_DB9.jpg",
+    "modalBack": "cards/nommsters/Chukmutt_EB9.jpg"
+  },
+  {
+    "name": "Creech",
+    "id": "creech",
+    "guild": "Sylvani",
+    "cost": 8,
+    "front": "cards/nommsters/Creech_DS8_thumb.jpg",
+    "back": "cards/nommsters/Creech_ES8_thumb.jpg",
+    "modalFront": "cards/nommsters/Creech_DS8.jpg",
+    "modalBack": "cards/nommsters/Creech_ES8.jpg"
+  },
+  {
+    "name": "Dazzlemyte",
+    "id": "dazzlemyte",
+    "guild": "Coronis",
+    "cost": 10,
+    "front": "cards/nommsters/Dazzlemyte_DC10_thumb.jpg",
+    "back": "cards/nommsters/Dazzlemyte_EC10_thumb.jpg",
+    "modalFront": "cards/nommsters/Dazzlemyte_DC10.jpg",
+    "modalBack": "cards/nommsters/Dazzlemyte_EC10.jpg"
+  },
+  {
+    "name": "Dreemie",
+    "id": "dreemie",
+    "guild": "Veralyn",
+    "cost": 9,
+    "front": "cards/nommsters/Dreemie_DV9_thumb.jpg",
+    "back": "cards/nommsters/Dreemie_EV9_thumb.jpg",
+    "modalFront": "cards/nommsters/Dreemie_DV9.jpg",
+    "modalBack": "cards/nommsters/Dreemie_EV9.jpg"
+  },
+  {
+    "name": "Fumblecap",
+    "id": "fumblecap",
+    "guild": "Veralyn",
+    "cost": 10,
+    "front": "cards/nommsters/Fumblecap_DV10_thumb.jpg",
+    "back": "cards/nommsters/Fumblecap_EV10_thumb.jpg",
+    "modalFront": "cards/nommsters/Fumblecap_DV10.jpg",
+    "modalBack": "cards/nommsters/Fumblecap_EV10.jpg"
+  },
+  {
+    "name": "Glittermaw",
+    "id": "glittermaw",
+    "guild": "Coronis",
+    "cost": 11,
+    "front": "cards/nommsters/Glittermaw_DC11_thumb.jpg",
+    "back": "cards/nommsters/Glittermaw_EC11_thumb.jpg",
+    "modalFront": "cards/nommsters/Glittermaw_DC11.jpg",
+    "modalBack": "cards/nommsters/Glittermaw_EC11.jpg"
+  },
+  {
+    "name": "Gubbins",
+    "id": "gubbins",
+    "guild": "Burlindor",
+    "cost": 12,
+    "front": "cards/nommsters/Gubbins_DB12_thumb.jpg",
+    "back": "cards/nommsters/Gubbins_EB12_thumb.jpg",
+    "modalFront": "cards/nommsters/Gubbins_DB12.jpg",
+    "modalBack": "cards/nommsters/Gubbins_EB12.jpg"
+  },
+  {
+    "name": "Jibbletart",
+    "id": "jibbletart",
+    "guild": "Veralyn",
+    "cost": 10,
+    "front": "cards/nommsters/Jibbletart_DV10_thumb.jpg",
+    "back": "cards/nommsters/Jibbletart_EV10_thumb.jpg",
+    "modalFront": "cards/nommsters/Jibbletart_DV10.jpg",
+    "modalBack": "cards/nommsters/Jibbletart_EV10.jpg"
+  },
+  {
+    "name": "Luggabun",
+    "id": "luggabun",
+    "guild": "Flaria",
+    "cost": 20,
+    "front": "cards/nommsters/Luggabun_DF20_thumb.jpg",
+    "back": "cards/nommsters/Luggabun_EF20_thumb.jpg",
+    "modalFront": "cards/nommsters/Luggabun_DF20.jpg",
+    "modalBack": "cards/nommsters/Luggabun_EF20.jpg"
+  },
+  {
+    "name": "Parette",
+    "id": "parette",
+    "guild": "Flaria",
+    "cost": 10,
+    "front": "cards/nommsters/Parette_DF10_thumb.jpg",
+    "back": "cards/nommsters/Parette_EF10_thumb.jpg",
+    "modalFront": "cards/nommsters/Parette_DF10.jpg",
+    "modalBack": "cards/nommsters/Parette_EF10.jpg"
+  },
+  {
+    "name": "Slivver",
+    "id": "slivver",
+    "guild": "Sylvani",
+    "cost": 10,
+    "front": "cards/nommsters/Slivver_DS10_thumb.jpg",
+    "back": "cards/nommsters/Slivver_ES10_thumb.jpg",
+    "modalFront": "cards/nommsters/Slivver_DS10.jpg",
+    "modalBack": "cards/nommsters/Slivver_ES10.jpg"
+  },
+  {
+    "name": "Sniffin",
+    "id": "sniffin",
+    "guild": "Axalon",
+    "cost": 10,
+    "front": "cards/nommsters/Sniffin_DA10_thumb.jpg",
+    "back": "cards/nommsters/Sniffin_EA10_thumb.jpg",
+    "modalFront": "cards/nommsters/Sniffin_DA10.jpg",
+    "modalBack": "cards/nommsters/Sniffin_EA10.jpg"
+  },
+  {
+    "name": "Tortax",
+    "id": "tortax",
+    "guild": "Axalon",
+    "cost": 9,
+    "front": "cards/nommsters/Tortax_DA9_thumb.jpg",
+    "back": "cards/nommsters/Tortax_EA9_thumb.jpg",
+    "modalFront": "cards/nommsters/Tortax_DA9.jpg",
+    "modalBack": "cards/nommsters/Tortax_EA9.jpg"
+  },
+  {
+    "name": "Tusslegruff",
+    "id": "tusslegruff",
+    "guild": "Burlindor",
+    "cost": 22,
+    "front": "cards/nommsters/Tusslegruff_DB22_thumb.jpg",
+    "back": "cards/nommsters/Tusslegruff_EB22_thumb.jpg",
+    "modalFront": "cards/nommsters/Tusslegruff_DB22.jpg",
+    "modalBack": "cards/nommsters/Tusslegruff_EB22.jpg"
+  },
+  {
+    "name": "Vexwize",
+    "id": "vexwize",
+    "guild": "Axalon",
+    "cost": 19,
+    "front": "cards/nommsters/Vexwize_DA19_thumb.jpg",
+    "back": "cards/nommsters/Vexwize_EA19_thumb.jpg",
+    "modalFront": "cards/nommsters/Vexwize_DA19.jpg",
+    "modalBack": "cards/nommsters/Vexwize_EA19.jpg"
+  },
+  {
+    "name": "Yoonima",
+    "id": "yoonima",
+    "guild": "Flaria",
+    "cost": 11,
+    "front": "cards/nommsters/Yoonima_DF11_thumb.jpg",
+    "back": "cards/nommsters/Yoonima_EF11_thumb.jpg",
+    "modalFront": "cards/nommsters/Yoonima_DF11.jpg",
+    "modalBack": "cards/nommsters/Yoonima_EF11.jpg"
+  },
+  {
+    "name": "Zep",
+    "id": "zep",
+    "guild": "Sylvani",
+    "cost": 10,
+    "front": "cards/nommsters/Zep_DS10_thumb.jpg",
+    "back": "cards/nommsters/Zep_ES10_thumb.jpg",
+    "modalFront": "cards/nommsters/Zep_DS10.jpg",
+    "modalBack": "cards/nommsters/Zep_ES10.jpg"
+  }
+]

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nommsters</title>
+  <script src="https://unpkg.com/vue@3"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .flip-card {
+      perspective: 1000px;
+    }
+    .flip-inner {
+      transition: transform 0.4s;
+      transform-style: preserve-3d;
+    }
+    .flipped .flip-inner {
+      transform: rotateY(180deg);
+    }
+    .flip-front, .flip-back {
+      backface-visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .flip-back {
+      transform: rotateY(180deg);
+    }
+    .modal-bg {
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+  </style>
+</head>
+<body class="bg-gray-100 p-6">
+  <div id="app" class="max-w-5xl mx-auto">
+    <h1 class="text-3xl font-bold text-center mb-2">Nommsters</h1>
+    <div class="text-center mb-6">
+      <a href="index.html" class="text-blue-600 hover:underline text-lg">&larr; Back to Gallery</a>
+    </div>
+
+    <!-- Filter Section -->
+
+    <button 
+      v-if="showDeck"
+      @click="openDeckCodeModal" 
+      class="px-4 py-2 bg-green-500 text-white rounded shadow mb-4">
+      Generate Deck Code
+    </button>
+
+    <!-- Guild Filter Buttons with Dynamic Colors -->
+    <div class="flex flex-wrap gap-2 justify-center mb-6">
+      <button 
+        v-for="guild in guilds" 
+        :key="guild" 
+        @click="toggleGuild(guild)"
+        class="px-4 py-2 rounded border shadow flex items-center gap-2 transition-all"
+        :style="{
+          backgroundColor: selectedGuilds.includes(guild) ? guildColors[guild] : '#e5e5e5',
+          color: selectedGuilds.includes(guild) ? 'white' : 'black'
+        }">
+
+        <!-- Non-Clickable Checkbox -->
+        <input 
+          type="checkbox" 
+          :checked="selectedGuilds.includes(guild)" 
+          class="w-4 h-4 pointer-events-none"
+        >
+
+        {{ guild }}
+      </button>
+    </div>
+
+    <div v-for="card in filteredNommsters" :key="card.id" class="mb-8">
+      <div class="flex items-center gap-6">
+        <!-- Card flip container -->
+        <div 
+          class="relative w-64 h-64 flip-card cursor-pointer" 
+          @click.left="openModal(card, flippedCards.includes(card.id))"
+          :class="{ 'flipped': flippedCards.includes(card.id) }"
+        >
+          <div class="flip-inner w-full h-full">
+            <img :src="card.front" class="flip-front object-contain w-full h-full rounded border shadow">
+            <img :src="card.back" class="flip-back object-contain w-full h-full rounded border shadow">
+          </div>
+        </div>
+
+        <!-- Card Info -->
+        <div>
+          <h2 class="text-xl font-semibold mb-2">{{ card.name }}</h2>
+          <div class="flex items-center gap-2 mb-3">
+            <button
+              class="px-3 py-1 rounded text-white"
+              :style="{
+                backgroundColor: !flippedCards.includes(card.id) ? guildColors[card.guild] : '#ccc',
+              }"
+              @click="setFlipped(card.id, false)"
+            >Dormant</button>
+
+            <button
+              class="px-3 py-1 rounded text-white"
+              :style="{
+                backgroundColor: flippedCards.includes(card.id) ? guildColors[card.guild] : '#ccc',
+              }"
+              @click="setFlipped(card.id, true)"
+            >Energized</button>
+          </div>
+          <button
+            class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+            @click="toggleDeck(card.id)"
+          >
+            {{ deck.includes(card.id) ? 'In My Deck' : 'Add to Deck' }}
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div v-if="modalCard" class="fixed inset-0 flex items-center justify-center modal-bg z-50" @click="closeModal">
+      <div class="bg-white p-4 rounded shadow-lg max-w-xl w-full relative" @click.stop>
+        <button class="absolute top-2 right-2 text-gray-600 text-xl font-bold" @click="closeModal">&times;</button>
+        <img :src="modalState === 'dormant' ? modalCard.modalFront : modalCard.modalBack" class="w-full object-contain rounded">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const { createApp } = Vue;
+
+    createApp({
+      data() {
+        return {
+          nommsters: [],
+          flippedCards: [],
+          deck: [],
+          modalCard: null,
+          modalState: 'dormant',
+          searchQuery: '',
+          showFavoritesOnly: false,
+          showDeck: false,
+          selectedGuilds: [],
+          guilds: ["Axalon", "Burlindor", "Coronis", "Flaria", "Sylvani", "Veralyn"],
+          guildColors: {
+            Axalon: "#1bb829",
+            Burlindor: "#e28416",
+            Coronis: "#ffef03",
+            Flaria: "#ce9dde",
+            Sylvani: "#2c4dea",
+            Veralyn: "#c60757"
+          }
+        };
+      },
+      computed: {
+        deckSize() {
+          return this.deck.length;
+        },
+        filteredNommsters() {
+          return this.nommsters.filter(card => {
+            const inDeck = this.showDeck ? this.deck.includes(card.id) : true;
+            const matchesSearch = card.name.toLowerCase().includes(this.searchQuery.toLowerCase());
+            const isFavorite = this.showFavoritesOnly ? this.deck.includes(card.id) : true;
+            const matchesGuild = this.selectedGuilds.length === 0 || this.selectedGuilds.includes(card.guild);
+            return inDeck && matchesSearch && isFavorite && matchesGuild;
+          });
+        }
+      },
+      mounted() {
+        fetch('nommsters.json')
+          .then(res => res.json())
+          .then(data => {
+            this.nommsters = data;
+            this.selectedGuilds = [...this.guilds];
+          })
+          .catch(err => {
+            console.error("Failed to load nommsters.json", err);
+          });
+      },
+      methods: {
+        setFlipped(id, flipToBack) {
+          const index = this.flippedCards.indexOf(id);
+          if (flipToBack && index === -1) this.flippedCards.push(id);
+          else if (!flipToBack && index !== -1) this.flippedCards.splice(index, 1);
+        },
+        toggleDeck(id) {
+          const index = this.deck.indexOf(id);
+          if (index === -1) {
+            this.deck.push(id);
+          } else {
+            this.deck.splice(index, 1);
+          }
+        },
+        toggleDeckView() {
+          this.showDeck = !this.showDeck;
+        },
+        openModal(card, isFlipped) {
+          this.modalCard = card;
+          this.modalState = isFlipped ? 'energized' : 'dormant';
+        },
+        closeModal() {
+          this.modalCard = null;
+          this.modalState = 'dormant';
+        },
+        toggleGuild(guild) {
+          const index = this.selectedGuilds.indexOf(guild);
+          if (index === -1) this.selectedGuilds.push(guild);
+          else this.selectedGuilds.splice(index, 1);
+        },
+        openDeckCodeModal() {
+          const lines = this.nommsters
+            .filter(c => this.deck.includes(c.id))
+            .sort((a, b) => a.guild.localeCompare(b.guild))
+            .map(c => `${c.name}`);
+
+          const grouped = {};
+          lines.forEach(line => {
+            const [name] = line.split(' x');
+            const guild = this.nommsters.find(c => c.name === name)?.guild || 'Other';
+            if (!grouped[guild]) grouped[guild] = [];
+            grouped[guild].push(line);
+          });
+
+          let output = '';
+          for (const guild of Object.keys(grouped)) {
+            output += guild + '\n';
+            grouped[guild].forEach(line => output += ` - ${line}\n`);
+          }
+
+          navigator.clipboard.writeText(output.trim());
+          alert("Deck code copied to clipboard!\n\n" + output.trim());
+        }
+      }
+    }).mount('#app');
+  </script>
+</body>
+</html>
