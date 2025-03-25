@@ -80,6 +80,14 @@
           @click.left="openModal(card, flippedCards.includes(card.id))"
           :class="{ 'flipped': flippedCards.includes(card.id) }"
         >
+        <!-- Flip Button (shared for both sides) -->
+        <button
+        @click.stop="toggleFlip(card.id)"
+        class="absolute top-2 right-2 text-white text-4xl z-10"
+        :style="{ backgroundColor: guildColors[card.guild] }"
+        >
+        &#x1F501;
+        </button>
           <div class="flip-inner w-full h-full">
             <img :src="card.front" class="flip-front object-contain w-full h-full rounded border shadow">
             <img :src="card.back" class="flip-back object-contain w-full h-full rounded border shadow">
@@ -177,6 +185,10 @@
           });
       },
       methods: {
+        toggleFlip(id) {
+          const isFlipped = this.flippedCards.includes(id);
+          this.setFlipped(id, !isFlipped);
+        },
         setFlipped(id, flipToBack) {
           const index = this.flippedCards.indexOf(id);
           if (flipToBack && index === -1) this.flippedCards.push(id);
