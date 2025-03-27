@@ -510,16 +510,6 @@
     "thumbnail": null
   },
   {
-    "id": 52,
-    "name": "Novice Sarai",
-    "guild": "Burlindor",
-    "rarity": "Rare",
-    "type": "Character",
-    "version": 10,
-    "image": "cards/burlindor/novice-sarai_b1c10.jpg",
-    "thumbnail": null
-  },
-  {
     "id": 53,
     "name": "Old Fashioned Productivity",
     "guild": "Burlindor",
@@ -2057,6 +2047,36 @@
     "type": "Asset",
     "version": 10,
     "image": "cards/veralyn/vip-guest-list_v1s10.jpg",
+    "thumbnail": null
+  },
+  {
+    "id": 207,
+    "name": "Arthunk",
+    "guild": "Burlindor",
+    "rarity": "Rare",
+    "type": "Character",
+    "version": 11,
+    "image": "cards/burlindor/arthunk_b1c11.jpg",
+    "thumbnail": null
+  },
+  {
+    "id": 208,
+    "name": "Stanvil",
+    "guild": "Burlindor",
+    "rarity": "Rare",
+    "type": "Character",
+    "version": 11,
+    "image": "cards/burlindor/stanvil_b1c11.jpg",
+    "thumbnail": null
+  },
+  {
+    "id": 209,
+    "name": "Typecast Harland",
+    "guild": "Coronis",
+    "rarity": "Rare",
+    "type": "Character",
+    "version": 11,
+    "image": "cards/coronis/typecast-Harland_c1c11.jpg",
     "thumbnail": null
   }
 ]
