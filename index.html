@@ -353,7 +353,7 @@ createApp({
     },
     async fetchCards() {
       try {
-        const response = await fetch('cards.json');  // Fetch JSON
+        const response = await fetch('cards_v11.json');  // Fetch JSON
         this.cards = await response.json();
       } catch (error) {
         console.error("Error loading cards.json:", error);
