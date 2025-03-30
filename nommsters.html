@@ -177,7 +177,13 @@
         fetch('nommsters.json')
           .then(res => res.json())
           .then(data => {
-            this.nommsters = data;
+            this.nommsters = data.sort((a, b) => {
+              if (a.guild === b.guild) {
+                return a.name.localeCompare(b.name);
+              }
+              return a.guild.localeCompare(b.guild);
+            });
+
             this.selectedGuilds = [...this.guilds];
           })
           .catch(err => {

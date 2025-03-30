@@ -1140,16 +1140,6 @@
     "thumbnail": null
   },
   {
-    "id": 116,
-    "name": "Noombus",
-    "guild": "Flaria",
-    "rarity": "Rare",
-    "type": "Character",
-    "version": 10,
-    "image": "cards/flaria/noombus_f1c10.jpg",
-    "thumbnail": null
-  },
-  {
     "id": 117,
     "name": "One Way Ticket",
     "guild": "Flaria",
@@ -2077,6 +2067,16 @@
     "type": "Character",
     "version": 11,
     "image": "cards/coronis/typecast-Harland_c1c11.jpg",
+    "thumbnail": null
+  },
+  {
+    "id": 210,
+    "name": "Deeproute Guide Rahdish",
+    "guild": "Flaria",
+    "rarity": "Rare",
+    "type": "Character",
+    "version": 11,
+    "image": "cards/flaria/deeproute-guide-rahdish_f1c11.jpg",
     "thumbnail": null
   }
 ]
