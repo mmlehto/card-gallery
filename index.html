@@ -30,6 +30,10 @@
       <option v-for="type in types" :key="type">{{ type }}</option>
     </select>
 
+    <select v-model="selectedRarity" class="px-4 py-2 rounded border">
+      <option value="">All Rarities</option>
+      <option v-for="rarity in rarities" :key="rarity">{{ rarity }}</option>
+    </select>
   <!-- This is the Search Bar -->
    <input
       v-model="searchQuery" 
@@ -221,6 +225,7 @@ createApp({
         Veralyn: "#c60757"
       },
       selectedType: '',
+      selectedRarity: '',
       showFavoritesOnly: false,
       searchQuery: '',
       showDeck: false,
@@ -241,12 +246,16 @@ createApp({
     types() {
       return [...new Set(this.cards.map(card => card.type))];
     },
+    rarities() {
+      return [...new Set(this.cards.map(card => card.rarity))];
+    },
     filteredCards() {
       if (this.selectedGuilds.length === 0) return []; // Show nothing if no Guilds selected
 
       return this.cards.filter(card => {
         return this.selectedGuilds.includes(card.guild)
             && (!this.selectedType || card.type === this.selectedType)
+            && (!this.selectedRarity || card.rarity === this.selectedRarity)
             && (!this.showFavoritesOnly || this.isFavorite(card.id))
             && (!this.searchQuery || card.name.toLowerCase().includes(this.searchQuery.toLowerCase()));
       });
@@ -392,11 +401,12 @@ createApp({
 
       // Watch for changes in filtering criteria and update filteredCards
       this.$watch(
-        () => [this.selectedGuilds, this.selectedType, this.showFavoritesOnly, this.searchQuery],
+        () => [this.selectedGuilds, this.selectedType, this.selectedRarity, this.showFavoritesOnly, this.searchQuery],
         () => {
           this.filteredCards = this.cards.filter(card => {
             return (this.selectedGuilds.includes(card.guild))
                 && (!this.selectedType || card.type === this.selectedType)
+                && (!this.selectedRarity || card.rarity === this.selectedRarity)
                 && (!this.showFavoritesOnly || this.isFavorite(card.id))
                 && (!this.searchQuery || card.name.toLowerCase().includes(this.searchQuery.toLowerCase()));
           });
