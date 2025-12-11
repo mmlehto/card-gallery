@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nommsters Tier Sorter</title>
+  <script src="https://unpkg.com/vue@3"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <div id="app" class="p-6 max-w-5xl mx-auto">
+    <h1 class="text-3xl font-bold mb-4">Nommsters Tier Sorter</h1>
+
+    <div v-if="cardA && cardB" class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+      <div @click="vote(cardA, cardB)" class="cursor-pointer bg-white rounded shadow p-4 text-center hover:ring-4 hover:ring-blue-300">
+        <img :src="cardA.thumbnail" class="mx-auto mb-2 rounded max-h-64" :alt="cardA.name" />
+        <h2 class="text-lg font-semibold">{{ cardA.name }}</h2>
+      </div>
+
+      <div @click="vote(cardB, cardA)" class="cursor-pointer bg-white rounded shadow p-4 text-center hover:ring-4 hover:ring-blue-300">
+        <img :src="cardB.thumbnail" class="mx-auto mb-2 rounded max-h-64" :alt="cardB.name" />
+        <h2 class="text-lg font-semibold">{{ cardB.name }}</h2>
+      </div>
+    </div>
+
+    <button @click="reset" class="mb-6 px-4 py-2 bg-red-500 text-white rounded shadow">Reset Rankings</button>
+
+    <div v-for="tier in ['S','A','B','C','D','F']" :key="tier" class="mb-4">
+      <h3 class="text-xl font-bold mb-2">Tier {{ tier }}</h3>
+      <div class="flex flex-wrap gap-2">
+        <div v-for="card in tieredCards[tier]" :key="card.id" class="w-32">
+          <img :src="card.thumbnail" class="rounded mb-1" :alt="card.name" />
+          <p class="text-sm text-center">{{ card.name }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const K = 48; // Elo adjustment factor
+
+    const app = Vue.createApp({
+      data() {
+        return {
+          allCards: [],
+          scores: {},
+          cardA: null,
+          cardB: null,
+        };
+      },
+    computed: {
+        tieredCards() {
+            const tiers = { S: [], A: [], B: [], C: [], D: [], F: [] };
+            for (const card of this.allCards) {
+            const rating = this.scores[card.id] || 1000;
+            if (rating >= 1200) tiers.S.push(card);
+            else if (rating >= 1100) tiers.A.push(card);
+            else if (rating >= 1025) tiers.B.push(card);
+            else if (rating >= 975)  tiers.C.push(card);
+            else if (rating >= 900)  tiers.D.push(card);
+            else tiers.F.push(card);
+            }
+            return tiers;
+        },
+    },
+
+      methods: {
+        vote(winner, loser) {
+          const rW = this.getRating(winner.id);
+          const rL = this.getRating(loser.id);
+          const eW = 1 / (1 + Math.pow(10, (rL - rW) / 400));
+          const eL = 1 / (1 + Math.pow(10, (rW - rL) / 400));
+          this.scores[winner.id] = rW + K * (1 - eW);
+          this.scores[loser.id] = rL + K * (0 - eL);
+          this.saveScores();
+          this.pickNext();
+        },
+        getRating(id) {
+          return this.scores[id] || 1000;
+        },
+        pickNext() {
+            const pool = [...this.allCards];
+            if (pool.length < 2) return;
+            const sorted = [...this.allCards].sort((a, b) => this.getRating(a.id) - this.getRating(b.id));
+            const idx = Math.floor(Math.random() * (sorted.length - 1));
+            this.cardA = sorted[idx];
+            this.cardB = sorted[idx + 1];
+        },
+        shuffle(arr) {
+          for (let i = arr.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [arr[i], arr[j]] = [arr[j], arr[i]];
+          }
+        },
+        saveScores() {
+          localStorage.setItem("eloScores", JSON.stringify(this.scores));
+        },
+        loadScores() {
+          const saved = localStorage.getItem("eloScores");
+          if (saved) this.scores = JSON.parse(saved);
+        },
+        reset() {
+          if (confirm("Reset all rankings?")) {
+            this.scores = {};
+            this.saveScores();
+            this.pickNext();
+          }
+        },
+      },
+      async mounted() {
+        const res = await fetch('cards_v11.json');
+        const data = await res.json();
+        this.allCards = data.map(card => {
+            return {
+                ...card,
+                thumbnail: card.image.replace('.jpg', '_thumb.jpg')
+            };
+        });
+
+        this.shuffle(this.allCards);
+        this.loadScores();
+        this.pickNext();
+      },
+    });
+
+    app.mount("#app");
+  </script>
+</body>
+</html>
