@@ -174,7 +174,7 @@
         }
       },
       mounted() {
-        fetch('nommsters.json')
+        fetch('nommsters_v13.json')
           .then(res => res.json())
           .then(data => {
             this.nommsters = data.sort((a, b) => {
@@ -187,7 +187,7 @@
             this.selectedGuilds = [...this.guilds];
           })
           .catch(err => {
-            console.error("Failed to load nommsters.json", err);
+            console.error("Failed to load json", err);
           });
       },
       methods: {
