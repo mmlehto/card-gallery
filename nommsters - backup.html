@@ -72,64 +72,6 @@
       </button>
     </div>
 
-    <!-- Random Pick -->
-    <div class="flex justify-center mb-6">
-      <button
-        @click="startRandomPick"
-        :disabled="isPicking"
-        class="px-4 py-2 bg-purple-600 text-white rounded shadow disabled:opacity-50"
-      >
-        {{ isPicking ? 'Picking…' : 'Pick a Random Nommster' }}
-      </button>
-    </div>
-
-    <!-- Random Pick Overlay -->
-    <div
-      v-if="pickerOpen"
-      class="fixed inset-0 flex items-center justify-center modal-bg z-50"
-      @click="cancelPick"
-    >
-      <div class="bg-white p-5 rounded shadow-lg w-full max-w-md relative" @click.stop>
-        <button class="absolute top-2 right-2 text-gray-600 text-xl font-bold" @click="cancelPick">&times;</button>
-
-        <div class="text-lg font-semibold mb-3">Random pick in progress…</div>
-
-        <div class="flex items-center gap-4">
-          <div
-            class="w-40 h-40 rounded border-4 overflow-hidden flex items-center justify-center"
-            :style="{ borderColor: pickerCard ? guildColors[pickerCard.guild] : '#ddd' }"
-          >
-            <img
-              v-if="pickerCard"
-              :key="pickerCard.id"
-              :src="pickerCard.front"
-              class="w-full h-full object-contain nommsters-roulette-pop"
-            />
-            <div v-else class="text-gray-400">—</div>
-          </div>
-
-          <div class="flex-1">
-            <div class="text-sm text-gray-500">Cycling through…</div>
-            <div class="text-xl font-bold leading-tight">{{ pickerCard ? pickerCard.name : '—' }}</div>
-            <div class="text-sm" :style="{ color: pickerCard ? guildColors[pickerCard.guild] : '#666' }">
-              {{ pickerCard ? pickerCard.guild : '' }}
-            </div>
-
-            <div class="mt-4 h-2 bg-gray-200 rounded">
-              <div class="h-2 bg-gray-800 rounded" :style="{ width: pickerProgress + '%' }"></div>
-            </div>
-            <div class="text-xs text-gray-500 mt-1">{{ Math.round(pickerProgress) }}%</div>
-          </div>
-        </div>
-
-        <div class="mt-5 flex justify-end gap-2">
-          <button @click="cancelPick" class="px-3 py-2 bg-gray-200 rounded">Cancel</button>
-          <button @click="finishPickNow" class="px-3 py-2 bg-green-600 text-white rounded">Stop here</button>
-        </div>
-      </div>
-    </div>  
-
-
     <div v-for="card in filteredNommsters" :key="card.id" class="mb-8">
       <div class="flex items-center gap-6">
         <!-- Card flip container -->
@@ -186,24 +128,10 @@
     <div v-if="modalCard" class="fixed inset-0 flex items-center justify-center modal-bg z-50" @click="closeModal">
       <div class="bg-white p-4 rounded shadow-lg max-w-xl w-full relative" @click.stop>
         <button class="absolute top-2 right-2 text-gray-600 text-xl font-bold" @click="closeModal">&times;</button>
-        <button
-          class="absolute top-2 left-2 px-3 py-1 rounded text-white text-sm shadow"
-          :style="{ backgroundColor: guildColors[modalCard.guild] || '#111' }"
-          @click.stop="toggleModalFlip"
-        >
-          Flip
-        </button>
-        <img
-          @click="toggleModalFlip"
-          :src="modalState === 'dormant' ? modalCard.modalFront : modalCard.modalBack"
-          class="w-full object-contain rounded cursor-pointer"
-        />
-
+        <img :src="modalState === 'dormant' ? modalCard.modalFront : modalCard.modalBack" class="w-full object-contain rounded">
       </div>
     </div>
   </div>
-
-  <script src="nommsters-roulette.js"></script>
 
   <script>
     const { createApp } = Vue;
@@ -228,14 +156,7 @@
             Flaria: "#ce9dde",
             Sylvani: "#2c4dea",
             Veralyn: "#c60757"
-          },
-          // random pick UI
-          pickerOpen: false,
-          isPicking: false,
-          pickerCard: null,
-          pickerProgress: 0,
-          rouletteCancel: null,
-
+          }
         };
       },
       computed: {
@@ -273,15 +194,6 @@
         toggleFlip(id) {
           const isFlipped = this.flippedCards.includes(id);
           this.setFlipped(id, !isFlipped);
-        },
-        toggleModalFlip() {
-          if (!this.modalCard) return;
-
-          const flipToBack = this.modalState === "dormant"; // going to energized/back
-          this.modalState = flipToBack ? "energized" : "dormant";
-
-          // keep consistent with the main page flip state
-          this.setFlipped(this.modalCard.id, flipToBack);
         },
         setFlipped(id, flipToBack) {
           const index = this.flippedCards.indexOf(id);
@@ -334,66 +246,7 @@
 
           navigator.clipboard.writeText(output.trim());
           alert("Deck code copied to clipboard!\n\n" + output.trim());
-        },
-        getPickPool() {
-          // Picks from whatever is currently visible (respects your filtering):contentReference[oaicite:8]{index=8}
-          return (this.filteredNommsters && this.filteredNommsters.length)
-            ? this.filteredNommsters
-            : this.nommsters;
-        },
-        startRandomPick() {
-          if (this.isPicking) return;
-
-          const pool = this.getPickPool();
-          if (!pool.length) {
-            alert("No Nommsters available to pick from.");
-            return;
-          }
-
-          // reset UI
-          this.isPicking = true;
-          this.pickerOpen = true;
-          this.pickerProgress = 0;
-          this.pickerCard = pool[Math.floor(Math.random() * pool.length)];
-
-          // cancel any previous run
-          if (typeof this.rouletteCancel === "function") this.rouletteCancel();
-
-          this.rouletteCancel = window.NommstersRoulette.runRoulette({
-            pool,
-            durationMs: 2600,
-            onTick: (card) => { this.pickerCard = card; },
-            onProgress: (p) => { this.pickerProgress = p; },
-            onDone: (card) => {
-              this.isPicking = false;
-              this.pickerOpen = false;
-
-              const isFlipped = this.flippedCards.includes(card.id);
-              this.openModal(card, isFlipped); // uses your existing modal flow:contentReference[oaicite:9]{index=9}
-            }
-          });
-        },
-        cancelPick() {
-          if (typeof this.rouletteCancel === "function") this.rouletteCancel();
-          this.rouletteCancel = null;
-          this.isPicking = false;
-          this.pickerOpen = false;
-          this.pickerProgress = 0;
-        },
-        finishPickNow() {
-          if (typeof this.rouletteCancel === "function") this.rouletteCancel();
-          this.rouletteCancel = null;
-
-          const card = this.pickerCard;
-          this.isPicking = false;
-          this.pickerOpen = false;
-
-          if (card) {
-            const isFlipped = this.flippedCards.includes(card.id);
-            this.openModal(card, isFlipped);
-          }
-        },
-
+        }
       }
     }).mount('#app');
   </script>
