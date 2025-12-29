@@ -1,0 +1,175 @@
+GUILD,RARITY,TYPE,NAME,POWER,COMBAT,TEXTBOX,TRAITS,Art brief,Deals True Damage
+Axalon,1,Action,Academic Enrollment,-,-,"Play:  As long as you control at least one character with 🍬 on it, each of your characters with 🍬 on it belongs to Axalon instead of its original Guild. (Remains in play until the effect is complete.)",AURA,,FALSE
+Axalon,3,Character,Axalock,1,🛡️ 1,Your opponent's Nommster costs +1. Defeated: Draw a card.,TRINKETTE,,FALSE
+Axalon,2,Action,Back to the Drawing Board,-,-,Play: Choose a ready character. Place that character in its owner's stash.,WORK,,FALSE
+Axalon,1,Action,Balance the Books,-,-,"Play: Defeat an enemy character with power equal to the number of cards in your stash. Discard: Stash the top card of your deck. Then, retire this card.",WORK,,FALSE
+Axalon,3,Character,Blockhead,3,🛡️ 2,"Rowdy. Victory: After this attacks and defeats an enemy, this captures 2🍬 from your opponent.",GRAVEN - WHIZ,,FALSE
+Axalon,1,Character,Blue,2,-,Skill: Choose another friendly character. Fetch a character from your deck that shares a trait with the chosen character.,CREATURE,,FALSE
+Axalon,2,Character,Bookcase Bumper,4,🌫️,"Rowdy. Play: You may stash a card from your hand. If you do, deal 3💥 to this.",GEIST,,TRUE
+Axalon,3,Asset,Brain Food,-,-,"Use: Remove 1🍬 from a friendly character and add it to your Nommster. Then, discard Brain Food.",FOOD,,FALSE
+Axalon,1,Action,Collective Intelligence,-,-,"Play: If the number of cards in your hand is equal to the number of characters you control, each of your characters captures 1🍬 from your opponent.",TACTIC,,FALSE
+Axalon,2,Action,Cram Session,-,-,"Play: Research the top 3 cards of your deck, then stash the top card of your deck.",WORK,,FALSE
+Axalon,3,Action,Flavor Profile Analysis,-,-,"Play: A friendly character captures 2🍬 from your opponent. It's a tough job, but someone's gotta do it.",WORK,,FALSE
+Axalon,1,Character,Hardnosed Gumshoe,5,🛡️ 1,"Skill: Research the top 3 cards of your deck. If you find any characters, you may play one of them. ""The Nose"" knows.",GRAVEN - WHIZ,,FALSE
+Axalon,1,Character,Headmaster Lockmere,4,🧊,"When you choose as a turn option to PLAY a card, if this character is ready, you may choose any card in your stash and play that card instead. Play: Stash a card from your hand.",MORTAL - WHIZ - STAR,,FALSE
+Axalon,2,Character,Jumpy Investigator,2,🏹,"Play: Research the top 3 cards of any deck. If you find a Geist character, you may discard it. If you do, ready and use Jumpy Investigator. “There’s n-no such thing as ghosts...there’s no such thing as g-ghosts...”",GEIST,,FALSE
+Axalon,2,Character,Lab Technician,2,-,"After you Research, ready this character. Sing: After this sings, stash a card from your hand.",TRINKETTE - WHIZ,,FALSE
+Axalon,1,Action,Lightbulb Moment,-,-,"Play: Reveal a card from your hand. Ready and use a character that matches the revealed card's Guild. Then, retire this card.",EVENT,,FALSE
+Axalon,1,Asset,Lytewrite Academy,-,-,"Use: Research the top 3 cards of your deck. If you find any Axalon cards, you may reveal one and stash it.",LOCATION,,FALSE
+Axalon,3,Character,Lytewrite Bookman,3,-,"Play: This captures 1🍬. Skill: Research the top 3 cards of an opponent's deck. If you find an action card, you may discard it.",MORTAL - WHIZ,,FALSE
+Axalon,2,Character,Nosy Auditor,1,🛡️ 2,Play: This captures 1🍬. Skill: Remove all 🍬 from this and return it to the common supply.,GRAVEN - WHIZ,,FALSE
+Axalon,1,Asset,Number Cruncher,-,-,"Use: Defeat each character with power equal to the number of cards in your hand. Then, retire Number Cruncher. Operator's Note: ""Watch your digits.""",MACHINE,,FALSE
+Axalon,1,Asset,Open Book of Wonder,-,-,"Use: Reveal your hand. If each card is Rare, gain 1🍬. ""To share knowledge openly is to invite the whole world to marvel with you."" - Tomekeeper Ada",ITEM - BOOK,,FALSE
+Axalon,1,Action,Recruitment Campaign,-,-,"Play: Research the top 3 cards of your deck. If you find any Rowdy characters, you may play them (one at a time). ",WORK,,FALSE
+Axalon,3,Action,Red-Handed,-,-,"Play: Reveal a random card from your opponent's hand. Then, defeat an enemy controlled by your opponent that belongs to the revealed card's Guild.",TACTIC,,FALSE
+Axalon,1,Asset,Research Funding,-,-,Use: Gain 1🍬 for each deck you have researched this round.,BOUNTY,,FALSE
+Axalon,3,Action,Scholastic Pursuit,-,-,Play: Gain 1🍬. Research the top 3 cards of your deck.,SONG,,FALSE
+Axalon,1,Action,Shakedown,-,-,"Play: Research the top 3 cards of an opponent's deck. If you find any Asset cards, you may discard any of them.",TACTIC,,FALSE
+Axalon,1,Character,Slyborg,3,🌸,"Whenever you Research, this captures 1🍬 for each card placed on the bottom of the deck. Sing: After this sings, research the top 3 cards of your deck.",TRINKETTE - WHIZ,,FALSE
+Axalon,2,Action,Supporting Evidence,-,-,"Play: A friendly character captures 1🍬 from your opponent for each card in your stash. Then, retire this card.",EVENT,,FALSE
+Axalon,1,Character,Tomekeeper Ada,3,-,Play: Stash a card from your hand. Skill: Each player gains 1🍬 for each card in their stash.,CREATURE - WHIZ,,FALSE
+Burlindor,1,Action,A Hard Day's Work,-,-,"Play: If your hand is empty, gain 3🍬 and PASS. ""After a day like that, I think we can treat ourselves!""",WORK,,FALSE
+Burlindor,1,Action,A Rare Work Ethic,-,-,Play: Ready a Rare character.,WORK,,FALSE
+Burlindor,3,Character,Blacksmith,4,🛡️ 1,Discard: Deal 2💥 to a character.,GRAVEN - ARTISAN,,TRUE
+Burlindor,1,Asset,Bleu Ribbon Wheel,-,-,Use: Defeat each character with power 3 or lower. Discard Bleu Ribbon Wheel.,FOOD,,FALSE
+Burlindor,1,Asset,Burlindor Mess Hall,-,-,"Use: Fetch a Burlindor character from your discard pile and stash it. If you do, PASS. They work hard, they eat harder.",LOCATION,,FALSE
+Burlindor,3,Character,Carver,4,-,Rowdy. Play: Discard a card.,GEIST,,FALSE
+Burlindor,1,Character,Cheezewhiz Stiltz,4,🌫️,"Skill: Play a Food asset from your discard pile. If you do, gain 1🍬.",CREATURE - ARTISAN - WHIZ,,FALSE
+Burlindor,1,Character,Cobbler Tessa,4,🧊,"Skill: Play a character from any Guild. Then, ready and use that character. “Do you have any of the ones that light up when you run really fast?”- Ultimeero",MORTAL - ARTISAN,,FALSE
+Burlindor,1,Asset,Creamy Cauldron,-,-,"Use: For each friendly damaged character gain 1🍬 . Then, remove all damage from each friendly character and discard Creamy Cauldron. Leftovers? Not with Burlindor.",FOOD,,FALSE
+Burlindor,3,Action,Double-Shift,-,-,"Play: Choose a damaged character. If it is friendly, ready that character. If it is an enemy, defeat it.",WORK,,FALSE
+Burlindor,2,Character,Eager Apprentice,2,🏹,Discard: Fetch an asset card from your discard pile.,CREATURE,,FALSE
+Burlindor,3,Action,Good as New,-,-,Play: Stash a non-Burlindor card from your discard pile. ,WORK,,FALSE
+Burlindor,2,Action,Graveyard Shift,-,-,"Play: Play a Geist character from your discard pile. If you do, gain 1🍬.",WORK,,FALSE
+Burlindor,1,Character,Jack of All Trades,3,🧊,"You may play Work actions as if they belonged to your active Guild. Skill: Discard a card from your hand. If you do, fetch a Work action from your discard pile.",ARTISAN - MORTAL - STAR,,FALSE
+Burlindor,2,Action,Lunch Break,-,-,"Play: Use an opponent's Food asset as if you controlled it. (When it is discarded, place it in its owner's discard pile.)",TACTIC,,FALSE
+Burlindor,1,Action,Old-Fashioned Productivity,-,-,"Play: For the rest of the round, after a player plays a card, they may deal 1💥 to a character. If the card was a Work action, they may deal 2💥 instead. (Remains in play until the effect is complete.)",Aura,,TRUE
+Burlindor,1,Character,Patchwork,6,🧊,"Skill: Gain 1🍬 for each damage on Patchwork. Then, remove all damage from Patchwork.",TRINKETTE - ARTISAN,,FALSE
+Burlindor,3,Asset,Primordial Rind,-,-,"Use: Deal 1💥 to a friendly ready character. If it is not defeated, use that character. Then, discard Primordial Rind. “Even I won’t take a whiff.” - Hardnosed Gumshoe",FOOD,,TRUE
+Burlindor,2,Action,Quick Fix,-,-,"Play: Discard a card. If you do, deal 2💥 to a character. If the card was an Asset, deal 4💥 to that character instead.",WORK,,TRUE
+Burlindor,1,Character,Quick Learner,5,🌫️,Skill: Activate the Skill ability of a neighboring character as if Quick Learner had that Skill.,ROOTLING - WHIZ - ARTISAN,,FALSE
+Burlindor,1,Asset,Rush Orders,-,-,Use:  For the rest of the round each character with a Skill ability enters play ready. Discard Rush Orders.,ITEM,,FALSE
+Burlindor,1,Character,Safety Compliance Officer,1,🛡️ 4,"Skill: Choose an Asset in play. Return it to its owner's hand. ""Don't blame me, you should have memorized the latest edition of the Comprehensive Safety Handbook!""",MORTAL - WHIZ,,FALSE
+Burlindor,2,Character,Scrapyard Scavenger,1,🔥 X,This character's aggression (🔥) value is equal to the number of Assets you control. Play: Play an Asset from your discard pile.,GEIST,,FALSE
+Burlindor,1,Character,Short-Order Cook,2,🛡️ 2,"Skill: Ready each friendly Rowdy character. For the rest of the round, they belong to your active Guild.",GRAVEN,,FALSE
+Burlindor,2,Action,Spare Parts,-,-,"Play: Discard a card. If you do, stash a card from your hand.",TACTIC,,FALSE
+Burlindor,2,Character,Starvin' Marlin,5,🔥 1,"Rowdy. Victory: After this attacks and defeats an enemy, your opponent loses 1🍬.",CREATURE,,FALSE
+Burlindor,1,Asset,The Midnight Oil,-,-,"Use: Fetch each Geist character from your discard pile. Then, discard The Midnight Oil and PASS. “The Dalijaian Emporium really DOES have everything!” - Eager Apprentice",ITEM,,FALSE
+Burlindor,3,Character,Torquelet,2,🔥 1,Discard: Choose one... • Exhaust an asset. • Ready an asset.,TRINKETTE - ARTISAN,,FALSE
+Burlindor,3,Action,Ways of Old,-,-,Play: Gain 1🍬. Choose a Burlindor card from your discard pile and place it on either the top or the bottom of your deck.,SONG,,FALSE
+Coronis,1,Character,Backup Vocalist,2,🌸,"After an opponent plays a Song action, you gain 1🍬.",TRINKETTE - STAR ,,FALSE
+Coronis,1,Action,Boo!,-,-,"Play: Deal 2💥 to each character that does not belong to the most popular Guild. Then, retire this card.",EVENT,An audience of Geist characters is loudly booing and throwing tomatoes.,TRUE
+Coronis,1,Character,Brash Maverick,6,🧊,"Rowdy. Defeated: If this character was defeated in combat, draw cards equal to the enemy character's power. ""The bigger the foe, the bigger the SHOW!""",CREATURE - STAR - ATHLETE,,FALSE
+Coronis,2,Character,Celebrity Handler,2,🌫️,Play: Choose one... • Play a Star character. • Use a Star character. • Ready a Star character.,GEIST - HELPER,,FALSE
+Coronis,3,Character,Crowd Clearer,4,🔥 2,"Rowdy. Victory: After this attacks and defeats an enemy, gain 1🍬.",CREATURE,,FALSE
+Coronis,3,Action,Crown Me Twice,-,-,"Play: Gain 1🍬. If Coronis is the most popular Guild, move 1🍬 from a friendly character and add it to your supply.",SONG,,FALSE
+Coronis,3,Action,Flash Photography,-,-,"Play: Deal 1💥 to a character. If that damage does not defeat that character, exhaust it and gain 1🍬. Now everyone smile and say, “We hate the photographer!”",WORK,,TRUE
+Coronis,1,Action,Heroic Battle Scene,-,-,"Play: Until there are no Rowdy characters in play, when a player uses a Rowdy character to attack, their opponent loses 1🍬. (Remains in play until the effect is complete.)",AURA - SCENE,,FALSE
+Coronis,2,Character,Highlight Beamer,2,🏹,"Rowdy. After a Rare character is played, ready this character.",TRINKETTE,,FALSE
+Coronis,1,Character,King Coronis,X,🧊,This character’s power is equal to 2 times the total number of Coronis characters in play. Play: Exhaust each character with lower power than King Coronis. Bow before the King!,MORTAL - STAR,,FALSE
+Coronis,3,Asset,Large Crown-Combo,-,-,"Use: If you control a character that belongs to the most popular Guild, gain 1🍬. Then, discard this and take another turn.",FOOD,,FALSE
+Coronis,1,Character,Magical Duo Howler & Hush,2,🏹,"Play: Without shuffling, your opponent reveals a random card from your deck. Play that card as if it belonged to your active Guild. (If that card cannot be played, retire it.) ""Pick a card, any card...""",GROUP - STAR,,FALSE
+Coronis,1,Asset,Making an Entrance,-,-,Use: Reveal cards from the top of your deck until you reveal a Coronis character or run out of cards. Play that character. (Place the other revealed cards on the bottom of your deck in a random order).,TALENT,,FALSE
+Coronis,2,Character,Nommster-Breeder,4,🧊,Skill: Choose a friendly character. Remove each 🍬 from that character and add it to your Nommster.,MORTAL,,FALSE
+Coronis,3,Character,Pep Squad,3,🌫️,"Sing: After this sings, if Coronis is the most popular Guild, gain  another 🍬.",GROUP - ATHLETE,,FALSE
+Coronis,2,Action,Prop Swap,-,-,"Play: Exhaust a friendly Coronis character. If you do, stash 2 cards from your hand.",WORK,,FALSE
+Coronis,1,Character,Seat Filler,2,🛡️ 1,"This character cannot Sing. Play: If you do not control 6 characters, take another turn. Defeated: If you do not control 6 characters, stash this card.",GRAVEN,,FALSE
+Coronis,3,Character,Sidekick,1,🔥 4,"Rowdy. Play: If this was played next to a Coronis character, ready this character.",MORTAL - ATHLETE,,FALSE
+Coronis,2,Action,Snack Attack,-,-,"Play: Remove 1🍬 from a friendly character. If you do, ready and attack with that character.",TACTIC,,FALSE
+Coronis,2,Action,Sound Check,-,-,Play: Deal 1💥 to each non-Coronis character.,WORK,,TRUE
+Coronis,1,Asset,Stage Presence,-,-,Each opponent's Nommster costs +2 while Coronis is the most popular Guild.,TALENT,,FALSE
+Coronis,1,Asset,Star-Power,-,-,"As long as you control a Star character, your opponents cannot play or use Assets.",TALENT,,FALSE
+Coronis,1,Character,Sweetheart Singer Ashton,5,🧊,"Sing: After this sings, fetch each Song action from your discard pile. ♪ ""I'll cross the stars..."" ♪",MORTAL - STAR,,FALSE
+Coronis,1,Character,Sweetheart Singer Blake,4,🧊,"Sing: After this sings, for the remainder the round, each time you play a card, gain 1🍬. ♪ ""I'll chase the moon..."" ♪",MORTAL - STAR,,FALSE
+Coronis,1,Character,Sweetheart Singer Cade,3,🧊,"Sing: After this sings, ready each other friendly Star character. ♪ ""I'll do it all just to be with youuuuu!"" ♪",MORTAL - STAR,,FALSE
+Coronis,1,Asset,The Crown Theater,-,-,"Use: If Coronis is the most popular Guild, gain 2🍬 and then PASS.",LOCATION,,FALSE
+Coronis,3,Character,Ticket Collector,6,🧊,"Play: This captures 1🍬. If Coronis is the most popular Guild, this captures 2🍬 instead.",GEIST,,FALSE
+Coronis,2,Action,Tipping Culture,-,-,"Play: Choose one... • Each friendly Coronis character captures 1🍬. • A friendly character captures 1🍬. Tipping the Coronis isn't generosity, it's survival etiquette.",TACTIC,,FALSE
+Coronis,1,Character,Voice Coach Vera,1,🏹,Skill: Vocal Practice - Ready and use a character that has a Sing ability.,CREATURE - HELPER,,FALSE
+Flaria,3,Action,Boarding Fee,-,-,"Play: A player of your choice loses 1🍬. If that player controls 6 characters, they lose 2🍬 instead.",TACTIC,,FALSE
+Flaria,1,Action,Catch the Train,-,-,"Play: Reveal the top card of your deck. If it is a character, play it and retire this card. Otherwise, discard that card and take another turn.",EVENT,,FALSE
+Flaria,1,Action,Charming Charity,-,-,"Play: Choose a friendly Flaria character. Its non-Flaria neighbors each capture 2🍬. ""They’re my friends, but with your help, they can be yours too.""",WORK,,FALSE
+Flaria,1,Action,Complimentary Waffles,-,-,"Play: For the remainder of the round, each friendly Rowdy character belongs to Flaria and can be used to sing. (Remains in play until the effect is complete.)",AURA,,FALSE
+Flaria,1,Character,Cuddles,5,🌸,"Rowdy. When this character deals damage, draw a card.",CREATURE,,FALSE
+Flaria,1,Action,Customs Inspection,-,-,"Use: Look at another player's hand. If you find any Asset cards, you may place one of them on the bottom of its owner's deck and gain 1🍬.",WORK,,FALSE
+Flaria,1,Character,Emissary Aurelia,3,🌸,"Skill: If this character has 2 neighbors, and this character and its neighbors all belong to different Guilds, swap your active Guild to one of those Guilds.",ROOTLING - HELPER - STAR,,FALSE
+Flaria,1,Asset,Gift of Gab,-,-,"Use: Your least powerful character captures 1🍬. Draw a card. ""...and so I says to the guy, ‘If it’s not spaghetti, why’s it in my pants?!’""",TALENT,,FALSE
+Flaria,1,Asset,Lost and Found,-,-,"Use: Reveal a card from your hand. If it is Rare, stash it.",LOCATION,,FALSE
+Flaria,3,Character,Motivational Speaker,1,-,Play: Ready and use a neighboring non-Flaria character.,GEIST - HELPER,,FALSE
+Flaria,2,Action,Noise Complaint,-,-,Play: Defeat a Rowdy enemy that has a non-Rowdy neighbor.,TACTIC,,FALSE
+Flaria,1,Action,One-Way Ticket,-,-,"Play: If your opponent controls 6 characters, retire an enemy character. Otherwise, retire this card. Discard: Retire this card. “Your adventure continues, just on a different track. Farewell for now!” - Sterling",EVENT,,FALSE
+Flaria,1,Asset,Pack-Mastery,-,-,"Use: If you have 6 or more cards in your hand, draw a card. A single well-packed bag can hold everything you'd ever need for an adventure.",TALENT,,FALSE
+Flaria,3,Character,Porter in Training,2,🌸,"Play: If this character has a non-Flaria neighbor, ready this character.",CREATURE - HELPER,,FALSE
+Flaria,3,Asset,Rail Mix,-,-,"Use: Draw a card. Then, discard Rail Mix.",FOOD,,FALSE
+Flaria,2,Action,Relaxation Therapy,-,-,"Play: Exhaust the most powerful enemy and each of its neighbors. If you exhausted 3 characters this way, gain 1🍬.  “...and now visualize your worries melting away like butter on a stack of pancakes.”",WORK,,FALSE
+Flaria,2,Character,Returning Traveler,2,-,"Play: You may play a non-Flaria Trinkette character. Defeated: Place this character on the bottom of your deck. ""Every trip needs a souvenir. Some of them blink!""",MORTAL,,FALSE
+Flaria,3,Character,Service Attendant,2,🛡️ 2,"Sing: After this sings, each player draws a card.",GRAVEN - HELPER,,FALSE
+Flaria,1,Action,Small Talk,-,-,"Play: Ready and use a character that does not belong to your active Guild. Then, if that character was not your least powerful character, retire this card.",EVENT,,FALSE
+Flaria,2,Character,Sootslinger,2,🔥 2,"Rowdy. Play: Retire a card from your hand. If you do, draw 2 cards.",GEIST,,FALSE
+Flaria,2,Action,Souvenir Showcase,-,-,"Play: Reveal a non-Flaria card from your hand. If the revealed card is a Trinkette character, reveal another non-Flaria card. Stash each card revealed this way.",TACTIC,,FALSE
+Flaria,2,Character,Station Security,2,🌸,This character's non-Flaria neighbors cannot be attacked.,ROOTLING - HELPER,,FALSE
+Flaria,1,Character,Stowaway Brooks,6,-,"After any player chooses Flaria as their active Guild, place this character on the bottom of your deck.",MORTAL,,FALSE
+Flaria,3,Action,Switching Tracks,-,-,"Play: Return a friendly non-Flaria character to your hand. If you do, draw a card.",WORK,,FALSE
+Flaria,1,Asset,The Final Stop,-,-,Use: Place each character in play on the bottom of its owner's deck in a random order. Retire this card and then PASS.,LOCATION,,FALSE
+Flaria,2,Action,Travel Troubles,-,-,"Play: Place a character in its owner's hand. If it was an enemy character, take another turn. Nothing derails an adventure like forgetting your train ticket at home.",TACTIC,,FALSE
+Flaria,1,Character,Unity Conductor Sterling,6,🧊,"At the end of each of your turns, if Unity Conductor Sterling is ready and you control 6 characters, draw a card. Play: If you control 6 characters, ready this character. “My track record speaks for itself. Full trains on time, every time -- the Sterling guarantee!”",MORTAL - HELPER - STAR,,FALSE
+Flaria,1,Asset,Unity Railway,-,-,"Use: Play a non-Flaria character. Wherever you're headed, Unity is the way to get there.",LOCATION,,FALSE
+Flaria,3,Action,Warm Welcome,-,-,"Play: You may play a non-Flaria character. If you do, gain 1🍬. ",SONG,,FALSE
+Wildkind,3,Character,Braided Dancer,2,🏹,"Play: Ready this character. Victory: After this attacks and defeats an enemy, exhaust the defeated enemy's neighbors.",ROOTLING - REVELER,,FALSE
+Wildkind,2,Action,Bust a Move,-,-,"Play: Ready and attack with a friendly character. If an enemy is defeated this way, place a 🍬 from the common supply on each of the defeated enemy's neighbors.",TACTIC,,FALSE
+Wildkind,1,Asset,Candyshoppe,-,-,Play: Each player gains 1🍬. Use: Each player who has not PASSED gains 1🍬.,LOCATION,,FALSE
+Wildkind,1,Character,Bouncer Brockman,3,🛡️ 3,This character cannot Sing. Skill: Place an enemy in its owner's hand.,GRAVEN,,FALSE
+Wildkind,3,Character,Candyshoppe Key,3,🔥 1,Rowdy. Your Nommster costs 1 less.,TRINKETTE,,FALSE
+Wildkind,1,Character,Cover Charger,3,🧊,"While this character is ready, you gain 1🍬 whenever your opponent plays a character.",TRINKETTE - REVELER,,FALSE
+Wildkind,1,Asset,Crystal Ball,-,-,"Use: Look at the top 3 cards of your deck. Discard one, put one on the bottom of your deck, and one back on top.",ITEM,,FALSE
+Wildkind,1,Action,Fickle Fate,-,-,"Play: Retire the top card of your deck. If it's not a Wildkind card, retire an enemy. ""Anything but the Aching Tooth, please!""",TACTIC,,FALSE
+Wildkind,2,Character,Hippop,2,🌫️,"Sing: After this sings, discard a random card from your opponent's hand.",CREATURE - REVELER,,FALSE
+Wildkind,1,Action,Hot Streak,-,-,"Play: Reveal the top card of your deck. If it is a non-Wildkind card, play it and return Hot Streak to your hand. If it is a Wildkind card, retire Hot Streak and PASS.",EVENT,,FALSE
+Wildkind,2,Action,Kaboom!,-,-,"Play: Each player reveals the top card of their deck and defeats a character they control that belongs to the revealed card's Guild. Then, retire this card. Discard: Play this card instead.",EVENT,,FALSE
+Wildkind,1,Action,Karaoke Hour,-,-,"Play: During the next round, at the end of each player's turn, if they did not use a character to Sing, they PASS. (Remains in play until the effect is complete.)",AURA,,FALSE
+Wildkind,2,Action,Late Night Snack,-,-,Play: Put a 🍬 from the common supply on every non-Sugarcoated (🧊) character.,WORK,,FALSE
+Wildkind,3,Asset,Lolli-Pop,-,-,"Use: An opponent discards a random card from their hand. Then, discard Lollipop.",FOOD,,FALSE
+Wildkind,1,Character,Messy Munchie Maniac,5,-,"Rowdy. This gains Ranged (🏹) when attacking a character with 🍬 on it. Play: If there is an enemy character with at least 1🍬 on it, ready this character.",CREATURE - REVELER,,FALSE
+Wildkind,1,Asset,Mosh Pit!,-,-,"Use: Defeat each non-Rowdy character. Then, retire this card.",LOCATION,,FALSE
+Wildkind,3,Character,Party Animal,1,🧊,Defeated: Gain 1🍬.,TRINKETTE - REVELER,,FALSE
+Wildkind,3,Action,Party Fowl,-,-,Play: Choose one... • Each player loses 1🍬. • Each player discards a random card from their hand.,TACTIC,,FALSE
+Wildkind,1,Character,Party Planning Committee,3,🧊,Play: Each player stashes each card in their hand. It’s a lot of work planning every last detail of unbridled chaos!,GROUP,,FALSE
+Wildkind,2,Character,Popwick,3,🌫️,Rowdy. Play: Discard a random card from your opponent's hand.,GEIST - REVELER,,FALSE
+Wildkind,1,Character,Razzbramble,3,🌸,"While this character has 2 neighbors, your opponents cannot feed their Nommsters.",ROOTLING,,FALSE
+Wildkind,2,Character,Reckless Dancer,3,🔥 3,"Rowdy. Victory: After this attacks and defeats an enemy, if the enemy was defeated with aggressive (🔥) damage, retire it.",CREATURE - REVELER,,FALSE
+Wildkind,2,Action,Scavenger Hunt,-,-,Play: Choose one... • Stash the top card of your deck. • Discard a random card from an opponent's stash.,TACTIC,,FALSE
+Wildkind,1,Character,Silentfoot,12,🌫️,"When your opponent plays a character, shuffle Silentfoot into your deck. Play: Gain 1🍬. “No, really - it’s been fun! I just have an early morning...”",CREATURE,,FALSE
+Wildkind,1,Action,Sugar Rush!,-,-,"Play: Lose 2🍬. If you do, for the rest of the round, all characters with Sugarcoated (🧊) enter play ready. (Remains in play until the effect is complete.)",AURA,,FALSE
+Wildkind,1,Action,The Night Looks Back,-,-,Play: Choose One... During the next round... - Enemy characters cannot sing. - Enemy characters cannot attack. (Remains in play until the effect is complete.),AURA,,FALSE
+Wildkind,3,Action,Throw a Bash,-,-,Play: Deal 3💥 to a character. Its owner gains 1🍬.,WORK,,TRUE
+Wildkind,3,Action,Unbraiding Beat,-,-,"Play: Gain 1🍬. Look at the top 3 cards of any deck. Discard one card, put one on the bottom of the deck, and one card back on top.",SONG,,FALSE
+Wildkind,1,Asset,VIP Guest List,-,-,"Use: If you do not control 6 characters, reveal the top card of your deck. If it is a Rare character, play it.",ITEM,,FALSE
+Ziotech,1,Action,Bet on Progress,-,-,"Play: The next time a player's deck becomes empty, the player who owns that deck gains 2🍬. (Remains in play until the effect is complete).",AURA,,FALSE
+Ziotech,2,Character,Cache Burner,2,🔥 1,"Play: You may retire a card from your discard pile. If you do, ready this character. Skill: Each opponent loses 1🍬. ""Burnt to a crisp? We prefer the term 'thermally optimized.'""",GEIST - WHIZ,,FALSE
+Ziotech,1,Action,Call an Audible,-,-,"This card can only be played if it is your first turn this round. Play: Swap your active Guild. Then, retire this card.",EVENT,,FALSE
+Ziotech,3,Character,ChronoCell™,1,-,"When you PASS, refill your hand with an additional card. Defeated: Choose a card from your hand and discard it.",TRINKETTE,,FALSE
+Ziotech,2,Character,Efficiency Assessor,3,🌫️,Your opponent's Nommster costs +1 for each retired card you own.,TRINKETTE,,FALSE
+Ziotech,2,Action,Efficiency Spike,-,-,"Play: Retire a card from your discard pile. If you do, choose an enemy and deal 1💥 to it for each retired card you own.",TACTIC,,TRUE
+Ziotech,1,Character,Forecaster Liora,3,🌫️,"Play: Fetch an Event action from your deck. You may stash it. Sing: After this sings, choose a retired Event action you own and place it on the top of your deck.",GEIST - WHIZ - STAR,,FALSE
+Ziotech,1,Action,Hack the System,-,-,"Play: Choose any retired card you own. Stash it, then retire this card. With an infinite budget and enough time he will hack ANYTHING.",WORK - EVENT,,FALSE
+Ziotech,1,Action,HARD REBOOT,-,-,"Play: Each player updates every card in their hand. Then, retire this card.",EVENT,,FALSE
+Ziotech,1,Character,Knuckleball,3,-,"Rowdy. Each time you update one or more cards in your hand, deal 1💥 to an enemy.",TRINKETTE - ATHLETE,,TRUE
+Ziotech,3,Action,"Let's Go, Zyborgs!",-,-,"Play: Gain 1🍬. Then, update 1 card in your hand.",SONG,,FALSE
+Ziotech,1,Action,Living in the Past,-,-,"Play: Until the end of the round, your opponents’ Nommsters cost +1 for every 5 cards in your discard pile.  (Remains in play until the effect is complete.)",AURA,,FALSE
+Ziotech,3,Asset,Overclock™,-,-,"Use: Update 1 card in your hand. Then, discard Overclock™.",FOOD,,FALSE
+Ziotech,1,Action,Peak-Hours Pricing,-,-,"Play: Until you PASS, your opponents must pay you 1🍬 to play or use an asset. (Remains in play until the effect is complete.)",AURA,,FALSE
+Ziotech,3,Character,Playmaker,2,🌫️,Play: This captures 1🍬. Discard: Gain 1🍬.,CREATURE - ATHLETE,,FALSE
+Ziotech,1,Action,Product Recall,-,-,"Play: Until the end of the round, each time a player discards a card, a character they control captures 1🍬. (Remains in play until the effect is complete.)",AURA - TACTIC,,FALSE
+Ziotech,3,Action,Quick Reflexes,-,-,Play: Each player that does not control a character with Swift (🌫️) loses 1🍬.,TACTIC,,FALSE
+Ziotech,3,Character,Scout,1,🏹,"After an opponent draws a card, ready this character. Victory: After this attacks and defeats an enemy, stash the top card of your deck.",MORTAL,,FALSE
+Ziotech,1,Character,Shockdoc Sean,3,🌸,"During your turn, each time you discard a Rowdy character from your hand, you may play it. ""You’ve got the spirit, now let’s add a little purpose to the mix!""",MORTAL - HELPER - STAR,,FALSE
+Ziotech,2,Action,Slam Dunk,2,,"Play: Deal 2💥 to an enemy. If that enemy has power 5 or greater, defeat it instead. Get dunked on!",TACTIC,,TRUE
+Ziotech,1,Character,Starflyer Amelia,1,🌫️,"Play: Stash the top card of your deck. Sing: After this sings, place this on top of your deck. ""Why walk when you can soar?""",GEIST - ATHLETE - STAR,,FALSE
+Ziotech,2,Character,Tech Enthusiast,2,🛡️ 2,"Skill: Retire a card from your discard pile. If you do, draw 2 cards. “The kid thinks if it’s not new, it’s ancient.” - Mumbling Mechanic",GRAVEN - WHIZ,,FALSE
+Ziotech,1,Character,Telecommuter Tilda,3,🏹,"Defeated: Return a retired card you own to your hand. Then, retire this character.",MORTAL - WHIZ,,FALSE
+Ziotech,2,Action,Training Drills,-,-,"Play: If there are no cards in your stash, stash 2 cards. Otherwise, stash a card from your hand. “If you fail to plan, plan to fail!” - Life Coach Lou",TACTIC,,FALSE
+Ziotech,3,Action,Turbo Boost,-,-,"When this card is retired, draw a card. Play: Exhaust an enemy. Discard: Ready a friendly character and retire this card.",WORK,,FALSE
+Ziotech,2,Character,Update-Enforcer,3,🛡️ 1,"Rowdy. Victory: After this attacks and defeats an enemy, your opponent discards 2 random cards in their hand, then draws 2 cards.",GRAVEN - ATHLETE,,FALSE
+Ziotech,1,Character,Zack the Pack-Shredder,2,🌫️,"Skill: Update 2 cards in your hand. After discarding any Rare cards this way, you may stash them. “It’s a mint Smokey O’Day rookie!”",CREATURE,,FALSE
+Ziotech,1,Asset,Ziotech Headquarters,-,-,"Play: Lose 1 🍬. If you do not, retire this card. Play: Update 1 card in your hand.",LOCATION,,FALSE
+Ziotech,1,Asset,Zyboporter™,-,-,Use: Play a character with Swift (🌫️). It enters play ready. You’re always game-ready with your very own Zyboporter™! (Just 12 easy payments of $999),ITEM,,FALSE

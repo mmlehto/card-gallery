@@ -1,0 +1,3548 @@
+{
+  "version": "v14",
+  "cards": [
+    {
+      "id": "academic enrollment",
+      "name": "Academic Enrollment",
+      "guild": "Axalon",
+      "type": "Action",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "AURA"
+      ],
+      "text": "Play:  As long as you control at least one character with 🍬 on it, each of your characters with 🍬 on it belongs to Axalon instead of its original Guild. (Remains in play until the effect is complete.)",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/axalon/academic enrollment_large.jpg",
+      "thumb": "cards/axalon/academic enrollment_thumb.jpg",
+      "searchText": "academic enrollment axalon action rare rarity1 aura play as long as you control at least one character with 🍬 on it each of your characters with 🍬 on it belongs to axalon instead of its original guild remains in play until the effect is complete treat candy treats"
+    },
+    {
+      "id": "axalock",
+      "name": "Axalock",
+      "guild": "Axalon",
+      "type": "Character",
+      "rarity": 3,
+      "rarityLabel": "Common",
+      "power": 1,
+      "combatRaw": "🛡️ 1",
+      "traits": [
+        "TRINKETTE"
+      ],
+      "text": "Your opponent's Nommster costs +1. Defeated: Draw a card.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/axalon/axalock_large.jpg",
+      "thumb": "cards/axalon/axalock_thumb.jpg",
+      "searchText": "axalock axalon character common rarity3 trinkette your opponent s nommster costs 1 defeated draw a card 🛡️ 1 durable durability armor defense defensive"
+    },
+    {
+      "id": "back to the drawing board",
+      "name": "Back to the Drawing Board",
+      "guild": "Axalon",
+      "type": "Action",
+      "rarity": 2,
+      "rarityLabel": "Uncommon",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "WORK"
+      ],
+      "text": "Play: Choose a ready character. Place that character in its owner's stash.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/axalon/back to the drawing board_large.jpg",
+      "thumb": "cards/axalon/back to the drawing board_thumb.jpg",
+      "searchText": "back to the drawing board axalon action uncommon rarity2 work play choose a ready character place that character in its owner s stash"
+    },
+    {
+      "id": "balance the books",
+      "name": "Balance the Books",
+      "guild": "Axalon",
+      "type": "Action",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "WORK"
+      ],
+      "text": "Play: Defeat an enemy character with power equal to the number of cards in your stash. Discard: Stash the top card of your deck. Then, retire this card.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/axalon/balance the books_large.jpg",
+      "thumb": "cards/axalon/balance the books_thumb.jpg",
+      "searchText": "balance the books axalon action rare rarity1 work play defeat an enemy character with power equal to the number of cards in your stash discard stash the top card of your deck then retire this card"
+    },
+    {
+      "id": "blockhead",
+      "name": "Blockhead",
+      "guild": "Axalon",
+      "type": "Character",
+      "rarity": 3,
+      "rarityLabel": "Common",
+      "power": 3,
+      "combatRaw": "🛡️ 2",
+      "traits": [
+        "GRAVEN",
+        "WHIZ"
+      ],
+      "text": "Rowdy. Victory: After this attacks and defeats an enemy, this captures 2🍬 from your opponent.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/axalon/blockhead_large.jpg",
+      "thumb": "cards/axalon/blockhead_thumb.jpg",
+      "searchText": "blockhead axalon character common rarity3 graven whiz rowdy victory after this attacks and defeats an enemy this captures 2🍬 from your opponent treat candy treats 🛡️ 2 durable durability armor defense defensive"
+    },
+    {
+      "id": "blue",
+      "name": "Blue",
+      "guild": "Axalon",
+      "type": "Character",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": 2,
+      "combatRaw": "-",
+      "traits": [
+        "CREATURE"
+      ],
+      "text": "Skill: Choose another friendly character. Fetch a character from your deck that shares a trait with the chosen character.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/axalon/blue_large.jpg",
+      "thumb": "cards/axalon/blue_thumb.jpg",
+      "searchText": "blue axalon character rare rarity1 creature skill choose another friendly character fetch a character from your deck that shares a trait with the chosen character"
+    },
+    {
+      "id": "bookcase bumper",
+      "name": "Bookcase Bumper",
+      "guild": "Axalon",
+      "type": "Character",
+      "rarity": 2,
+      "rarityLabel": "Uncommon",
+      "power": 4,
+      "combatRaw": "🌫️",
+      "traits": [
+        "GEIST"
+      ],
+      "text": "Rowdy. Play: You may stash a card from your hand. If you do, deal 3💥 to this.",
+      "flags": {
+        "trueDamage": true
+      },
+      "image": "cards/axalon/bookcase bumper_large.jpg",
+      "thumb": "cards/axalon/bookcase bumper_thumb.jpg",
+      "searchText": "bookcase bumper axalon character uncommon rarity2 geist rowdy play you may stash a card from your hand if you do deal 3💥 to this damage damaged 🌫️ swift"
+    },
+    {
+      "id": "brain food",
+      "name": "Brain Food",
+      "guild": "Axalon",
+      "type": "Asset",
+      "rarity": 3,
+      "rarityLabel": "Common",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "FOOD"
+      ],
+      "text": "Use: Remove 1🍬 from a friendly character and add it to your Nommster. Then, discard Brain Food.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/axalon/brain food_large.jpg",
+      "thumb": "cards/axalon/brain food_thumb.jpg",
+      "searchText": "brain food axalon asset common rarity3 food use remove 1🍬 from a friendly character and add it to your nommster then discard brain food treat candy treats"
+    },
+    {
+      "id": "collective intelligence",
+      "name": "Collective Intelligence",
+      "guild": "Axalon",
+      "type": "Action",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "TACTIC"
+      ],
+      "text": "Play: If the number of cards in your hand is equal to the number of characters you control, each of your characters captures 1🍬 from your opponent.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/axalon/collective intelligence_large.jpg",
+      "thumb": "cards/axalon/collective intelligence_thumb.jpg",
+      "searchText": "collective intelligence axalon action rare rarity1 tactic play if the number of cards in your hand is equal to the number of characters you control each of your characters captures 1🍬 from your opponent treat candy treats"
+    },
+    {
+      "id": "cram session",
+      "name": "Cram Session",
+      "guild": "Axalon",
+      "type": "Action",
+      "rarity": 2,
+      "rarityLabel": "Uncommon",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "WORK"
+      ],
+      "text": "Play: Research the top 3 cards of your deck, then stash the top card of your deck.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/axalon/cram session_large.jpg",
+      "thumb": "cards/axalon/cram session_thumb.jpg",
+      "searchText": "cram session axalon action uncommon rarity2 work play research the top 3 cards of your deck then stash the top card of your deck"
+    },
+    {
+      "id": "flavor profile analysis",
+      "name": "Flavor Profile Analysis",
+      "guild": "Axalon",
+      "type": "Action",
+      "rarity": 3,
+      "rarityLabel": "Common",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "WORK"
+      ],
+      "text": "Play: A friendly character captures 2🍬 from your opponent. It's a tough job, but someone's gotta do it.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/axalon/flavor profile analysis_large.jpg",
+      "thumb": "cards/axalon/flavor profile analysis_thumb.jpg",
+      "searchText": "flavor profile analysis axalon action common rarity3 work play a friendly character captures 2🍬 from your opponent it s a tough job but someone s gotta do it treat candy treats"
+    },
+    {
+      "id": "hardnosed gumshoe",
+      "name": "Hardnosed Gumshoe",
+      "guild": "Axalon",
+      "type": "Character",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": 5,
+      "combatRaw": "🛡️ 1",
+      "traits": [
+        "GRAVEN",
+        "WHIZ"
+      ],
+      "text": "Skill: Research the top 3 cards of your deck. If you find any characters, you may play one of them. \"The Nose\" knows.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/axalon/hardnosed gumshoe_large.jpg",
+      "thumb": "cards/axalon/hardnosed gumshoe_thumb.jpg",
+      "searchText": "hardnosed gumshoe axalon character rare rarity1 graven whiz skill research the top 3 cards of your deck if you find any characters you may play one of them the nose knows 🛡️ 1 durable durability armor defense defensive"
+    },
+    {
+      "id": "headmaster lockmere",
+      "name": "Headmaster Lockmere",
+      "guild": "Axalon",
+      "type": "Character",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": 4,
+      "combatRaw": "🧊",
+      "traits": [
+        "MORTAL",
+        "WHIZ",
+        "STAR"
+      ],
+      "text": "When you choose as a turn option to PLAY a card, if this character is ready, you may choose any card in your stash and play that card instead. Play: Stash a card from your hand.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/axalon/headmaster lockmere_large.jpg",
+      "thumb": "cards/axalon/headmaster lockmere_thumb.jpg",
+      "searchText": "headmaster lockmere axalon character rare rarity1 mortal whiz star when you choose as a turn option to play a card if this character is ready you may choose any card in your stash and play that card instead play stash a card from your hand 🧊 sugarcoated"
+    },
+    {
+      "id": "jumpy investigator",
+      "name": "Jumpy Investigator",
+      "guild": "Axalon",
+      "type": "Character",
+      "rarity": 2,
+      "rarityLabel": "Uncommon",
+      "power": 2,
+      "combatRaw": "🏹",
+      "traits": [
+        "GEIST"
+      ],
+      "text": "Play: Research the top 3 cards of any deck. If you find a Geist character, you may discard it. If you do, ready and use Jumpy Investigator. “There’s n-no such thing as ghosts...there’s no such thing as g-ghosts...”",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/axalon/jumpy investigator_large.jpg",
+      "thumb": "cards/axalon/jumpy investigator_thumb.jpg",
+      "searchText": "jumpy investigator axalon character uncommon rarity2 geist play research the top 3 cards of any deck if you find a geist character you may discard it if you do ready and use jumpy investigator there s n no such thing as ghosts there s no such thing as g ghosts 🏹 ranged"
+    },
+    {
+      "id": "lab technician",
+      "name": "Lab Technician",
+      "guild": "Axalon",
+      "type": "Character",
+      "rarity": 2,
+      "rarityLabel": "Uncommon",
+      "power": 2,
+      "combatRaw": "-",
+      "traits": [
+        "TRINKETTE",
+        "WHIZ"
+      ],
+      "text": "After you Research, ready this character. Sing: After this sings, stash a card from your hand.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/axalon/lab technician_large.jpg",
+      "thumb": "cards/axalon/lab technician_thumb.jpg",
+      "searchText": "lab technician axalon character uncommon rarity2 trinkette whiz after you research ready this character sing after this sings stash a card from your hand"
+    },
+    {
+      "id": "lightbulb moment",
+      "name": "Lightbulb Moment",
+      "guild": "Axalon",
+      "type": "Action",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "EVENT"
+      ],
+      "text": "Play: Reveal a card from your hand. Ready and use a character that matches the revealed card's Guild. Then, retire this card.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/axalon/lightbulb moment_large.jpg",
+      "thumb": "cards/axalon/lightbulb moment_thumb.jpg",
+      "searchText": "lightbulb moment axalon action rare rarity1 event play reveal a card from your hand ready and use a character that matches the revealed card s guild then retire this card"
+    },
+    {
+      "id": "lytewrite academy",
+      "name": "Lytewrite Academy",
+      "guild": "Axalon",
+      "type": "Asset",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "LOCATION"
+      ],
+      "text": "Use: Research the top 3 cards of your deck. If you find any Axalon cards, you may reveal one and stash it.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/axalon/lytewrite academy_large.jpg",
+      "thumb": "cards/axalon/lytewrite academy_thumb.jpg",
+      "searchText": "lytewrite academy axalon asset rare rarity1 location use research the top 3 cards of your deck if you find any axalon cards you may reveal one and stash it"
+    },
+    {
+      "id": "lytewrite bookman",
+      "name": "Lytewrite Bookman",
+      "guild": "Axalon",
+      "type": "Character",
+      "rarity": 3,
+      "rarityLabel": "Common",
+      "power": 3,
+      "combatRaw": "-",
+      "traits": [
+        "MORTAL",
+        "WHIZ"
+      ],
+      "text": "Play: This captures 1🍬. Skill: Research the top 3 cards of an opponent's deck.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/axalon/lytewrite bookman_large.jpg",
+      "thumb": "cards/axalon/lytewrite bookman_thumb.jpg",
+      "searchText": "lytewrite bookman axalon character common rarity3 mortal whiz play this captures 1🍬 skill research the top 3 cards of an opponent s deck if you find an action card you may discard it treat candy treats"
+    },
+    {
+      "id": "nosy auditor",
+      "name": "Nosy Auditor",
+      "guild": "Axalon",
+      "type": "Character",
+      "rarity": 2,
+      "rarityLabel": "Uncommon",
+      "power": 1,
+      "combatRaw": "🛡️ 2",
+      "traits": [
+        "GRAVEN",
+        "WHIZ"
+      ],
+      "text": "Play: This captures 1🍬. Skill: Remove all 🍬 from this and return it to the common supply.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/axalon/nosy auditor_large.jpg",
+      "thumb": "cards/axalon/nosy auditor_thumb.jpg",
+      "searchText": "nosy auditor axalon character uncommon rarity2 graven whiz play this captures 1🍬 skill remove all 🍬 from this and return it to the common supply treat candy treats 🛡️ 2 durable durability armor defense defensive"
+    },
+    {
+      "id": "number cruncher",
+      "name": "Number Cruncher",
+      "guild": "Axalon",
+      "type": "Asset",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "MACHINE"
+      ],
+      "text": "Use: Defeat each character with power equal to the number of cards in your hand. Then, retire Number Cruncher. Operator's Note: \"Watch your digits.\"",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/axalon/number cruncher_large.jpg",
+      "thumb": "cards/axalon/number cruncher_thumb.jpg",
+      "searchText": "number cruncher axalon asset rare rarity1 machine use defeat each character with power equal to the number of cards in your hand then retire number cruncher operator s note watch your digits"
+    },
+    {
+      "id": "open book of wonder",
+      "name": "Open Book of Wonder",
+      "guild": "Axalon",
+      "type": "Asset",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "ITEM",
+        "BOOK"
+      ],
+      "text": "Use: Reveal your hand. If each card is Rare, gain 1🍬. \"To share knowledge openly is to invite the whole world to marvel with you.\" - Tomekeeper Ada",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/axalon/open book of wonder_large.jpg",
+      "thumb": "cards/axalon/open book of wonder_thumb.jpg",
+      "searchText": "open book of wonder axalon asset rare rarity1 item book use reveal your hand if each card is rare gain 1🍬 to share knowledge openly is to invite the whole world to marvel with you tomekeeper ada treat candy treats"
+    },
+    {
+      "id": "recruitment campaign",
+      "name": "Recruitment Campaign",
+      "guild": "Axalon",
+      "type": "Action",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "WORK"
+      ],
+      "text": "Play: Research the top 3 cards of your deck. If you find any Rowdy characters, you may play them (one at a time).",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/axalon/recruitment campaign_large.jpg",
+      "thumb": "cards/axalon/recruitment campaign_thumb.jpg",
+      "searchText": "recruitment campaign axalon action rare rarity1 work play research the top 3 cards of your deck if you find any rowdy characters you may play them one at a time"
+    },
+    {
+      "id": "red-handed",
+      "name": "Red-Handed",
+      "guild": "Axalon",
+      "type": "Action",
+      "rarity": 3,
+      "rarityLabel": "Common",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "TACTIC"
+      ],
+      "text": "Play: Reveal a random card from your opponent's hand. Then, defeat an enemy controlled by your opponent that belongs to the revealed card's Guild.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/axalon/red-handed_large.jpg",
+      "thumb": "cards/axalon/red-handed_thumb.jpg",
+      "searchText": "red handed axalon action common rarity3 tactic play reveal a random card from your opponent s hand then defeat an enemy controlled by your opponent that belongs to the revealed card s guild"
+    },
+    {
+      "id": "research funding",
+      "name": "Research Funding",
+      "guild": "Axalon",
+      "type": "Asset",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "BOUNTY"
+      ],
+      "text": "Use: Gain 1🍬 for each deck you have researched this round.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/axalon/research funding_large.jpg",
+      "thumb": "cards/axalon/research funding_thumb.jpg",
+      "searchText": "research funding axalon asset rare rarity1 bounty use gain 1🍬 for each deck you have researched this round treat candy treats"
+    },
+    {
+      "id": "scholastic pursuit",
+      "name": "Scholastic Pursuit",
+      "guild": "Axalon",
+      "type": "Action",
+      "rarity": 3,
+      "rarityLabel": "Common",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "SONG"
+      ],
+      "text": "Play: Gain 1🍬. Research the top 3 cards of your deck.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/axalon/scholastic pursuit_large.jpg",
+      "thumb": "cards/axalon/scholastic pursuit_thumb.jpg",
+      "searchText": "scholastic pursuit axalon action common rarity3 song play gain 1🍬 research the top 3 cards of your deck treat candy treats"
+    },
+    {
+      "id": "shakedown",
+      "name": "Shakedown",
+      "guild": "Axalon",
+      "type": "Action",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "TACTIC"
+      ],
+      "text": "Play: Research the top 3 cards of an opponent's deck. If you find any Asset cards, you may discard any of them.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/axalon/shakedown_large.jpg",
+      "thumb": "cards/axalon/shakedown_thumb.jpg",
+      "searchText": "shakedown axalon action rare rarity1 tactic play research the top 3 cards of an opponent s deck if you find any asset cards you may discard any of them"
+    },
+    {
+      "id": "slyborg",
+      "name": "Slyborg",
+      "guild": "Axalon",
+      "type": "Character",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": 3,
+      "combatRaw": "🌸",
+      "traits": [
+        "TRINKETTE",
+        "WHIZ"
+      ],
+      "text": "Whenever you Research, this captures 1🍬 for each card placed on the bottom of the deck. Sing: After this sings, research the top 3 cards of your deck.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/axalon/slyborg_large.jpg",
+      "thumb": "cards/axalon/slyborg_thumb.jpg",
+      "searchText": "slyborg axalon character rare rarity1 trinkette whiz whenever you research this captures 1🍬 for each card placed on the bottom of the deck sing after this sings research the top 3 cards of your deck treat candy treats 🌸 gentle"
+    },
+    {
+      "id": "supporting evidence",
+      "name": "Supporting Evidence",
+      "guild": "Axalon",
+      "type": "Action",
+      "rarity": 2,
+      "rarityLabel": "Uncommon",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "EVENT"
+      ],
+      "text": "Play: A friendly character captures 1🍬 from your opponent for each card in your stash. Then, retire this card.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/axalon/supporting evidence_large.jpg",
+      "thumb": "cards/axalon/supporting evidence_thumb.jpg",
+      "searchText": "supporting evidence axalon action uncommon rarity2 event play a friendly character captures 1🍬 from your opponent for each card in your stash then retire this card treat candy treats"
+    },
+    {
+      "id": "tomekeeper ada",
+      "name": "Tomekeeper Ada",
+      "guild": "Axalon",
+      "type": "Character",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": 3,
+      "combatRaw": "-",
+      "traits": [
+        "CREATURE",
+        "WHIZ"
+      ],
+      "text": "Play: Stash a card from your hand. Skill: Each player gains 1🍬 for each card in their stash.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/axalon/tomekeeper ada_large.jpg",
+      "thumb": "cards/axalon/tomekeeper ada_thumb.jpg",
+      "searchText": "tomekeeper ada axalon character rare rarity1 creature whiz play stash a card from your hand skill each player gains 1🍬 for each card in their stash treat candy treats"
+    },
+    {
+      "id": "a hard days work",
+      "name": "A Hard Day's Work",
+      "guild": "Burlindor",
+      "type": "Action",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "WORK"
+      ],
+      "text": "Play: If your hand is empty, gain 3🍬 and PASS. \"After a day like that, I think we can treat ourselves!\"",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/burlindor/a hard days work_large.jpg",
+      "thumb": "cards/burlindor/a hard days work_thumb.jpg",
+      "searchText": "a hard day s work burlindor action rare rarity1 work play if your hand is empty gain 3🍬 and pass after a day like that i think we can treat ourselves treat candy treats"
+    },
+    {
+      "id": "a rare work ethic",
+      "name": "A Rare Work Ethic",
+      "guild": "Burlindor",
+      "type": "Action",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "WORK"
+      ],
+      "text": "Play: Ready a Rare character.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/burlindor/a rare work ethic_large.jpg",
+      "thumb": "cards/burlindor/a rare work ethic_thumb.jpg",
+      "searchText": "a rare work ethic burlindor action rare rarity1 work play ready a rare character"
+    },
+    {
+      "id": "blacksmith",
+      "name": "Blacksmith",
+      "guild": "Burlindor",
+      "type": "Character",
+      "rarity": 3,
+      "rarityLabel": "Common",
+      "power": 4,
+      "combatRaw": "🛡️ 1",
+      "traits": [
+        "GRAVEN",
+        "ARTISAN"
+      ],
+      "text": "Discard: Deal 2💥 to a character.",
+      "flags": {
+        "trueDamage": true
+      },
+      "image": "cards/burlindor/blacksmith_large.jpg",
+      "thumb": "cards/burlindor/blacksmith_thumb.jpg",
+      "searchText": "blacksmith burlindor character common rarity3 graven artisan discard deal 2💥 to a character damage damaged 🛡️ 1 durable durability armor defense defensive"
+    },
+    {
+      "id": "bleu ribbon wheel",
+      "name": "Bleu Ribbon Wheel",
+      "guild": "Burlindor",
+      "type": "Asset",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "FOOD"
+      ],
+      "text": "Use: Defeat each character with power 3 or lower. Discard Bleu Ribbon Wheel.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/burlindor/bleu ribbon wheel_large.jpg",
+      "thumb": "cards/burlindor/bleu ribbon wheel_thumb.jpg",
+      "searchText": "bleu ribbon wheel burlindor asset rare rarity1 food use defeat each character with power 3 or lower discard bleu ribbon wheel"
+    },
+    {
+      "id": "burlindor mess hall",
+      "name": "Burlindor Mess Hall",
+      "guild": "Burlindor",
+      "type": "Asset",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "LOCATION"
+      ],
+      "text": "Use: Fetch a Burlindor character from your discard pile and stash it. If you do, PASS. They work hard, they eat harder.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/burlindor/burlindor mess hall_large.jpg",
+      "thumb": "cards/burlindor/burlindor mess hall_thumb.jpg",
+      "searchText": "burlindor mess hall burlindor asset rare rarity1 location use fetch a burlindor character from your discard pile and stash it if you do pass they work hard they eat harder"
+    },
+    {
+      "id": "carver",
+      "name": "Carver",
+      "guild": "Burlindor",
+      "type": "Character",
+      "rarity": 3,
+      "rarityLabel": "Common",
+      "power": 4,
+      "combatRaw": "-",
+      "traits": [
+        "GEIST"
+      ],
+      "text": "Rowdy. Play: Discard a card.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/burlindor/carver_large.jpg",
+      "thumb": "cards/burlindor/carver_thumb.jpg",
+      "searchText": "carver burlindor character common rarity3 geist rowdy play discard a card"
+    },
+    {
+      "id": "cheezewhiz stiltz",
+      "name": "Cheezewhiz Stiltz",
+      "guild": "Burlindor",
+      "type": "Character",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": 4,
+      "combatRaw": "🌫️",
+      "traits": [
+        "CREATURE",
+        "ARTISAN",
+        "WHIZ"
+      ],
+      "text": "Skill: Play a Food asset from your discard pile. If you do, gain 1🍬.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/burlindor/cheezewhiz stiltz_large.jpg",
+      "thumb": "cards/burlindor/cheezewhiz stiltz_thumb.jpg",
+      "searchText": "cheezewhiz stiltz burlindor character rare rarity1 creature artisan whiz skill play a food asset from your discard pile if you do gain 1🍬 treat candy treats 🌫️ swift"
+    },
+    {
+      "id": "cobbler tessa",
+      "name": "Cobbler Tessa",
+      "guild": "Burlindor",
+      "type": "Character",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": 4,
+      "combatRaw": "🧊",
+      "traits": [
+        "MORTAL",
+        "ARTISAN"
+      ],
+      "text": "Skill: Play a character from any Guild. Then, ready and use that character. “Do you have any of the ones that light up when you run really fast?”- Ultimeero",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/burlindor/cobbler tessa_large.jpg",
+      "thumb": "cards/burlindor/cobbler tessa_thumb.jpg",
+      "searchText": "cobbler tessa burlindor character rare rarity1 mortal artisan skill play a character from any guild then ready and use that character do you have any of the ones that light up when you run really fast ultimeero 🧊 sugarcoated"
+    },
+    {
+      "id": "creamy cauldron",
+      "name": "Creamy Cauldron",
+      "guild": "Burlindor",
+      "type": "Asset",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "FOOD"
+      ],
+      "text": "Use: For each friendly damaged character gain 1🍬 . Then, remove all damage from each friendly character and discard Creamy Cauldron. Leftovers? Not with Burlindor.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/burlindor/creamy cauldron_large.jpg",
+      "thumb": "cards/burlindor/creamy cauldron_thumb.jpg",
+      "searchText": "creamy cauldron burlindor asset rare rarity1 food use for each friendly damaged character gain 1🍬 then remove all damage from each friendly character and discard creamy cauldron leftovers not with burlindor treat candy treats"
+    },
+    {
+      "id": "double-shift",
+      "name": "Double-Shift",
+      "guild": "Burlindor",
+      "type": "Action",
+      "rarity": 3,
+      "rarityLabel": "Common",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "WORK"
+      ],
+      "text": "Play: Choose a damaged character. If it is friendly, ready that character. If it is an enemy, defeat it.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/burlindor/double-shift_large.jpg",
+      "thumb": "cards/burlindor/double-shift_thumb.jpg",
+      "searchText": "double shift burlindor action common rarity3 work play choose a damaged character if it is friendly ready that character if it is an enemy defeat it"
+    },
+    {
+      "id": "eager apprentice",
+      "name": "Eager Apprentice",
+      "guild": "Burlindor",
+      "type": "Character",
+      "rarity": 2,
+      "rarityLabel": "Uncommon",
+      "power": 2,
+      "combatRaw": "🏹",
+      "traits": [
+        "CREATURE"
+      ],
+      "text": "Discard: Fetch an asset card from your discard pile.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/burlindor/eager apprentice_large.jpg",
+      "thumb": "cards/burlindor/eager apprentice_thumb.jpg",
+      "searchText": "eager apprentice burlindor character uncommon rarity2 creature discard fetch an asset card from your discard pile 🏹 ranged"
+    },
+    {
+      "id": "good as new",
+      "name": "Good as New",
+      "guild": "Burlindor",
+      "type": "Action",
+      "rarity": 3,
+      "rarityLabel": "Common",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "WORK"
+      ],
+      "text": "Play: Stash a non-Burlindor card from your discard pile.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/burlindor/good as new_large.jpg",
+      "thumb": "cards/burlindor/good as new_thumb.jpg",
+      "searchText": "good as new burlindor action common rarity3 work play stash a non burlindor card from your discard pile"
+    },
+    {
+      "id": "graveyard shift",
+      "name": "Graveyard Shift",
+      "guild": "Burlindor",
+      "type": "Action",
+      "rarity": 2,
+      "rarityLabel": "Uncommon",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "WORK"
+      ],
+      "text": "Play: Play a Geist character from your discard pile. If you do, gain 1🍬.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/burlindor/graveyard shift_large.jpg",
+      "thumb": "cards/burlindor/graveyard shift_thumb.jpg",
+      "searchText": "graveyard shift burlindor action uncommon rarity2 work play play a geist character from your discard pile if you do gain 1🍬 treat candy treats"
+    },
+    {
+      "id": "jack of all trades",
+      "name": "Jack of All Trades",
+      "guild": "Burlindor",
+      "type": "Character",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": 3,
+      "combatRaw": "🧊",
+      "traits": [
+        "ARTISAN",
+        "MORTAL",
+        "STAR"
+      ],
+      "text": "You may play Work actions as if they belonged to your active Guild. Skill: Discard a card from your hand. If you do, fetch a Work action from your discard pile.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/burlindor/jack of all trades_large.jpg",
+      "thumb": "cards/burlindor/jack of all trades_thumb.jpg",
+      "searchText": "jack of all trades burlindor character rare rarity1 artisan mortal star you may play work actions as if they belonged to your active guild skill discard a card from your hand if you do fetch a work action from your discard pile 🧊 sugarcoated"
+    },
+    {
+      "id": "lunch break",
+      "name": "Lunch Break",
+      "guild": "Burlindor",
+      "type": "Action",
+      "rarity": 2,
+      "rarityLabel": "Uncommon",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "TACTIC"
+      ],
+      "text": "Play: Use an opponent's Food asset as if you controlled it. (When it is discarded, place it in its owner's discard pile.)",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/burlindor/lunch break_large.jpg",
+      "thumb": "cards/burlindor/lunch break_thumb.jpg",
+      "searchText": "lunch break burlindor action uncommon rarity2 tactic play use an opponent s food asset as if you controlled it when it is discarded place it in its owner s discard pile"
+    },
+    {
+      "id": "old-fashioned productivity",
+      "name": "Old-Fashioned Productivity",
+      "guild": "Burlindor",
+      "type": "Action",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "Aura"
+      ],
+      "text": "Play: For the rest of the round, after a player plays a card, they may deal 1💥 to a character. If the card was a Work action, they may deal 2💥 instead. (Remains in play until the effect is complete.)",
+      "flags": {
+        "trueDamage": true
+      },
+      "image": "cards/burlindor/old-fashioned productivity_large.jpg",
+      "thumb": "cards/burlindor/old-fashioned productivity_thumb.jpg",
+      "searchText": "old fashioned productivity burlindor action rare rarity1 aura play for the rest of the round after a player plays a card they may deal 1💥 to a character if the card was a work action they may deal 2💥 instead remains in play until the effect is complete damage damaged"
+    },
+    {
+      "id": "patchwork",
+      "name": "Patchwork",
+      "guild": "Burlindor",
+      "type": "Character",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": 6,
+      "combatRaw": "🧊",
+      "traits": [
+        "TRINKETTE",
+        "ARTISAN"
+      ],
+      "text": "Skill: Gain 1🍬 for each damage on Patchwork. Then, remove all damage from Patchwork.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/burlindor/patchwork_large.jpg",
+      "thumb": "cards/burlindor/patchwork_thumb.jpg",
+      "searchText": "patchwork burlindor character rare rarity1 trinkette artisan skill gain 1🍬 for each damage on patchwork then remove all damage from patchwork treat candy treats 🧊 sugarcoated"
+    },
+    {
+      "id": "primordial rind",
+      "name": "Primordial Rind",
+      "guild": "Burlindor",
+      "type": "Asset",
+      "rarity": 3,
+      "rarityLabel": "Common",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "FOOD"
+      ],
+      "text": "Use: Deal 1💥 to a friendly ready character. If it is not defeated, use that character. Then, discard Primordial Rind. “Even I won’t take a whiff.” - Hardnosed Gumshoe",
+      "flags": {
+        "trueDamage": true
+      },
+      "image": "cards/burlindor/primordial rind_large.jpg",
+      "thumb": "cards/burlindor/primordial rind_thumb.jpg",
+      "searchText": "primordial rind burlindor asset common rarity3 food use deal 1💥 to a friendly ready character if it is not defeated use that character then discard primordial rind even i won t take a whiff hardnosed gumshoe damage damaged"
+    },
+    {
+      "id": "quick fix",
+      "name": "Quick Fix",
+      "guild": "Burlindor",
+      "type": "Action",
+      "rarity": 2,
+      "rarityLabel": "Uncommon",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "WORK"
+      ],
+      "text": "Play: Discard a card. If you do, deal 2💥 to a character. If the card was an Asset, deal 4💥 to that character instead.",
+      "flags": {
+        "trueDamage": true
+      },
+      "image": "cards/burlindor/quick fix_large.jpg",
+      "thumb": "cards/burlindor/quick fix_thumb.jpg",
+      "searchText": "quick fix burlindor action uncommon rarity2 work play discard a card if you do deal 2💥 to a character if the card was an asset deal 4💥 to that character instead damage damaged"
+    },
+    {
+      "id": "quick learner",
+      "name": "Quick Learner",
+      "guild": "Burlindor",
+      "type": "Character",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": 5,
+      "combatRaw": "🌫️",
+      "traits": [
+        "ROOTLING",
+        "WHIZ",
+        "ARTISAN"
+      ],
+      "text": "Skill: Activate the Skill ability of a neighboring character as if Quick Learner had that Skill.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/burlindor/quick learner_large.jpg",
+      "thumb": "cards/burlindor/quick learner_thumb.jpg",
+      "searchText": "quick learner burlindor character rare rarity1 rootling whiz artisan skill activate the skill ability of a neighboring character as if quick learner had that skill 🌫️ swift"
+    },
+    {
+      "id": "rush orders",
+      "name": "Rush Orders",
+      "guild": "Burlindor",
+      "type": "Asset",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "ITEM"
+      ],
+      "text": "Use:  For the rest of the round each character with a Skill ability enters play ready. Discard Rush Orders.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/burlindor/rush orders_large.jpg",
+      "thumb": "cards/burlindor/rush orders_thumb.jpg",
+      "searchText": "rush orders burlindor asset rare rarity1 item use for the rest of the round each character with a skill ability enters play ready discard rush orders"
+    },
+    {
+      "id": "safety compliance officer",
+      "name": "Safety Compliance Officer",
+      "guild": "Burlindor",
+      "type": "Character",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": 1,
+      "combatRaw": "🛡️ 4",
+      "traits": [
+        "MORTAL",
+        "WHIZ"
+      ],
+      "text": "Skill: Choose an Asset in play. Return it to its owner's hand. \"Don't blame me, you should have memorized the latest edition of the Comprehensive Safety Handbook!\"",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/burlindor/safety compliance officer_large.jpg",
+      "thumb": "cards/burlindor/safety compliance officer_thumb.jpg",
+      "searchText": "safety compliance officer burlindor character rare rarity1 mortal whiz skill choose an asset in play return it to its owner s hand don t blame me you should have memorized the latest edition of the comprehensive safety handbook 🛡️ 4 durable durability armor defense defensive"
+    },
+    {
+      "id": "scrapyard scavenger",
+      "name": "Scrapyard Scavenger",
+      "guild": "Burlindor",
+      "type": "Character",
+      "rarity": 2,
+      "rarityLabel": "Uncommon",
+      "power": 1,
+      "combatRaw": "🔥 X",
+      "traits": [
+        "GEIST"
+      ],
+      "text": "This character's aggression (🔥) value is equal to the number of Assets you control. Play: Play an Asset from your discard pile.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/burlindor/scrapyard scavenger_large.jpg",
+      "thumb": "cards/burlindor/scrapyard scavenger_thumb.jpg",
+      "searchText": "scrapyard scavenger burlindor character uncommon rarity2 geist this character s aggression 🔥 value is equal to the number of assets you control play play an asset from your discard pile aggression aggressive 🔥 x aggression aggressive"
+    },
+    {
+      "id": "short-order cook",
+      "name": "Short-Order Cook",
+      "guild": "Burlindor",
+      "type": "Character",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": 2,
+      "combatRaw": "🛡️ 2",
+      "traits": [
+        "GRAVEN"
+      ],
+      "text": "Skill: Ready each friendly Rowdy character. For the rest of the round, they belong to your active Guild.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/burlindor/short-order cook_large.jpg",
+      "thumb": "cards/burlindor/short-order cook_thumb.jpg",
+      "searchText": "short order cook burlindor character rare rarity1 graven skill ready each friendly rowdy character for the rest of the round they belong to your active guild 🛡️ 2 durable durability armor defense defensive"
+    },
+    {
+      "id": "spare parts",
+      "name": "Spare Parts",
+      "guild": "Burlindor",
+      "type": "Action",
+      "rarity": 2,
+      "rarityLabel": "Uncommon",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "TACTIC"
+      ],
+      "text": "Play: Discard a card. If you do, stash a card from your hand.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/burlindor/spare parts_large.jpg",
+      "thumb": "cards/burlindor/spare parts_thumb.jpg",
+      "searchText": "spare parts burlindor action uncommon rarity2 tactic play discard a card if you do stash a card from your hand"
+    },
+    {
+      "id": "starvin marlin",
+      "name": "Starvin' Marlin",
+      "guild": "Burlindor",
+      "type": "Character",
+      "rarity": 2,
+      "rarityLabel": "Uncommon",
+      "power": 5,
+      "combatRaw": "🔥 1",
+      "traits": [
+        "CREATURE"
+      ],
+      "text": "Rowdy. Victory: After this attacks and defeats an enemy, your opponent loses 1🍬.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/burlindor/starvin marlin_large.jpg",
+      "thumb": "cards/burlindor/starvin marlin_thumb.jpg",
+      "searchText": "starvin marlin burlindor character uncommon rarity2 creature rowdy victory after this attacks and defeats an enemy your opponent loses 1🍬 treat candy treats 🔥 1 aggression aggressive"
+    },
+    {
+      "id": "the midnight oil",
+      "name": "The Midnight Oil",
+      "guild": "Burlindor",
+      "type": "Asset",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "ITEM"
+      ],
+      "text": "Use: Fetch each Geist character from your discard pile. Then, discard The Midnight Oil and PASS. “The Dalijaian Emporium really DOES have everything!” - Eager Apprentice",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/burlindor/the midnight oil_large.jpg",
+      "thumb": "cards/burlindor/the midnight oil_thumb.jpg",
+      "searchText": "the midnight oil burlindor asset rare rarity1 item use fetch each geist character from your discard pile then discard the midnight oil and pass the dalijaian emporium really does have everything eager apprentice"
+    },
+    {
+      "id": "torquelet",
+      "name": "Torquelet",
+      "guild": "Burlindor",
+      "type": "Character",
+      "rarity": 3,
+      "rarityLabel": "Common",
+      "power": 2,
+      "combatRaw": "🔥 1",
+      "traits": [
+        "TRINKETTE",
+        "ARTISAN"
+      ],
+      "text": "Discard: Choose one... • Exhaust an asset. • Ready an asset.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/burlindor/torquelet_large.jpg",
+      "thumb": "cards/burlindor/torquelet_thumb.jpg",
+      "searchText": "torquelet burlindor character common rarity3 trinkette artisan discard choose one exhaust an asset ready an asset 🔥 1 aggression aggressive"
+    },
+    {
+      "id": "ways of old",
+      "name": "Ways of Old",
+      "guild": "Burlindor",
+      "type": "Action",
+      "rarity": 3,
+      "rarityLabel": "Common",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "SONG"
+      ],
+      "text": "Play: Gain 1🍬. Choose a Burlindor card from your discard pile and place it on either the top or the bottom of your deck.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/burlindor/ways of old_large.jpg",
+      "thumb": "cards/burlindor/ways of old_thumb.jpg",
+      "searchText": "ways of old burlindor action common rarity3 song play gain 1🍬 choose a burlindor card from your discard pile and place it on either the top or the bottom of your deck treat candy treats"
+    },
+    {
+      "id": "backup vocalist",
+      "name": "Backup Vocalist",
+      "guild": "Coronis",
+      "type": "Character",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": 2,
+      "combatRaw": "🌸",
+      "traits": [
+        "TRINKETTE",
+        "STAR"
+      ],
+      "text": "After an opponent plays a Song action, you gain 1🍬.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/coronis/backup vocalist_large.jpg",
+      "thumb": "cards/coronis/backup vocalist_thumb.jpg",
+      "searchText": "backup vocalist coronis character rare rarity1 trinkette star after an opponent plays a song action you gain 1🍬 treat candy treats 🌸 gentle"
+    },
+    {
+      "id": "boo",
+      "name": "Boo!",
+      "guild": "Coronis",
+      "type": "Action",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "EVENT"
+      ],
+      "text": "Play: Deal 2💥 to each character that does not belong to the most popular Guild. Then, retire this card.",
+      "flags": {
+        "trueDamage": true
+      },
+      "image": "cards/coronis/boo_large.jpg",
+      "thumb": "cards/coronis/boo_thumb.jpg",
+      "searchText": "boo coronis action rare rarity1 event play deal 2💥 to each character that does not belong to the most popular guild then retire this card damage damaged"
+    },
+    {
+      "id": "brash maverick",
+      "name": "Brash Maverick",
+      "guild": "Coronis",
+      "type": "Character",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": 6,
+      "combatRaw": "🧊",
+      "traits": [
+        "CREATURE",
+        "STAR",
+        "ATHLETE"
+      ],
+      "text": "Rowdy. Defeated: If this character was defeated in combat, draw cards equal to the enemy character's power. \"The bigger the foe, the bigger the SHOW!\"",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/coronis/brash maverick_large.jpg",
+      "thumb": "cards/coronis/brash maverick_thumb.jpg",
+      "searchText": "brash maverick coronis character rare rarity1 creature star athlete rowdy defeated if this character was defeated in combat draw cards equal to the enemy character s power the bigger the foe the bigger the show 🧊 sugarcoated"
+    },
+    {
+      "id": "celebrity handler",
+      "name": "Celebrity Handler",
+      "guild": "Coronis",
+      "type": "Character",
+      "rarity": 2,
+      "rarityLabel": "Uncommon",
+      "power": 2,
+      "combatRaw": "🌫️",
+      "traits": [
+        "GEIST",
+        "HELPER"
+      ],
+      "text": "Play: Choose one... • Play a Star character. • Use a Star character. • Ready a Star character.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/coronis/celebrity handler_large.jpg",
+      "thumb": "cards/coronis/celebrity handler_thumb.jpg",
+      "searchText": "celebrity handler coronis character uncommon rarity2 geist helper play choose one play a star character use a star character ready a star character 🌫️ swift"
+    },
+    {
+      "id": "crowd clearer",
+      "name": "Crowd Clearer",
+      "guild": "Coronis",
+      "type": "Character",
+      "rarity": 3,
+      "rarityLabel": "Common",
+      "power": 4,
+      "combatRaw": "🔥 2",
+      "traits": [
+        "CREATURE"
+      ],
+      "text": "Rowdy. Victory: After this attacks and defeats an enemy, gain 1🍬.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/coronis/crowd clearer_large.jpg",
+      "thumb": "cards/coronis/crowd clearer_thumb.jpg",
+      "searchText": "crowd clearer coronis character common rarity3 creature rowdy victory after this attacks and defeats an enemy gain 1🍬 treat candy treats 🔥 2 aggression aggressive"
+    },
+    {
+      "id": "crown me twice",
+      "name": "Crown Me Twice",
+      "guild": "Coronis",
+      "type": "Action",
+      "rarity": 3,
+      "rarityLabel": "Common",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "SONG"
+      ],
+      "text": "Play: Gain 1🍬. If Coronis is the \rmost popular Guild, move 1🍬 from a friendly character and add it to your supply.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/coronis/crown me twice_large.jpg",
+      "thumb": "cards/coronis/crown me twice_thumb.jpg",
+      "searchText": "crown me twice coronis action common rarity3 song play gain 1🍬 if coronis is the most popular guild move 1🍬 from a friendly character and add it to your supply treat candy treats"
+    },
+    {
+      "id": "flash photography",
+      "name": "Flash Photography",
+      "guild": "Coronis",
+      "type": "Action",
+      "rarity": 3,
+      "rarityLabel": "Common",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "WORK"
+      ],
+      "text": "Play: Deal 1💥 to a character. If that damage does not defeat that character, exhaust it and gain 1🍬. Now everyone smile and say, “We hate the photographer!”",
+      "flags": {
+        "trueDamage": true
+      },
+      "image": "cards/coronis/flash photography_large.jpg",
+      "thumb": "cards/coronis/flash photography_thumb.jpg",
+      "searchText": "flash photography coronis action common rarity3 work play deal 1💥 to a character if that damage does not defeat that character exhaust it and gain 1🍬 now everyone smile and say we hate the photographer treat candy treats damage damaged"
+    },
+    {
+      "id": "heroic battle scene",
+      "name": "Heroic Battle Scene",
+      "guild": "Coronis",
+      "type": "Action",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "AURA",
+        "SCENE"
+      ],
+      "text": "Play: Until there are no Rowdy characters in play, when a player uses a Rowdy character to attack, their opponent loses 1🍬. (Remains in play until the effect is complete.)",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/coronis/heroic battle scene_large.jpg",
+      "thumb": "cards/coronis/heroic battle scene_thumb.jpg",
+      "searchText": "heroic battle scene coronis action rare rarity1 aura scene play until there are no rowdy characters in play when a player uses a rowdy character to attack their opponent loses 1🍬 remains in play until the effect is complete treat candy treats"
+    },
+    {
+      "id": "highlight beamer",
+      "name": "Highlight Beamer",
+      "guild": "Coronis",
+      "type": "Character",
+      "rarity": 2,
+      "rarityLabel": "Uncommon",
+      "power": 2,
+      "combatRaw": "🏹",
+      "traits": [
+        "TRINKETTE"
+      ],
+      "text": "Rowdy. After a Rare character is played, ready this character.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/coronis/highlight beamer_large.jpg",
+      "thumb": "cards/coronis/highlight beamer_thumb.jpg",
+      "searchText": "highlight beamer coronis character uncommon rarity2 trinkette rowdy after a rare character is played ready this character 🏹 ranged"
+    },
+    {
+      "id": "king coronis",
+      "name": "King Coronis",
+      "guild": "Coronis",
+      "type": "Character",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "🧊",
+      "traits": [
+        "MORTAL",
+        "STAR"
+      ],
+      "text": "This character’s power is equal to 2 times the total number of Coronis characters in play. Play: Exhaust each character with lower power than King Coronis. Bow before the King!",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/coronis/king coronis_large.jpg",
+      "thumb": "cards/coronis/king coronis_thumb.jpg",
+      "searchText": "king coronis coronis character rare rarity1 mortal star this character s power is equal to 2 times the total number of coronis characters in play play exhaust each character with lower power than king coronis bow before the king 🧊 sugarcoated"
+    },
+    {
+      "id": "large crown-combo",
+      "name": "Large Crown-Combo",
+      "guild": "Coronis",
+      "type": "Asset",
+      "rarity": 3,
+      "rarityLabel": "Common",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "FOOD"
+      ],
+      "text": "Use: If you control a character that belongs to the most popular Guild, gain 1🍬. Then, discard this and take another turn.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/coronis/large crown-combo_large.jpg",
+      "thumb": "cards/coronis/large crown-combo_thumb.jpg",
+      "searchText": "large crown combo coronis asset common rarity3 food use if you control a character that belongs to the most popular guild gain 1🍬 then discard this and take another turn treat candy treats"
+    },
+    {
+      "id": "magical duo howler & hush",
+      "name": "Magical Duo Howler & Hush",
+      "guild": "Coronis",
+      "type": "Character",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": 2,
+      "combatRaw": "🏹",
+      "traits": [
+        "GROUP",
+        "STAR"
+      ],
+      "text": "Play: Without shuffling, your opponent reveals a random card from your deck. Play that card as if it belonged to your active Guild. (If that card cannot be played, retire it.) \"Pick a card, any card...\"",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/coronis/magical duo howler & hush_large.jpg",
+      "thumb": "cards/coronis/magical duo howler & hush_thumb.jpg",
+      "searchText": "magical duo howler & hush coronis character rare rarity1 group star play without shuffling your opponent reveals a random card from your deck play that card as if it belonged to your active guild if that card cannot be played retire it pick a card any card 🏹 ranged"
+    },
+    {
+      "id": "making an entrance",
+      "name": "Making an Entrance",
+      "guild": "Coronis",
+      "type": "Asset",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "TALENT"
+      ],
+      "text": "Use: Reveal cards from the top of your deck until you reveal a Coronis character or run out of cards. Play that character. (Place the other revealed cards on the bottom of your deck in a random order).",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/coronis/making an entrance_large.jpg",
+      "thumb": "cards/coronis/making an entrance_thumb.jpg",
+      "searchText": "making an entrance coronis asset rare rarity1 talent use reveal cards from the top of your deck until you reveal a coronis character or run out of cards play that character place the other revealed cards on the bottom of your deck in a random order"
+    },
+    {
+      "id": "nommster-breeder",
+      "name": "Nommster-Breeder",
+      "guild": "Coronis",
+      "type": "Character",
+      "rarity": 2,
+      "rarityLabel": "Uncommon",
+      "power": 4,
+      "combatRaw": "🧊",
+      "traits": [
+        "MORTAL"
+      ],
+      "text": "Skill: Choose a friendly character. Remove each 🍬 from that character and add it to your Nommster.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/coronis/nommster-breeder_large.jpg",
+      "thumb": "cards/coronis/nommster-breeder_thumb.jpg",
+      "searchText": "nommster breeder coronis character uncommon rarity2 mortal skill choose a friendly character remove each 🍬 from that character and add it to your nommster treat candy treats 🧊 sugarcoated"
+    },
+    {
+      "id": "pep squad",
+      "name": "Pep Squad",
+      "guild": "Coronis",
+      "type": "Character",
+      "rarity": 3,
+      "rarityLabel": "Common",
+      "power": 3,
+      "combatRaw": "🌫️",
+      "traits": [
+        "GROUP",
+        "ATHLETE"
+      ],
+      "text": "Sing: After this sings, if Coronis is the most popular Guild, gain  another 🍬.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/coronis/pep squad_large.jpg",
+      "thumb": "cards/coronis/pep squad_thumb.jpg",
+      "searchText": "pep squad coronis character common rarity3 group athlete sing after this sings if coronis is the most popular guild gain another 🍬 treat candy treats 🌫️ swift"
+    },
+    {
+      "id": "prop swap",
+      "name": "Prop Swap",
+      "guild": "Coronis",
+      "type": "Action",
+      "rarity": 2,
+      "rarityLabel": "Uncommon",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "WORK"
+      ],
+      "text": "Play: Exhaust a friendly Coronis character. If you do, stash 2 cards from your hand.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/coronis/prop swap_large.jpg",
+      "thumb": "cards/coronis/prop swap_thumb.jpg",
+      "searchText": "prop swap coronis action uncommon rarity2 work play exhaust a friendly coronis character if you do stash 2 cards from your hand"
+    },
+    {
+      "id": "seat filler",
+      "name": "Seat Filler",
+      "guild": "Coronis",
+      "type": "Character",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": 2,
+      "combatRaw": "🛡️ 1",
+      "traits": [
+        "GRAVEN"
+      ],
+      "text": "This character cannot Sing. Play: If you do not control 6 characters, take another turn. Defeated: If you do not control 6 characters, stash this card.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/coronis/seat filler_large.jpg",
+      "thumb": "cards/coronis/seat filler_thumb.jpg",
+      "searchText": "seat filler coronis character rare rarity1 graven this character cannot sing play if you do not control 6 characters take another turn defeated if you do not control 6 characters stash this card 🛡️ 1 durable durability armor defense defensive"
+    },
+    {
+      "id": "sidekick",
+      "name": "Sidekick",
+      "guild": "Coronis",
+      "type": "Character",
+      "rarity": 3,
+      "rarityLabel": "Common",
+      "power": 1,
+      "combatRaw": "🔥 4",
+      "traits": [
+        "MORTAL",
+        "ATHLETE"
+      ],
+      "text": "Rowdy. Play: If this was played next to a Coronis character, ready this character.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/coronis/sidekick_large.jpg",
+      "thumb": "cards/coronis/sidekick_thumb.jpg",
+      "searchText": "sidekick coronis character common rarity3 mortal athlete rowdy play if this was played next to a coronis character ready this character 🔥 4 aggression aggressive"
+    },
+    {
+      "id": "snack attack",
+      "name": "Snack Attack",
+      "guild": "Coronis",
+      "type": "Action",
+      "rarity": 2,
+      "rarityLabel": "Uncommon",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "TACTIC"
+      ],
+      "text": "Play: Remove 1🍬 from a friendly character. If you do, ready and attack with that character.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/coronis/snack attack_large.jpg",
+      "thumb": "cards/coronis/snack attack_thumb.jpg",
+      "searchText": "snack attack coronis action uncommon rarity2 tactic play remove 1🍬 from a friendly character if you do ready and attack with that character treat candy treats"
+    },
+    {
+      "id": "sound check",
+      "name": "Sound Check",
+      "guild": "Coronis",
+      "type": "Action",
+      "rarity": 2,
+      "rarityLabel": "Uncommon",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "WORK"
+      ],
+      "text": "Play: Deal 1💥 to each non-Coronis character.",
+      "flags": {
+        "trueDamage": true
+      },
+      "image": "cards/coronis/sound check_large.jpg",
+      "thumb": "cards/coronis/sound check_thumb.jpg",
+      "searchText": "sound check coronis action uncommon rarity2 work play deal 1💥 to each non coronis character damage damaged"
+    },
+    {
+      "id": "stage presence",
+      "name": "Stage Presence",
+      "guild": "Coronis",
+      "type": "Asset",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "TALENT"
+      ],
+      "text": "Each opponent's Nommster costs +2 while Coronis is the most popular Guild.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/coronis/stage presence_large.jpg",
+      "thumb": "cards/coronis/stage presence_thumb.jpg",
+      "searchText": "stage presence coronis asset rare rarity1 talent each opponent s nommster costs 2 while coronis is the most popular guild"
+    },
+    {
+      "id": "star-power",
+      "name": "Star-Power",
+      "guild": "Coronis",
+      "type": "Asset",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "TALENT"
+      ],
+      "text": "As long as you control a Star character, your opponents cannot play or use Assets.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/coronis/star-power_large.jpg",
+      "thumb": "cards/coronis/star-power_thumb.jpg",
+      "searchText": "star power coronis asset rare rarity1 talent as long as you control a star character your opponents cannot play or use assets"
+    },
+    {
+      "id": "sweetheart singer ashton",
+      "name": "Sweetheart Singer Ashton",
+      "guild": "Coronis",
+      "type": "Character",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": 5,
+      "combatRaw": "🧊",
+      "traits": [
+        "MORTAL",
+        "STAR"
+      ],
+      "text": "Sing: After this sings, fetch each Song action from your discard pile. ♪ \"I'll cross the stars...\" ♪",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/coronis/sweetheart singer ashton_large.jpg",
+      "thumb": "cards/coronis/sweetheart singer ashton_thumb.jpg",
+      "searchText": "sweetheart singer ashton coronis character rare rarity1 mortal star sing after this sings fetch each song action from your discard pile i ll cross the stars 🧊 sugarcoated"
+    },
+    {
+      "id": "sweetheart singer blake",
+      "name": "Sweetheart Singer Blake",
+      "guild": "Coronis",
+      "type": "Character",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": 4,
+      "combatRaw": "🧊",
+      "traits": [
+        "MORTAL",
+        "STAR"
+      ],
+      "text": "Sing: After this sings, for the remainder the round, each time you play a card, gain 1🍬. ♪ \"I'll chase the moon...\" ♪",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/coronis/sweetheart singer blake_large.jpg",
+      "thumb": "cards/coronis/sweetheart singer blake_thumb.jpg",
+      "searchText": "sweetheart singer blake coronis character rare rarity1 mortal star sing after this sings for the remainder the round each time you play a card gain 1🍬 i ll chase the moon treat candy treats 🧊 sugarcoated"
+    },
+    {
+      "id": "sweetheart singer cade",
+      "name": "Sweetheart Singer Cade",
+      "guild": "Coronis",
+      "type": "Character",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": 3,
+      "combatRaw": "🧊",
+      "traits": [
+        "MORTAL",
+        "STAR"
+      ],
+      "text": "Sing: After this sings, ready each other friendly Star character. ♪ \"I'll do it all just to be with youuuuu!\" ♪",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/coronis/sweetheart singer cade_large.jpg",
+      "thumb": "cards/coronis/sweetheart singer cade_thumb.jpg",
+      "searchText": "sweetheart singer cade coronis character rare rarity1 mortal star sing after this sings ready each other friendly star character i ll do it all just to be with youuuuu 🧊 sugarcoated"
+    },
+    {
+      "id": "the crown theater",
+      "name": "The Crown Theater",
+      "guild": "Coronis",
+      "type": "Asset",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "LOCATION"
+      ],
+      "text": "Use: If Coronis is the most popular Guild, gain 2🍬 and then PASS.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/coronis/the crown theater_large.jpg",
+      "thumb": "cards/coronis/the crown theater_thumb.jpg",
+      "searchText": "the crown theater coronis asset rare rarity1 location use if coronis is the most popular guild gain 2🍬 and then pass treat candy treats"
+    },
+    {
+      "id": "ticket collector",
+      "name": "Ticket Collector",
+      "guild": "Coronis",
+      "type": "Character",
+      "rarity": 3,
+      "rarityLabel": "Common",
+      "power": 6,
+      "combatRaw": "🧊",
+      "traits": [
+        "GEIST"
+      ],
+      "text": "Play: This captures 1🍬. If Coronis is the most popular Guild, this captures 2🍬 instead.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/coronis/ticket collector_large.jpg",
+      "thumb": "cards/coronis/ticket collector_thumb.jpg",
+      "searchText": "ticket collector coronis character common rarity3 geist play this captures 1🍬 if coronis is the most popular guild this captures 2🍬 instead treat candy treats 🧊 sugarcoated"
+    },
+    {
+      "id": "tipping culture",
+      "name": "Tipping Culture",
+      "guild": "Coronis",
+      "type": "Action",
+      "rarity": 2,
+      "rarityLabel": "Uncommon",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "TACTIC"
+      ],
+      "text": "Play: Choose one... • Each friendly Coronis character captures 1🍬. • A friendly character captures 1🍬. Tipping the Coronis isn't generosity, it's survival etiquette.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/coronis/tipping culture_large.jpg",
+      "thumb": "cards/coronis/tipping culture_thumb.jpg",
+      "searchText": "tipping culture coronis action uncommon rarity2 tactic play choose one each friendly coronis character captures 1🍬 a friendly character captures 1🍬 tipping the coronis isn t generosity it s survival etiquette treat candy treats"
+    },
+    {
+      "id": "voice coach vera",
+      "name": "Voice Coach Vera",
+      "guild": "Coronis",
+      "type": "Character",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": 1,
+      "combatRaw": "🏹",
+      "traits": [
+        "CREATURE",
+        "HELPER"
+      ],
+      "text": "Skill: Vocal Practice - Ready and use a character that has a Sing ability.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/coronis/voice coach vera_large.jpg",
+      "thumb": "cards/coronis/voice coach vera_thumb.jpg",
+      "searchText": "voice coach vera coronis character rare rarity1 creature helper skill vocal practice ready and use a character that has a sing ability 🏹 ranged"
+    },
+    {
+      "id": "boarding fee",
+      "name": "Boarding Fee",
+      "guild": "Flaria",
+      "type": "Action",
+      "rarity": 3,
+      "rarityLabel": "Common",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "TACTIC"
+      ],
+      "text": "Play: A player of your choice loses 1🍬. If that player controls 6 characters, they lose 2🍬 instead.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/flaria/boarding fee_large.jpg",
+      "thumb": "cards/flaria/boarding fee_thumb.jpg",
+      "searchText": "boarding fee flaria action common rarity3 tactic play a player of your choice loses 1🍬 if that player controls 6 characters they lose 2🍬 instead treat candy treats"
+    },
+    {
+      "id": "catch the train",
+      "name": "Catch the Train",
+      "guild": "Flaria",
+      "type": "Action",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "EVENT"
+      ],
+      "text": "Play: Reveal the top card of your deck. \rIf it is a character, play it and retire this card. Otherwise, discard that card and take another turn.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/flaria/catch the train_large.jpg",
+      "thumb": "cards/flaria/catch the train_thumb.jpg",
+      "searchText": "catch the train flaria action rare rarity1 event play reveal the top card of your deck if it is a character play it and retire this card otherwise discard that card and take another turn"
+    },
+    {
+      "id": "charming charity",
+      "name": "Charming Charity",
+      "guild": "Flaria",
+      "type": "Action",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "WORK"
+      ],
+      "text": "Play: Choose a friendly Flaria character. Its non-Flaria neighbors each capture 2🍬. \"They’re my friends, but with your help, they can be yours too.\"",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/flaria/charming charity_large.jpg",
+      "thumb": "cards/flaria/charming charity_thumb.jpg",
+      "searchText": "charming charity flaria action rare rarity1 work play choose a friendly flaria character its non flaria neighbors each capture 2🍬 they re my friends but with your help they can be yours too treat candy treats"
+    },
+    {
+      "id": "complimentary waffles",
+      "name": "Complimentary Waffles",
+      "guild": "Flaria",
+      "type": "Action",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "AURA"
+      ],
+      "text": "Play: For the remainder of the round, each friendly Rowdy character belongs to Flaria and can be used to sing. (Remains in play until the effect is complete.)",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/flaria/complimentary waffles_large.jpg",
+      "thumb": "cards/flaria/complimentary waffles_thumb.jpg",
+      "searchText": "complimentary waffles flaria action rare rarity1 aura play for the remainder of the round each friendly rowdy character belongs to flaria and can be used to sing remains in play until the effect is complete"
+    },
+    {
+      "id": "cuddles",
+      "name": "Cuddles",
+      "guild": "Flaria",
+      "type": "Character",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": 5,
+      "combatRaw": "🌸",
+      "traits": [
+        "CREATURE"
+      ],
+      "text": "Rowdy. When this character deals damage, draw a card.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/flaria/cuddles_large.jpg",
+      "thumb": "cards/flaria/cuddles_thumb.jpg",
+      "searchText": "cuddles flaria character rare rarity1 creature rowdy when this character deals damage draw a card 🌸 gentle"
+    },
+    {
+      "id": "customs inspection",
+      "name": "Customs Inspection",
+      "guild": "Flaria",
+      "type": "Action",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "WORK"
+      ],
+      "text": "Use: Look at another player's hand. If you find any Asset cards, you may place one of them on the bottom of its owner's deck and gain 1🍬.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/flaria/customs inspection_large.jpg",
+      "thumb": "cards/flaria/customs inspection_thumb.jpg",
+      "searchText": "customs inspection flaria action rare rarity1 work use look at another player s hand if you find any asset cards you may place one of them on the bottom of its owner s deck and gain 1🍬 treat candy treats"
+    },
+    {
+      "id": "emissary aurelia",
+      "name": "Emissary Aurelia",
+      "guild": "Flaria",
+      "type": "Character",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": 3,
+      "combatRaw": "🌸",
+      "traits": [
+        "ROOTLING",
+        "HELPER",
+        "STAR"
+      ],
+      "text": "Skill: If this character has 2 neighbors, and this character and its neighbors all belong to different Guilds, swap your active Guild to one of those Guilds.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/flaria/emissary aurelia_large.jpg",
+      "thumb": "cards/flaria/emissary aurelia_thumb.jpg",
+      "searchText": "emissary aurelia flaria character rare rarity1 rootling helper star skill if this character has 2 neighbors and this character and its neighbors all belong to different guilds swap your active guild to one of those guilds 🌸 gentle"
+    },
+    {
+      "id": "gift of gab",
+      "name": "Gift of Gab",
+      "guild": "Flaria",
+      "type": "Asset",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "TALENT"
+      ],
+      "text": "Use: Your least powerful character captures 1🍬. Draw a card. \"...and so I says to the guy, ‘If it’s not spaghetti, why’s it in my pants?!’\"",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/flaria/gift of gab_large.jpg",
+      "thumb": "cards/flaria/gift of gab_thumb.jpg",
+      "searchText": "gift of gab flaria asset rare rarity1 talent use your least powerful character captures 1🍬 draw a card and so i says to the guy if it s not spaghetti why s it in my pants treat candy treats"
+    },
+    {
+      "id": "lost and found",
+      "name": "Lost and Found",
+      "guild": "Flaria",
+      "type": "Asset",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "LOCATION"
+      ],
+      "text": "Use: Reveal a card from your hand. If it is Rare, stash it.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/flaria/lost and found_large.jpg",
+      "thumb": "cards/flaria/lost and found_thumb.jpg",
+      "searchText": "lost and found flaria asset rare rarity1 location use reveal a card from your hand if it is rare stash it"
+    },
+    {
+      "id": "motivational speaker",
+      "name": "Motivational Speaker",
+      "guild": "Flaria",
+      "type": "Character",
+      "rarity": 3,
+      "rarityLabel": "Common",
+      "power": 1,
+      "combatRaw": "-",
+      "traits": [
+        "GEIST",
+        "HELPER"
+      ],
+      "text": "Play: Ready and use a neighboring non-Flaria character.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/flaria/motivational speaker_large.jpg",
+      "thumb": "cards/flaria/motivational speaker_thumb.jpg",
+      "searchText": "motivational speaker flaria character common rarity3 geist helper play ready and use a neighboring non flaria character"
+    },
+    {
+      "id": "noise complaint",
+      "name": "Noise Complaint",
+      "guild": "Flaria",
+      "type": "Action",
+      "rarity": 2,
+      "rarityLabel": "Uncommon",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "TACTIC"
+      ],
+      "text": "Play: Defeat a Rowdy enemy that has a non-Rowdy neighbor.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/flaria/noise complaint_large.jpg",
+      "thumb": "cards/flaria/noise complaint_thumb.jpg",
+      "searchText": "noise complaint flaria action uncommon rarity2 tactic play defeat a rowdy enemy that has a non rowdy neighbor"
+    },
+    {
+      "id": "one-way ticket",
+      "name": "One-Way Ticket",
+      "guild": "Flaria",
+      "type": "Action",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "EVENT"
+      ],
+      "text": "Play: If your opponent controls 6 characters, retire an enemy character. Otherwise, retire this card. Discard: Retire this card. “Your adventure continues, just on a different track. Farewell for now!” - Sterling",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/flaria/one-way ticket_large.jpg",
+      "thumb": "cards/flaria/one-way ticket_thumb.jpg",
+      "searchText": "one way ticket flaria action rare rarity1 event play if your opponent controls 6 characters retire an enemy character otherwise retire this card discard retire this card your adventure continues just on a different track farewell for now sterling"
+    },
+    {
+      "id": "pack-mastery",
+      "name": "Pack-Mastery",
+      "guild": "Flaria",
+      "type": "Asset",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "TALENT"
+      ],
+      "text": "Use: If you have 6 or more cards in your hand, draw a card. A single well-packed bag can hold everything you'd ever need for an adventure.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/flaria/pack-mastery_large.jpg",
+      "thumb": "cards/flaria/pack-mastery_thumb.jpg",
+      "searchText": "pack mastery flaria asset rare rarity1 talent use if you have 6 or more cards in your hand draw a card a single well packed bag can hold everything you d ever need for an adventure"
+    },
+    {
+      "id": "porter in training",
+      "name": "Porter in Training",
+      "guild": "Flaria",
+      "type": "Character",
+      "rarity": 3,
+      "rarityLabel": "Common",
+      "power": 2,
+      "combatRaw": "🌸",
+      "traits": [
+        "CREATURE",
+        "HELPER"
+      ],
+      "text": "Play: If this character has a non-Flaria neighbor, ready this character.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/flaria/porter in training_large.jpg",
+      "thumb": "cards/flaria/porter in training_thumb.jpg",
+      "searchText": "porter in training flaria character common rarity3 creature helper play if this character has a non flaria neighbor ready this character 🌸 gentle"
+    },
+    {
+      "id": "rail mix",
+      "name": "Rail Mix",
+      "guild": "Flaria",
+      "type": "Asset",
+      "rarity": 3,
+      "rarityLabel": "Common",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "FOOD"
+      ],
+      "text": "Use: Draw a card. Then, discard Rail Mix.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/flaria/rail mix_large.jpg",
+      "thumb": "cards/flaria/rail mix_thumb.jpg",
+      "searchText": "rail mix flaria asset common rarity3 food use draw a card then discard rail mix"
+    },
+    {
+      "id": "relaxation therapy",
+      "name": "Relaxation Therapy",
+      "guild": "Flaria",
+      "type": "Action",
+      "rarity": 2,
+      "rarityLabel": "Uncommon",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "WORK"
+      ],
+      "text": "Play: Exhaust the most powerful enemy and each of its neighbors. If you exhausted 3 characters this way, gain 1🍬.  “...and now visualize your worries melting away like butter on a stack of pancakes.”",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/flaria/relaxation therapy_large.jpg",
+      "thumb": "cards/flaria/relaxation therapy_thumb.jpg",
+      "searchText": "relaxation therapy flaria action uncommon rarity2 work play exhaust the most powerful enemy and each of its neighbors if you exhausted 3 characters this way gain 1🍬 and now visualize your worries melting away like butter on a stack of pancakes treat candy treats"
+    },
+    {
+      "id": "returning traveler",
+      "name": "Returning Traveler",
+      "guild": "Flaria",
+      "type": "Character",
+      "rarity": 2,
+      "rarityLabel": "Uncommon",
+      "power": 2,
+      "combatRaw": "-",
+      "traits": [
+        "MORTAL"
+      ],
+      "text": "Play: You may play a non-Flaria Trinkette character. Defeated: Place this character on the bottom of your deck. \"Every trip needs a souvenir. Some of them blink!\"",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/flaria/returning traveler_large.jpg",
+      "thumb": "cards/flaria/returning traveler_thumb.jpg",
+      "searchText": "returning traveler flaria character uncommon rarity2 mortal play you may play a non flaria trinkette character defeated place this character on the bottom of your deck every trip needs a souvenir some of them blink"
+    },
+    {
+      "id": "service attendant",
+      "name": "Service Attendant",
+      "guild": "Flaria",
+      "type": "Character",
+      "rarity": 3,
+      "rarityLabel": "Common",
+      "power": 2,
+      "combatRaw": "🛡️ 2",
+      "traits": [
+        "GRAVEN",
+        "HELPER"
+      ],
+      "text": "Sing: After this sings, each player draws a card.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/flaria/service attendant_large.jpg",
+      "thumb": "cards/flaria/service attendant_thumb.jpg",
+      "searchText": "service attendant flaria character common rarity3 graven helper sing after this sings each player draws a card 🛡️ 2 durable durability armor defense defensive"
+    },
+    {
+      "id": "small talk",
+      "name": "Small Talk",
+      "guild": "Flaria",
+      "type": "Action",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "EVENT"
+      ],
+      "text": "Play: Ready and use a character that does not belong to your active Guild. Then, if that character was not your least powerful character, retire this card.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/flaria/small talk_large.jpg",
+      "thumb": "cards/flaria/small talk_thumb.jpg",
+      "searchText": "small talk flaria action rare rarity1 event play ready and use a character that does not belong to your active guild then if that character was not your least powerful character retire this card"
+    },
+    {
+      "id": "sootslinger",
+      "name": "Sootslinger",
+      "guild": "Flaria",
+      "type": "Character",
+      "rarity": 2,
+      "rarityLabel": "Uncommon",
+      "power": 2,
+      "combatRaw": "🔥 2",
+      "traits": [
+        "GEIST"
+      ],
+      "text": "Rowdy. Play: Retire a card from your hand. If you do, draw 2 cards.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/flaria/sootslinger_large.jpg",
+      "thumb": "cards/flaria/sootslinger_thumb.jpg",
+      "searchText": "sootslinger flaria character uncommon rarity2 geist rowdy play retire a card from your hand if you do draw 2 cards 🔥 2 aggression aggressive"
+    },
+    {
+      "id": "souvenir showcase",
+      "name": "Souvenir Showcase",
+      "guild": "Flaria",
+      "type": "Action",
+      "rarity": 2,
+      "rarityLabel": "Uncommon",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "TACTIC"
+      ],
+      "text": "Play: Reveal a non-Flaria card from your hand. If the revealed card is a Trinkette character, reveal another non-Flaria card. Stash each card revealed this way.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/flaria/souvenir showcase_large.jpg",
+      "thumb": "cards/flaria/souvenir showcase_thumb.jpg",
+      "searchText": "souvenir showcase flaria action uncommon rarity2 tactic play reveal a non flaria card from your hand if the revealed card is a trinkette character reveal another non flaria card stash each card revealed this way"
+    },
+    {
+      "id": "station security",
+      "name": "Station Security",
+      "guild": "Flaria",
+      "type": "Character",
+      "rarity": 2,
+      "rarityLabel": "Uncommon",
+      "power": 2,
+      "combatRaw": "🌸",
+      "traits": [
+        "ROOTLING",
+        "HELPER"
+      ],
+      "text": "This character's non-Flaria neighbors cannot be attacked.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/flaria/station security_large.jpg",
+      "thumb": "cards/flaria/station security_thumb.jpg",
+      "searchText": "station security flaria character uncommon rarity2 rootling helper this character s non flaria neighbors cannot be attacked 🌸 gentle"
+    },
+    {
+      "id": "stowaway brooks",
+      "name": "Stowaway Brooks",
+      "guild": "Flaria",
+      "type": "Character",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": 6,
+      "combatRaw": "-",
+      "traits": [
+        "MORTAL"
+      ],
+      "text": "After any player chooses Flaria as their active Guild, place this character on the bottom of your deck.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/flaria/stowaway brooks_large.jpg",
+      "thumb": "cards/flaria/stowaway brooks_thumb.jpg",
+      "searchText": "stowaway brooks flaria character rare rarity1 mortal after any player chooses flaria as their active guild place this character on the bottom of your deck"
+    },
+    {
+      "id": "switching tracks",
+      "name": "Switching Tracks",
+      "guild": "Flaria",
+      "type": "Action",
+      "rarity": 3,
+      "rarityLabel": "Common",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "WORK"
+      ],
+      "text": "Play: Return a friendly non-Flaria character to your hand. If you do, draw a card.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/flaria/switching tracks_large.jpg",
+      "thumb": "cards/flaria/switching tracks_thumb.jpg",
+      "searchText": "switching tracks flaria action common rarity3 work play return a friendly non flaria character to your hand if you do draw a card"
+    },
+    {
+      "id": "the final stop",
+      "name": "The Final Stop",
+      "guild": "Flaria",
+      "type": "Asset",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "LOCATION"
+      ],
+      "text": "Use: Place each character in play on the bottom of its owner's deck in a random order. Retire this card and then PASS.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/flaria/the final stop_large.jpg",
+      "thumb": "cards/flaria/the final stop_thumb.jpg",
+      "searchText": "the final stop flaria asset rare rarity1 location use place each character in play on the bottom of its owner s deck in a random order retire this card and then pass"
+    },
+    {
+      "id": "travel troubles",
+      "name": "Travel Troubles",
+      "guild": "Flaria",
+      "type": "Action",
+      "rarity": 2,
+      "rarityLabel": "Uncommon",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "TACTIC"
+      ],
+      "text": "Play: Place a character in its owner's hand. If it was an enemy character, take another turn. Nothing derails an adventure like forgetting your train ticket at home.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/flaria/travel troubles_large.jpg",
+      "thumb": "cards/flaria/travel troubles_thumb.jpg",
+      "searchText": "travel troubles flaria action uncommon rarity2 tactic play place a character in its owner s hand if it was an enemy character take another turn nothing derails an adventure like forgetting your train ticket at home"
+    },
+    {
+      "id": "unity conductor sterling",
+      "name": "Unity Conductor Sterling",
+      "guild": "Flaria",
+      "type": "Character",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": 6,
+      "combatRaw": "🧊",
+      "traits": [
+        "MORTAL",
+        "HELPER",
+        "STAR"
+      ],
+      "text": "At the end of each of your turns, if Unity Conductor Sterling is ready and you control 6 characters, draw a card. Play: If you control 6 characters, ready this character. “My track record speaks for itself. Full trains on time, every time -- the Sterling guarantee!”",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/flaria/unity conductor sterling_large.jpg",
+      "thumb": "cards/flaria/unity conductor sterling_thumb.jpg",
+      "searchText": "unity conductor sterling flaria character rare rarity1 mortal helper star at the end of each of your turns if unity conductor sterling is ready and you control 6 characters draw a card play if you control 6 characters ready this character my track record speaks for itself full trains on time every time the sterling guarantee 🧊 sugarcoated"
+    },
+    {
+      "id": "unity railway",
+      "name": "Unity Railway",
+      "guild": "Flaria",
+      "type": "Asset",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "LOCATION"
+      ],
+      "text": "Use: Play a non-Flaria character. Wherever you're headed, Unity is the way to get there.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/flaria/unity railway_large.jpg",
+      "thumb": "cards/flaria/unity railway_thumb.jpg",
+      "searchText": "unity railway flaria asset rare rarity1 location use play a non flaria character wherever you re headed unity is the way to get there"
+    },
+    {
+      "id": "warm welcome",
+      "name": "Warm Welcome",
+      "guild": "Flaria",
+      "type": "Action",
+      "rarity": 3,
+      "rarityLabel": "Common",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "SONG"
+      ],
+      "text": "Play: You may play a non-Flaria character. If you do, gain 1🍬.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/flaria/warm welcome_large.jpg",
+      "thumb": "cards/flaria/warm welcome_thumb.jpg",
+      "searchText": "warm welcome flaria action common rarity3 song play you may play a non flaria character if you do gain 1🍬 treat candy treats"
+    },
+    {
+      "id": "braided dancer",
+      "name": "Braided Dancer",
+      "guild": "Wildkind",
+      "type": "Character",
+      "rarity": 3,
+      "rarityLabel": "Common",
+      "power": 2,
+      "combatRaw": "🏹",
+      "traits": [
+        "ROOTLING",
+        "REVELER"
+      ],
+      "text": "Play: Ready this character. Victory: After this attacks and defeats an enemy, exhaust the defeated enemy's neighbors.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/wildkind/braided dancer_large.jpg",
+      "thumb": "cards/wildkind/braided dancer_thumb.jpg",
+      "searchText": "braided dancer wildkind character common rarity3 rootling reveler play ready this character victory after this attacks and defeats an enemy exhaust the defeated enemy s neighbors 🏹 ranged"
+    },
+    {
+      "id": "bust a move",
+      "name": "Bust a Move",
+      "guild": "Wildkind",
+      "type": "Action",
+      "rarity": 2,
+      "rarityLabel": "Uncommon",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "TACTIC"
+      ],
+      "text": "Play: Ready and attack with a friendly character. If an enemy is defeated this way, place a 🍬 from the common supply on each of the defeated enemy's neighbors.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/wildkind/bust a move_large.jpg",
+      "thumb": "cards/wildkind/bust a move_thumb.jpg",
+      "searchText": "bust a move wildkind action uncommon rarity2 tactic play ready and attack with a friendly character if an enemy is defeated this way place a 🍬 from the common supply on each of the defeated enemy s neighbors treat candy treats"
+    },
+    {
+      "id": "candyshoppe",
+      "name": "Candyshoppe",
+      "guild": "Wildkind",
+      "type": "Asset",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "LOCATION"
+      ],
+      "text": "Play: Each player gains 1🍬. Use: Each player who has not PASSED gains 1🍬.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/wildkind/candyshoppe_large.jpg",
+      "thumb": "cards/wildkind/candyshoppe_thumb.jpg",
+      "searchText": "candyshoppe wildkind asset rare rarity1 location play each player gains 1🍬 use each player who has not passed gains 1🍬 treat candy treats"
+    },
+    {
+      "id": "bouncer brockman",
+      "name": "Bouncer Brockman",
+      "guild": "Wildkind",
+      "type": "Character",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": 3,
+      "combatRaw": "🛡️ 3",
+      "traits": [
+        "GRAVEN"
+      ],
+      "text": "This character cannot Sing. Skill: Place an enemy in its owner's hand.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/wildkind/bouncer brockman_large.jpg",
+      "thumb": "cards/wildkind/bouncer brockman_thumb.jpg",
+      "searchText": "bouncer brockman wildkind character rare rarity1 graven this character cannot sing skill place an enemy in its owner s hand 🛡️ 3 durable durability armor defense defensive"
+    },
+    {
+      "id": "candyshoppe key",
+      "name": "Candyshoppe Key",
+      "guild": "Wildkind",
+      "type": "Character",
+      "rarity": 3,
+      "rarityLabel": "Common",
+      "power": 3,
+      "combatRaw": "🔥 1",
+      "traits": [
+        "TRINKETTE"
+      ],
+      "text": "Rowdy. Your Nommster costs 1 less.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/wildkind/candyshoppe key_large.jpg",
+      "thumb": "cards/wildkind/candyshoppe key_thumb.jpg",
+      "searchText": "candyshoppe key wildkind character common rarity3 trinkette rowdy your nommster costs 1 less 🔥 1 aggression aggressive"
+    },
+    {
+      "id": "cover charger",
+      "name": "Cover Charger",
+      "guild": "Wildkind",
+      "type": "Character",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": 3,
+      "combatRaw": "🧊",
+      "traits": [
+        "TRINKETTE",
+        "REVELER"
+      ],
+      "text": "While this character is ready, you gain 1🍬 whenever your opponent plays a character.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/wildkind/cover charger_large.jpg",
+      "thumb": "cards/wildkind/cover charger_thumb.jpg",
+      "searchText": "cover charger wildkind character rare rarity1 trinkette reveler while this character is ready you gain 1🍬 whenever your opponent plays a character treat candy treats 🧊 sugarcoated"
+    },
+    {
+      "id": "crystal ball",
+      "name": "Crystal Ball",
+      "guild": "Wildkind",
+      "type": "Asset",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "ITEM"
+      ],
+      "text": "Use: Look at the top 3 cards of your deck. Discard one, put one on the bottom of your deck, and one back on top.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/wildkind/crystal ball_large.jpg",
+      "thumb": "cards/wildkind/crystal ball_thumb.jpg",
+      "searchText": "crystal ball wildkind asset rare rarity1 item use look at the top 3 cards of your deck discard one put one on the bottom of your deck and one back on top"
+    },
+    {
+      "id": "fickle fate",
+      "name": "Fickle Fate",
+      "guild": "Wildkind",
+      "type": "Action",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "TACTIC"
+      ],
+      "text": "Play: Retire the top card of your deck. If it's not a Wildkind card, retire an enemy. \"Anything but the Aching Tooth, please!\"",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/wildkind/fickle fate_large.jpg",
+      "thumb": "cards/wildkind/fickle fate_thumb.jpg",
+      "searchText": "fickle fate wildkind action rare rarity1 tactic play retire the top card of your deck if it s not a wildkind card retire an enemy anything but the aching tooth please"
+    },
+    {
+      "id": "hippop",
+      "name": "Hippop",
+      "guild": "Wildkind",
+      "type": "Character",
+      "rarity": 2,
+      "rarityLabel": "Uncommon",
+      "power": 2,
+      "combatRaw": "🌫️",
+      "traits": [
+        "CREATURE",
+        "REVELER"
+      ],
+      "text": "Sing: After this sings, discard a random card from your opponent's hand.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/wildkind/hippop_large.jpg",
+      "thumb": "cards/wildkind/hippop_thumb.jpg",
+      "searchText": "hippop wildkind character uncommon rarity2 creature reveler sing after this sings discard a random card from your opponent s hand 🌫️ swift"
+    },
+    {
+      "id": "hot streak",
+      "name": "Hot Streak",
+      "guild": "Wildkind",
+      "type": "Action",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "EVENT"
+      ],
+      "text": "Play: Reveal the top card of your deck. If it is a non-Wildkind card, play it and return Hot Streak to your hand. If it is a Wildkind card, retire Hot Streak and PASS.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/wildkind/hot streak_large.jpg",
+      "thumb": "cards/wildkind/hot streak_thumb.jpg",
+      "searchText": "hot streak wildkind action rare rarity1 event play reveal the top card of your deck if it is a non wildkind card play it and return hot streak to your hand if it is a wildkind card retire hot streak and pass"
+    },
+    {
+      "id": "kaboom",
+      "name": "Kaboom!",
+      "guild": "Wildkind",
+      "type": "Action",
+      "rarity": 2,
+      "rarityLabel": "Uncommon",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "EVENT"
+      ],
+      "text": "Play: Each player reveals the top card of their deck and defeats a character they control that belongs to the revealed card's Guild. Then, retire this card. Discard: Play this card instead.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/wildkind/kaboom_large.jpg",
+      "thumb": "cards/wildkind/kaboom_thumb.jpg",
+      "searchText": "kaboom wildkind action uncommon rarity2 event play each player reveals the top card of their deck and defeats a character they control that belongs to the revealed card s guild then retire this card discard play this card instead"
+    },
+    {
+      "id": "karaoke hour",
+      "name": "Karaoke Hour",
+      "guild": "Wildkind",
+      "type": "Action",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "AURA"
+      ],
+      "text": "Play: During the next round, at the end of each player's turn, if they did not use a character to Sing, they PASS. (Remains in play until the effect is complete.)",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/wildkind/karaoke hour_large.jpg",
+      "thumb": "cards/wildkind/karaoke hour_thumb.jpg",
+      "searchText": "karaoke hour wildkind action rare rarity1 aura play during the next round at the end of each player s turn if they did not use a character to sing they pass remains in play until the effect is complete"
+    },
+    {
+      "id": "late night snack",
+      "name": "Late Night Snack",
+      "guild": "Wildkind",
+      "type": "Action",
+      "rarity": 2,
+      "rarityLabel": "Uncommon",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "WORK"
+      ],
+      "text": "Play: Put a 🍬 from the common supply on every non-Sugarcoated (🧊) character.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/wildkind/late night snack_large.jpg",
+      "thumb": "cards/wildkind/late night snack_thumb.jpg",
+      "searchText": "late night snack wildkind action uncommon rarity2 work play put a 🍬 from the common supply on every non sugarcoated 🧊 character treat candy treats sugarcoated"
+    },
+    {
+      "id": "lolli-pop",
+      "name": "Lolli-Pop",
+      "guild": "Wildkind",
+      "type": "Asset",
+      "rarity": 3,
+      "rarityLabel": "Common",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "FOOD"
+      ],
+      "text": "Use: An opponent discards a random card from their hand. Then, discard Lollipop.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/wildkind/lolli-pop_large.jpg",
+      "thumb": "cards/wildkind/lolli-pop_thumb.jpg",
+      "searchText": "lolli pop wildkind asset common rarity3 food use an opponent discards a random card from their hand then discard lollipop"
+    },
+    {
+      "id": "messy munchie maniac",
+      "name": "Messy Munchie Maniac",
+      "guild": "Wildkind",
+      "type": "Character",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": 5,
+      "combatRaw": "-",
+      "traits": [
+        "CREATURE",
+        "REVELER"
+      ],
+      "text": "Rowdy. This gains Ranged (🏹) when attacking a character with 🍬 on it. Play: If there is an enemy character with at least 1🍬 on it, ready this character.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/wildkind/messy munchie maniac_large.jpg",
+      "thumb": "cards/wildkind/messy munchie maniac_thumb.jpg",
+      "searchText": "messy munchie maniac wildkind character rare rarity1 creature reveler rowdy this gains ranged 🏹 when attacking a character with 🍬 on it play if there is an enemy character with at least 1🍬 on it ready this character ranged treat candy treats"
+    },
+    {
+      "id": "mosh pit",
+      "name": "Mosh Pit!",
+      "guild": "Wildkind",
+      "type": "Asset",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "LOCATION"
+      ],
+      "text": "Use: Defeat each non-Rowdy character. Then, retire this card.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/wildkind/mosh pit_large.jpg",
+      "thumb": "cards/wildkind/mosh pit_thumb.jpg",
+      "searchText": "mosh pit wildkind asset rare rarity1 location use defeat each non rowdy character then retire this card"
+    },
+    {
+      "id": "party animal",
+      "name": "Party Animal",
+      "guild": "Wildkind",
+      "type": "Character",
+      "rarity": 3,
+      "rarityLabel": "Common",
+      "power": 1,
+      "combatRaw": "🧊",
+      "traits": [
+        "TRINKETTE",
+        "REVELER"
+      ],
+      "text": "Defeated: Gain 1🍬.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/wildkind/party animal_large.jpg",
+      "thumb": "cards/wildkind/party animal_thumb.jpg",
+      "searchText": "party animal wildkind character common rarity3 trinkette reveler defeated gain 1🍬 treat candy treats 🧊 sugarcoated"
+    },
+    {
+      "id": "party fowl",
+      "name": "Party Fowl",
+      "guild": "Wildkind",
+      "type": "Action",
+      "rarity": 3,
+      "rarityLabel": "Common",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "TACTIC"
+      ],
+      "text": "Play: Choose one... • Each player loses 1🍬. • Each player discards a random card from their hand.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/wildkind/party fowl_large.jpg",
+      "thumb": "cards/wildkind/party fowl_thumb.jpg",
+      "searchText": "party fowl wildkind action common rarity3 tactic play choose one each player loses 1🍬 each player discards a random card from their hand treat candy treats"
+    },
+    {
+      "id": "party planning committee",
+      "name": "Party Planning Committee",
+      "guild": "Wildkind",
+      "type": "Character",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": 3,
+      "combatRaw": "🧊",
+      "traits": [
+        "GROUP"
+      ],
+      "text": "Play: Each player stashes each card in their hand. It’s a lot of work planning every last detail of unbridled chaos!",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/wildkind/party planning committee_large.jpg",
+      "thumb": "cards/wildkind/party planning committee_thumb.jpg",
+      "searchText": "party planning committee wildkind character rare rarity1 group play each player stashes each card in their hand it s a lot of work planning every last detail of unbridled chaos 🧊 sugarcoated"
+    },
+    {
+      "id": "popwick",
+      "name": "Popwick",
+      "guild": "Wildkind",
+      "type": "Character",
+      "rarity": 2,
+      "rarityLabel": "Uncommon",
+      "power": 3,
+      "combatRaw": "🌫️",
+      "traits": [
+        "GEIST",
+        "REVELER"
+      ],
+      "text": "Rowdy. Play: Discard a random card from your opponent's hand.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/wildkind/popwick_large.jpg",
+      "thumb": "cards/wildkind/popwick_thumb.jpg",
+      "searchText": "popwick wildkind character uncommon rarity2 geist reveler rowdy play discard a random card from your opponent s hand 🌫️ swift"
+    },
+    {
+      "id": "razzbramble",
+      "name": "Razzbramble",
+      "guild": "Wildkind",
+      "type": "Character",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": 3,
+      "combatRaw": "🌸",
+      "traits": [
+        "ROOTLING"
+      ],
+      "text": "While this character has 2 neighbors, your opponents cannot feed their Nommsters.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/wildkind/razzbramble_large.jpg",
+      "thumb": "cards/wildkind/razzbramble_thumb.jpg",
+      "searchText": "razzbramble wildkind character rare rarity1 rootling while this character has 2 neighbors your opponents cannot feed their nommsters 🌸 gentle"
+    },
+    {
+      "id": "reckless dancer",
+      "name": "Reckless Dancer",
+      "guild": "Wildkind",
+      "type": "Character",
+      "rarity": 2,
+      "rarityLabel": "Uncommon",
+      "power": 3,
+      "combatRaw": "🔥 3",
+      "traits": [
+        "CREATURE",
+        "REVELER"
+      ],
+      "text": "Rowdy. Victory: After this attacks and defeats an enemy, if the enemy was defeated with aggressive (🔥) damage, retire it.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/wildkind/reckless dancer_large.jpg",
+      "thumb": "cards/wildkind/reckless dancer_thumb.jpg",
+      "searchText": "reckless dancer wildkind character uncommon rarity2 creature reveler rowdy victory after this attacks and defeats an enemy if the enemy was defeated with aggressive 🔥 damage retire it aggression aggressive 🔥 3 aggression aggressive"
+    },
+    {
+      "id": "scavenger hunt",
+      "name": "Scavenger Hunt",
+      "guild": "Wildkind",
+      "type": "Action",
+      "rarity": 2,
+      "rarityLabel": "Uncommon",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "TACTIC"
+      ],
+      "text": "Play: Choose one... • Stash the top card of your deck. • Discard a random card from an opponent's stash.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/wildkind/scavenger hunt_large.jpg",
+      "thumb": "cards/wildkind/scavenger hunt_thumb.jpg",
+      "searchText": "scavenger hunt wildkind action uncommon rarity2 tactic play choose one stash the top card of your deck discard a random card from an opponent s stash"
+    },
+    {
+      "id": "silentfoot",
+      "name": "Silentfoot",
+      "guild": "Wildkind",
+      "type": "Character",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": 12,
+      "combatRaw": "🌫️",
+      "traits": [
+        "CREATURE"
+      ],
+      "text": "When your opponent plays a character, shuffle Silentfoot into your deck. Play: Gain 1🍬. “No, really - it’s been fun! I just have an early morning...”",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/wildkind/silentfoot_large.jpg",
+      "thumb": "cards/wildkind/silentfoot_thumb.jpg",
+      "searchText": "silentfoot wildkind character rare rarity1 creature when your opponent plays a character shuffle silentfoot into your deck play gain 1🍬 no really it s been fun i just have an early morning treat candy treats 🌫️ swift"
+    },
+    {
+      "id": "sugar rush",
+      "name": "Sugar Rush!",
+      "guild": "Wildkind",
+      "type": "Action",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "AURA"
+      ],
+      "text": "Play: Lose 2🍬. If you do, for the rest of the round, all characters with Sugarcoated (🧊) enter play ready. (Remains in play until the effect is complete.)",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/wildkind/sugar rush_large.jpg",
+      "thumb": "cards/wildkind/sugar rush_thumb.jpg",
+      "searchText": "sugar rush wildkind action rare rarity1 aura play lose 2🍬 if you do for the rest of the round all characters with sugarcoated 🧊 enter play ready remains in play until the effect is complete treat candy treats sugarcoated"
+    },
+    {
+      "id": "the night looks back",
+      "name": "The Night Looks Back",
+      "guild": "Wildkind",
+      "type": "Action",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "AURA"
+      ],
+      "text": "Play: Choose One... During the next round... - Enemy characters cannot sing. - Enemy characters cannot attack. (Remains in play until the effect is complete.)",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/wildkind/the night looks back_large.jpg",
+      "thumb": "cards/wildkind/the night looks back_thumb.jpg",
+      "searchText": "the night looks back wildkind action rare rarity1 aura play choose one during the next round enemy characters cannot sing enemy characters cannot attack remains in play until the effect is complete"
+    },
+    {
+      "id": "throw a bash",
+      "name": "Throw a Bash",
+      "guild": "Wildkind",
+      "type": "Action",
+      "rarity": 3,
+      "rarityLabel": "Common",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "WORK"
+      ],
+      "text": "Play: Deal 3💥 to a character. Its owner gains 1🍬.",
+      "flags": {
+        "trueDamage": true
+      },
+      "image": "cards/wildkind/throw a bash_large.jpg",
+      "thumb": "cards/wildkind/throw a bash_thumb.jpg",
+      "searchText": "throw a bash wildkind action common rarity3 work play deal 3💥 to a character its owner gains 1🍬 treat candy treats damage damaged"
+    },
+    {
+      "id": "unbraiding beat",
+      "name": "Unbraiding Beat",
+      "guild": "Wildkind",
+      "type": "Action",
+      "rarity": 3,
+      "rarityLabel": "Common",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "SONG"
+      ],
+      "text": "Play: Gain 1🍬. Look at the top 3 cards of any deck. Discard one card, put one on the bottom of the deck, and one card back on top.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/wildkind/unbraiding beat_large.jpg",
+      "thumb": "cards/wildkind/unbraiding beat_thumb.jpg",
+      "searchText": "unbraiding beat wildkind action common rarity3 song play gain 1🍬 look at the top 3 cards of any deck discard one card put one on the bottom of the deck and one card back on top treat candy treats"
+    },
+    {
+      "id": "vip guest list",
+      "name": "VIP Guest List",
+      "guild": "Wildkind",
+      "type": "Asset",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "ITEM"
+      ],
+      "text": "Use: If you do not control 6 characters, reveal the top card of your deck. If it is a Rare character, play it.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/wildkind/vip guest list_large.jpg",
+      "thumb": "cards/wildkind/vip guest list_thumb.jpg",
+      "searchText": "vip guest list wildkind asset rare rarity1 item use if you do not control 6 characters reveal the top card of your deck if it is a rare character play it"
+    },
+    {
+      "id": "bet on progress",
+      "name": "Bet on Progress",
+      "guild": "Ziotech",
+      "type": "Action",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "AURA"
+      ],
+      "text": "Play: The next time a player's deck becomes empty, the player who owns that deck gains 2🍬. (Remains in play until the effect is complete).",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/ziotech/bet on progress_large.jpg",
+      "thumb": "cards/ziotech/bet on progress_thumb.jpg",
+      "searchText": "bet on progress ziotech action rare rarity1 aura play the next time a player s deck becomes empty the player who owns that deck gains 2🍬 remains in play until the effect is complete treat candy treats"
+    },
+    {
+      "id": "cache burner",
+      "name": "Cache Burner",
+      "guild": "Ziotech",
+      "type": "Character",
+      "rarity": 2,
+      "rarityLabel": "Uncommon",
+      "power": 2,
+      "combatRaw": "🔥 1",
+      "traits": [
+        "GEIST",
+        "WHIZ"
+      ],
+      "text": "Play: You may retire a card from your discard pile. If you do, ready this character. Skill: Each opponent loses 1🍬. \"Burnt to a crisp? We prefer the term 'thermally optimized.'\"",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/ziotech/cache burner_large.jpg",
+      "thumb": "cards/ziotech/cache burner_thumb.jpg",
+      "searchText": "cache burner ziotech character uncommon rarity2 geist whiz play you may retire a card from your discard pile if you do ready this character skill each opponent loses 1🍬 burnt to a crisp we prefer the term thermally optimized treat candy treats 🔥 1 aggression aggressive"
+    },
+    {
+      "id": "call an audible",
+      "name": "Call an Audible",
+      "guild": "Ziotech",
+      "type": "Action",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "EVENT"
+      ],
+      "text": "This card can only be played if it is your first turn this round. Play: Swap your active Guild. Then, retire this card.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/ziotech/call an audible_large.jpg",
+      "thumb": "cards/ziotech/call an audible_thumb.jpg",
+      "searchText": "call an audible ziotech action rare rarity1 event this card can only be played if it is your first turn this round play swap your active guild then retire this card"
+    },
+    {
+      "id": "chronocell",
+      "name": "ChronoCell™",
+      "guild": "Ziotech",
+      "type": "Character",
+      "rarity": 3,
+      "rarityLabel": "Common",
+      "power": 1,
+      "combatRaw": "-",
+      "traits": [
+        "TRINKETTE"
+      ],
+      "text": "When you PASS, refill your hand with an additional card. Defeated: Choose a card from your hand and discard it.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/ziotech/chronocell_large.jpg",
+      "thumb": "cards/ziotech/chronocell_thumb.jpg",
+      "searchText": "chronocell ziotech character common rarity3 trinkette when you pass refill your hand with an additional card defeated choose a card from your hand and discard it"
+    },
+    {
+      "id": "efficiency assessor",
+      "name": "Efficiency Assessor",
+      "guild": "Ziotech",
+      "type": "Character",
+      "rarity": 2,
+      "rarityLabel": "Uncommon",
+      "power": 3,
+      "combatRaw": "🌫️",
+      "traits": [
+        "TRINKETTE"
+      ],
+      "text": "Your opponent's Nommster costs +1 for each retired card you own.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/ziotech/efficiency assessor_large.jpg",
+      "thumb": "cards/ziotech/efficiency assessor_thumb.jpg",
+      "searchText": "efficiency assessor ziotech character uncommon rarity2 trinkette your opponent s nommster costs 1 for each retired card you own 🌫️ swift"
+    },
+    {
+      "id": "efficiency spike",
+      "name": "Efficiency Spike",
+      "guild": "Ziotech",
+      "type": "Action",
+      "rarity": 2,
+      "rarityLabel": "Uncommon",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "TACTIC"
+      ],
+      "text": "Play: Retire a card from your discard pile. If you do, choose an enemy and deal 1💥 to it for each retired card you own.",
+      "flags": {
+        "trueDamage": true
+      },
+      "image": "cards/ziotech/efficiency spike_large.jpg",
+      "thumb": "cards/ziotech/efficiency spike_thumb.jpg",
+      "searchText": "efficiency spike ziotech action uncommon rarity2 tactic play retire a card from your discard pile if you do choose an enemy and deal 1💥 to it for each retired card you own damage damaged"
+    },
+    {
+      "id": "forecaster liora",
+      "name": "Forecaster Liora",
+      "guild": "Ziotech",
+      "type": "Character",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": 3,
+      "combatRaw": "🌫️",
+      "traits": [
+        "GEIST",
+        "WHIZ",
+        "STAR"
+      ],
+      "text": "Play: Fetch an Event action from your deck. You may stash it. Sing: After this sings, choose a retired Event action you own and place it on the top of your deck.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/ziotech/forecaster liora_large.jpg",
+      "thumb": "cards/ziotech/forecaster liora_thumb.jpg",
+      "searchText": "forecaster liora ziotech character rare rarity1 geist whiz star play fetch an event action from your deck you may stash it sing after this sings choose a retired event action you own and place it on the top of your deck 🌫️ swift"
+    },
+    {
+      "id": "hack the system",
+      "name": "Hack the System",
+      "guild": "Ziotech",
+      "type": "Action",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "WORK",
+        "EVENT"
+      ],
+      "text": "Play: Choose any retired card you own. Stash it, then retire this card. With an infinite budget and enough time he will hack ANYTHING.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/ziotech/hack the system_large.jpg",
+      "thumb": "cards/ziotech/hack the system_thumb.jpg",
+      "searchText": "hack the system ziotech action rare rarity1 work event play choose any retired card you own stash it then retire this card with an infinite budget and enough time he will hack anything"
+    },
+    {
+      "id": "hard reboot",
+      "name": "HARD REBOOT",
+      "guild": "Ziotech",
+      "type": "Action",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "EVENT"
+      ],
+      "text": "Play: Each player updates every card in their hand. Then, retire this card.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/ziotech/hard reboot_large.jpg",
+      "thumb": "cards/ziotech/hard reboot_thumb.jpg",
+      "searchText": "hard reboot ziotech action rare rarity1 event play each player updates every card in their hand then retire this card"
+    },
+    {
+      "id": "knuckleball",
+      "name": "Knuckleball",
+      "guild": "Ziotech",
+      "type": "Character",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": 3,
+      "combatRaw": "-",
+      "traits": [
+        "TRINKETTE",
+        "ATHLETE"
+      ],
+      "text": "Rowdy. Each time you update one or more cards in your hand, deal 1💥 to an enemy.",
+      "flags": {
+        "trueDamage": true
+      },
+      "image": "cards/ziotech/knuckleball_large.jpg",
+      "thumb": "cards/ziotech/knuckleball_thumb.jpg",
+      "searchText": "knuckleball ziotech character rare rarity1 trinkette athlete rowdy each time you update one or more cards in your hand deal 1💥 to an enemy damage damaged"
+    },
+    {
+      "id": "lets go zyborgs",
+      "name": "Let's Go, Zyborgs!",
+      "guild": "Ziotech",
+      "type": "Action",
+      "rarity": 3,
+      "rarityLabel": "Common",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "SONG"
+      ],
+      "text": "Play: Gain 1🍬. Then, update 1 card in your hand.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/ziotech/lets go zyborgs_large.jpg",
+      "thumb": "cards/ziotech/lets go zyborgs_thumb.jpg",
+      "searchText": "let s go zyborgs ziotech action common rarity3 song play gain 1🍬 then update 1 card in your hand treat candy treats"
+    },
+    {
+      "id": "living in the past",
+      "name": "Living in the Past",
+      "guild": "Ziotech",
+      "type": "Action",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "AURA"
+      ],
+      "text": "Play: Until the end of the round, your opponents’ Nommsters cost +1 for every 5 cards in your discard pile.  (Remains in play until the effect is complete.)",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/ziotech/living in the past_large.jpg",
+      "thumb": "cards/ziotech/living in the past_thumb.jpg",
+      "searchText": "living in the past ziotech action rare rarity1 aura play until the end of the round your opponents nommsters cost 1 for every 5 cards in your discard pile remains in play until the effect is complete"
+    },
+    {
+      "id": "overclock",
+      "name": "Overclock™",
+      "guild": "Ziotech",
+      "type": "Asset",
+      "rarity": 3,
+      "rarityLabel": "Common",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "FOOD"
+      ],
+      "text": "Use: Update 1 card in your hand. Then, discard Overclock™.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/ziotech/overclock_large.jpg",
+      "thumb": "cards/ziotech/overclock_thumb.jpg",
+      "searchText": "overclock ziotech asset common rarity3 food use update 1 card in your hand then discard overclock"
+    },
+    {
+      "id": "peak-hours pricing",
+      "name": "Peak-Hours Pricing",
+      "guild": "Ziotech",
+      "type": "Action",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "AURA"
+      ],
+      "text": "Play: Until you PASS, your opponents must pay you 1🍬 to play or use an asset. (Remains in play until the effect is complete.)",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/ziotech/peak-hours pricing_large.jpg",
+      "thumb": "cards/ziotech/peak-hours pricing_thumb.jpg",
+      "searchText": "peak hours pricing ziotech action rare rarity1 aura play until you pass your opponents must pay you 1🍬 to play or use an asset remains in play until the effect is complete treat candy treats"
+    },
+    {
+      "id": "playmaker",
+      "name": "Playmaker",
+      "guild": "Ziotech",
+      "type": "Character",
+      "rarity": 3,
+      "rarityLabel": "Common",
+      "power": 2,
+      "combatRaw": "🌫️",
+      "traits": [
+        "CREATURE",
+        "ATHLETE"
+      ],
+      "text": "Play: This captures 1🍬. Discard: Gain 1🍬.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/ziotech/playmaker_large.jpg",
+      "thumb": "cards/ziotech/playmaker_thumb.jpg",
+      "searchText": "playmaker ziotech character common rarity3 creature athlete play this captures 1🍬 discard gain 1🍬 treat candy treats 🌫️ swift"
+    },
+    {
+      "id": "product recall",
+      "name": "Product Recall",
+      "guild": "Ziotech",
+      "type": "Action",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "AURA",
+        "TACTIC"
+      ],
+      "text": "Play: Until the end of the round, each time a player discards a card, a character they control captures 1🍬. (Remains in play until the effect is complete.)",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/ziotech/product recall_large.jpg",
+      "thumb": "cards/ziotech/product recall_thumb.jpg",
+      "searchText": "product recall ziotech action rare rarity1 aura tactic play until the end of the round each time a player discards a card a character they control captures 1🍬 remains in play until the effect is complete treat candy treats"
+    },
+    {
+      "id": "quick reflexes",
+      "name": "Quick Reflexes",
+      "guild": "Ziotech",
+      "type": "Action",
+      "rarity": 3,
+      "rarityLabel": "Common",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "TACTIC"
+      ],
+      "text": "Play: Each player that does not control a character with Swift (🌫️) loses 1🍬.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/ziotech/quick reflexes_large.jpg",
+      "thumb": "cards/ziotech/quick reflexes_thumb.jpg",
+      "searchText": "quick reflexes ziotech action common rarity3 tactic play each player that does not control a character with swift 🌫️ loses 1🍬 swift treat candy treats"
+    },
+    {
+      "id": "scout",
+      "name": "Scout",
+      "guild": "Ziotech",
+      "type": "Character",
+      "rarity": 3,
+      "rarityLabel": "Common",
+      "power": 1,
+      "combatRaw": "🏹",
+      "traits": [
+        "MORTAL"
+      ],
+      "text": "After an opponent draws a card, ready this character. Victory: After this attacks and defeats an enemy, stash the top card of your deck.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/ziotech/scout_large.jpg",
+      "thumb": "cards/ziotech/scout_thumb.jpg",
+      "searchText": "scout ziotech character common rarity3 mortal after an opponent draws a card ready this character victory after this attacks and defeats an enemy stash the top card of your deck 🏹 ranged"
+    },
+    {
+      "id": "shockdoc sean",
+      "name": "Shockdoc Sean",
+      "guild": "Ziotech",
+      "type": "Character",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": 3,
+      "combatRaw": "🌸",
+      "traits": [
+        "MORTAL",
+        "HELPER",
+        "STAR"
+      ],
+      "text": "During your turn, each time you discard a Rowdy character from your hand, you may play it. \"You’ve got the spirit, now let’s add a little purpose to the mix!\"",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/ziotech/shockdoc sean_large.jpg",
+      "thumb": "cards/ziotech/shockdoc sean_thumb.jpg",
+      "searchText": "shockdoc sean ziotech character rare rarity1 mortal helper star during your turn each time you discard a rowdy character from your hand you may play it you ve got the spirit now let s add a little purpose to the mix 🌸 gentle"
+    },
+    {
+      "id": "slam dunk",
+      "name": "Slam Dunk",
+      "guild": "Ziotech",
+      "type": "Action",
+      "rarity": 2,
+      "rarityLabel": "Uncommon",
+      "power": 2,
+      "combatRaw": null,
+      "traits": [
+        "TACTIC"
+      ],
+      "text": "Play: Deal 2💥 to an enemy. If that enemy has power 5 or greater, defeat it instead. Get dunked on!",
+      "flags": {
+        "trueDamage": true
+      },
+      "image": "cards/ziotech/slam dunk_large.jpg",
+      "thumb": "cards/ziotech/slam dunk_thumb.jpg",
+      "searchText": "slam dunk ziotech action uncommon rarity2 tactic play deal 2💥 to an enemy if that enemy has power 5 or greater defeat it instead get dunked on damage damaged"
+    },
+    {
+      "id": "starflyer amelia",
+      "name": "Starflyer Amelia",
+      "guild": "Ziotech",
+      "type": "Character",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": 1,
+      "combatRaw": "🌫️",
+      "traits": [
+        "GEIST",
+        "ATHLETE",
+        "STAR"
+      ],
+      "text": "Play: Stash the top card of your deck. Sing: After this sings, place this on top of your deck. \"Why walk when you can soar?\"",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/ziotech/starflyer amelia_large.jpg",
+      "thumb": "cards/ziotech/starflyer amelia_thumb.jpg",
+      "searchText": "starflyer amelia ziotech character rare rarity1 geist athlete star play stash the top card of your deck sing after this sings place this on top of your deck why walk when you can soar 🌫️ swift"
+    },
+    {
+      "id": "tech enthusiast",
+      "name": "Tech Enthusiast",
+      "guild": "Ziotech",
+      "type": "Character",
+      "rarity": 2,
+      "rarityLabel": "Uncommon",
+      "power": 2,
+      "combatRaw": "🛡️ 2",
+      "traits": [
+        "GRAVEN",
+        "WHIZ"
+      ],
+      "text": "Skill: Retire a card from your discard pile. If you do, draw 2 cards. “The kid thinks if it’s not new, it’s ancient.” - Mumbling Mechanic",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/ziotech/tech enthusiast_large.jpg",
+      "thumb": "cards/ziotech/tech enthusiast_thumb.jpg",
+      "searchText": "tech enthusiast ziotech character uncommon rarity2 graven whiz skill retire a card from your discard pile if you do draw 2 cards the kid thinks if it s not new it s ancient mumbling mechanic 🛡️ 2 durable durability armor defense defensive"
+    },
+    {
+      "id": "telecommuter tilda",
+      "name": "Telecommuter Tilda",
+      "guild": "Ziotech",
+      "type": "Character",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": 3,
+      "combatRaw": "🏹",
+      "traits": [
+        "MORTAL",
+        "WHIZ"
+      ],
+      "text": "Defeated: Return a retired card you own to your hand. Then, retire this character.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/ziotech/telecommuter tilda_large.jpg",
+      "thumb": "cards/ziotech/telecommuter tilda_thumb.jpg",
+      "searchText": "telecommuter tilda ziotech character rare rarity1 mortal whiz defeated return a retired card you own to your hand then retire this character 🏹 ranged"
+    },
+    {
+      "id": "training drills",
+      "name": "Training Drills",
+      "guild": "Ziotech",
+      "type": "Action",
+      "rarity": 2,
+      "rarityLabel": "Uncommon",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "TACTIC"
+      ],
+      "text": "Play: If there are no cards in your stash, stash 2 cards. Otherwise, stash a card from your hand. “If you fail to plan, plan to fail!” - Life Coach Lou",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/ziotech/training drills_large.jpg",
+      "thumb": "cards/ziotech/training drills_thumb.jpg",
+      "searchText": "training drills ziotech action uncommon rarity2 tactic play if there are no cards in your stash stash 2 cards otherwise stash a card from your hand if you fail to plan plan to fail life coach lou"
+    },
+    {
+      "id": "turbo boost",
+      "name": "Turbo Boost",
+      "guild": "Ziotech",
+      "type": "Action",
+      "rarity": 3,
+      "rarityLabel": "Common",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "WORK"
+      ],
+      "text": "When this card is retired, draw a card. Play: Exhaust an enemy. Discard: Ready a friendly character and retire this card.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/ziotech/turbo boost_large.jpg",
+      "thumb": "cards/ziotech/turbo boost_thumb.jpg",
+      "searchText": "turbo boost ziotech action common rarity3 work when this card is retired draw a card play exhaust an enemy discard ready a friendly character and retire this card"
+    },
+    {
+      "id": "update-enforcer",
+      "name": "Update-Enforcer",
+      "guild": "Ziotech",
+      "type": "Character",
+      "rarity": 2,
+      "rarityLabel": "Uncommon",
+      "power": 3,
+      "combatRaw": "🛡️ 1",
+      "traits": [
+        "GRAVEN",
+        "ATHLETE"
+      ],
+      "text": "Rowdy. Victory: After this attacks and defeats an enemy, your opponent discards 2 random cards in their hand, then draws 2 cards.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/ziotech/update-enforcer_large.jpg",
+      "thumb": "cards/ziotech/update-enforcer_thumb.jpg",
+      "searchText": "update enforcer ziotech character uncommon rarity2 graven athlete rowdy victory after this attacks and defeats an enemy your opponent discards 2 random cards in their hand then draws 2 cards 🛡️ 1 durable durability armor defense defensive"
+    },
+    {
+      "id": "zack the pack-shredder",
+      "name": "Zack the Pack-Shredder",
+      "guild": "Ziotech",
+      "type": "Character",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": 2,
+      "combatRaw": "🌫️",
+      "traits": [
+        "CREATURE"
+      ],
+      "text": "Skill: Update 2 cards in your hand. After discarding any Rare cards this way, you may stash them. “It’s a mint Smokey O’Day rookie!”",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/ziotech/zack the pack-shredder_large.jpg",
+      "thumb": "cards/ziotech/zack the pack-shredder_thumb.jpg",
+      "searchText": "zack the pack shredder ziotech character rare rarity1 creature skill update 2 cards in your hand after discarding any rare cards this way you may stash them it s a mint smokey o day rookie 🌫️ swift"
+    },
+    {
+      "id": "ziotech headquarters",
+      "name": "Ziotech Headquarters",
+      "guild": "Ziotech",
+      "type": "Asset",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "LOCATION"
+      ],
+      "text": "Play: Lose 1 🍬. If you do not, retire this card. Play: Update 1 card in your hand.",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/ziotech/ziotech headquarters_large.jpg",
+      "thumb": "cards/ziotech/ziotech headquarters_thumb.jpg",
+      "searchText": "ziotech headquarters ziotech asset rare rarity1 location play lose 1 🍬 if you do not retire this card play update 1 card in your hand treat candy treats"
+    },
+    {
+      "id": "zyboporter",
+      "name": "Zyboporter™",
+      "guild": "Ziotech",
+      "type": "Asset",
+      "rarity": 1,
+      "rarityLabel": "Rare",
+      "power": null,
+      "combatRaw": "-",
+      "traits": [
+        "ITEM"
+      ],
+      "text": "Use: Play a character with Swift (🌫️). It enters play ready. You’re always game-ready with your very own Zyboporter™! (Just 12 easy payments of $999)",
+      "flags": {
+        "trueDamage": false
+      },
+      "image": "cards/ziotech/zyboporter_large.jpg",
+      "thumb": "cards/ziotech/zyboporter_thumb.jpg",
+      "searchText": "zyboporter ziotech asset rare rarity1 item use play a character with swift 🌫️ it enters play ready you re always game ready with your very own zyboporter just 12 easy payments of 999 swift"
+    }
+  ]
+}

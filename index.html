@@ -11,7 +11,10 @@
 
 <div id="app" class="p-8">
     
-  <h1 class="text-4xl font-bold mb-6 text-center">{{ showDeck ? "My Deck" : "Card Gallery v13.0" }}</h1>
+  <h1 class="text-4xl font-bold mb-6 text-center">
+    {{ showDeck ? "My Deck" : "Card Gallery " + cardsVersion }}
+  </h1>
+
 
   <div class="text-center mb-4">
     <a href="nommsters.html" class="text-blue-600 hover:underline text-lg">View Nommsters</a>
@@ -30,17 +33,20 @@
       <option v-for="type in types" :key="type">{{ type }}</option>
     </select>
 
-    <select v-model="selectedRarity" class="px-4 py-2 rounded border">
-      <option value="">All Rarities</option>
-      <option v-for="rarity in rarities" :key="rarity">{{ rarity }}</option>
+    <select v-model.number="selectedRarity" class="px-4 py-2 rounded border">
+      <option :value="null">All Rarities</option>
+      <option v-for="r in rarityOptions" :key="r.value" :value="r.value">
+        {{ r.label }}
+      </option>
     </select>
+
   <!-- This is the Search Bar -->
-   <input
-      v-model="searchQuery" 
-      type="text" 
-      placeholder="Search by name..." 
+    <input
+      v-model="searchQuery"
+      type="text"
+      placeholder="Search (name, traits, effects, rarity…)"
       class="px-4 py-2 rounded border"
-    >
+    />
 
     <label class="flex items-center ml-4">
       <input type="checkbox" v-model="showFavoritesOnly" class="mr-2">
@@ -105,7 +111,8 @@
     >
 
     <h2 class="text-xl font-semibold mt-2">{{ card.name }}</h2>
-    <p class="text-sm text-gray-500">{{ card.guild }} | {{ card.type }} | {{ card.rarity }}</p>
+    <p class="text-sm text-gray-500">{{ card.guild }} | {{ card.type }} | {{ card.rarityLabel }}</p>
+
 
     <div class="mt-2 text-sm">
       <span>In my deck > </span>
@@ -176,7 +183,7 @@
     >
 
     <h2 class="text-xl font-semibold mt-2">{{ card.name }}</h2>
-    <p class="text-sm text-gray-500">{{ card.guild }} | {{ card.type }} | {{ card.rarity }}</p>
+    <p class="text-sm text-gray-500">{{ card.guild }} | {{ card.type }} | {{ card.rarityLabel }}</p>
     <div class="mt-2 text-sm">
       <span>In my deck > </span>
       <span 
@@ -211,18 +218,18 @@ const { createApp } = Vue;
 createApp({
   data() {
     return {
+      cardsVersion: "", // ← will come from JSON
       copied: false, // ✅ Tracks if the button was clicked
       deckCode: "",  // Stores generated deck string
       deckCounts: Vue.reactive(JSON.parse(localStorage.getItem('deckCounts') || '{}')),
-      filteredCards: [],
       selectedGuilds: [],
       guildColors: {
         Axalon: "#1bb829",
         Burlindor: "#e28416",
         Coronis: "#ffef03",
         Flaria: "#ce9dde",
-        Sylvani: "#2c4dea",
-        Veralyn: "#c60757"
+        Ziotech: "#2c4dea",
+        Wildkind: "#c60757"
       },
       selectedType: '',
       selectedRarity: '',
@@ -240,29 +247,66 @@ createApp({
     };
   },
   computed: {
+    rarityOptions() {
+      const seen = new Set();
+      const opts = [];
+
+      for (const card of this.cards) {
+        if (card.rarity == null) continue;
+        if (seen.has(card.rarity)) continue;
+        seen.add(card.rarity);
+        opts.push({
+          value: card.rarity,
+          label: card.rarityLabel || `Rarity ${card.rarity}`
+        });
+      }
+
+      // Sort 1->3
+      opts.sort((a, b) => a.value - b.value);
+      return opts;
+    },
+
     guilds() {
       return [...new Set(this.cards.map(card => card.guild))];
     },
+
     types() {
       return [...new Set(this.cards.map(card => card.type))];
     },
+
     rarities() {
       return [...new Set(this.cards.map(card => card.rarity))];
     },
+
     filteredCards() {
-      if (this.selectedGuilds.length === 0) return []; // Show nothing if no Guilds selected
+      if (this.selectedGuilds.length === 0) return [];
+
+      const query = this.searchQuery
+        .toLowerCase()
+        .trim()
+        .split(/\s+/)
+        .filter(Boolean);
 
       return this.cards.filter(card => {
-        return this.selectedGuilds.includes(card.guild)
-            && (!this.selectedType || card.type === this.selectedType)
-            && (!this.selectedRarity || card.rarity === this.selectedRarity)
-            && (!this.showFavoritesOnly || this.isFavorite(card.id))
-            && (!this.searchQuery || card.name.toLowerCase().includes(this.searchQuery.toLowerCase()));
+        if (!this.selectedGuilds.includes(card.guild)) return false;
+        if (this.selectedType && card.type !== this.selectedType) return false;
+        if (this.selectedRarity && card.rarity !== this.selectedRarity) return false;
+        if (this.showFavoritesOnly && !this.isFavorite(card.id)) return false;
+
+        // 🔑 SEARCH LOGIC
+        if (query.length > 0) {
+          const haystack = card.searchText || "";
+          return query.every(token => haystack.includes(token));
+        }
+
+        return true;
       });
     },
+
     deckSize() {
       return Object.values(this.deckCounts).reduce((sum, count) => sum + count, 0);
     },
+
     myDeckCards() {
     return this.cards.filter(card => {
       const count = this.getDeckCount(card.id) || 0;
@@ -316,28 +360,36 @@ createApp({
 
       console.log("Generated Deck Code:\n" + this.deckCode);
     },
+
     testClick(card) {
       console.log("Test Click Registered:", card.name);
       alert("You clicked on " + card.name);
     },
+
     getMaxCopies(rarity) {
-      if (rarity === "Rare") return [0, 1];   // Rare max 1
-      if (rarity === "Uncommon") return [0, 1, 2];  // Uncommon max 2
-      return [0, 1, 2, 3];  // Common max 3
+      // Your encoding: 1=Rare, 2=Uncommon, 3=Common
+      if (rarity === 1) return [0, 1];        // Rare max 1
+      if (rarity === 2) return [0, 1, 2];     // Uncommon max 2
+      return [0, 1, 2, 3];                    // Common max 3
     },
+
+
     setDeckCount(cardId, count) {
       this.deckCounts[cardId] = count;
       localStorage.setItem('deckCounts', JSON.stringify(this.deckCounts));
     },
+
     getDeckCount(cardId) {
       return this.deckCounts[cardId] ?? 0; // Default to 0 if not set
     },
+
     toggleDeckView() {
       this.showDeck = !this.showDeck;
       this.$nextTick(() => { 
         console.log("Updated myDeckCards:", this.myDeckCards);  // ✅ Ensure Vue updates
       });
     },
+
     toggleDeck(cardId) {
       if (this.myDeck.includes(cardId)) {
         this.myDeck = this.myDeck.filter(id => id !== cardId); // Remove from deck
@@ -346,9 +398,11 @@ createApp({
       }
       localStorage.setItem('myDeck', JSON.stringify(this.myDeck));
     },
+
     isInDeck(cardId) {
       return this.myDeck.includes(cardId);
     },
+
     toggleFavorite(cardId) {
       if (this.favorites.includes(cardId)) {
         this.favorites = this.favorites.filter(id => id !== cardId);
@@ -357,16 +411,18 @@ createApp({
       }
       localStorage.setItem('favorites', JSON.stringify(this.favorites));
     },
+
     isFavorite(cardId) {
       return this.favorites.includes(cardId);
     },
+
     async fetchCards() {
       try {
-        const response = await fetch('cards_v13.json');  // Fetch JSON
+        const response = await fetch('cards_v14.json');
         const data = await response.json();
 
-        // Sort by guild first, then name (both alphabetically)
-        this.cards = data.sort((a, b) => {
+        this.cardsVersion = data.version || "";
+        this.cards = data.cards.sort((a, b) => {
           if (a.guild === b.guild) {
             return a.name.localeCompare(b.name);
           }
@@ -379,6 +435,7 @@ createApp({
         this.loading = false;  // Remove loading state
       }
     },
+
     openModal(image) {
       if (!image) {
         console.error("No image provided to openModal!");
@@ -398,21 +455,6 @@ createApp({
   mounted() {
     this.fetchCards().then(() => {
       this.selectedGuilds = [...this.guilds];  // Select all Guilds after cards load
-
-      // Watch for changes in filtering criteria and update filteredCards
-      this.$watch(
-        () => [this.selectedGuilds, this.selectedType, this.selectedRarity, this.showFavoritesOnly, this.searchQuery],
-        () => {
-          this.filteredCards = this.cards.filter(card => {
-            return (this.selectedGuilds.includes(card.guild))
-                && (!this.selectedType || card.type === this.selectedType)
-                && (!this.selectedRarity || card.rarity === this.selectedRarity)
-                && (!this.showFavoritesOnly || this.isFavorite(card.id))
-                && (!this.searchQuery || card.name.toLowerCase().includes(this.searchQuery.toLowerCase()));
-          });
-        },
-        { deep: true, immediate: true } // Reacts to deep changes & runs immediately
-      );
     });
   }
 
