@@ -282,141 +282,141 @@
   {
     "name": "Churnix",
     "id": "churnix",
-    "guild": "Sylvani",
+    "guild": "ziotech",
     "cost": 0,
-    "front": "cards/nommsters/sylvani_Churnix_dormant_thumb.jpg",
-    "back": "cards/nommsters/sylvani_Churnix_energized_thumb.jpg",
-    "modalFront": "cards/nommsters/sylvani_Churnix_dormant.jpg",
-    "modalBack": "cards/nommsters/sylvani_Churnix_energized.jpg"
+    "front": "cards/nommsters/ziotech_Churnix_dormant_thumb.jpg",
+    "back": "cards/nommsters/ziotech_Churnix_energized_thumb.jpg",
+    "modalFront": "cards/nommsters/ziotech_Churnix_dormant.jpg",
+    "modalBack": "cards/nommsters/ziotech_Churnix_energized.jpg"
   },
   {
     "name": "Creech",
     "id": "creech",
-    "guild": "Sylvani",
+    "guild": "ziotech",
     "cost": 0,
-    "front": "cards/nommsters/sylvani_Creech_dormant_thumb.jpg",
-    "back": "cards/nommsters/sylvani_Creech_energized_thumb.jpg",
-    "modalFront": "cards/nommsters/sylvani_Creech_dormant.jpg",
-    "modalBack": "cards/nommsters/sylvani_Creech_energized.jpg"
+    "front": "cards/nommsters/ziotech_Creech_dormant_thumb.jpg",
+    "back": "cards/nommsters/ziotech_Creech_energized_thumb.jpg",
+    "modalFront": "cards/nommsters/ziotech_Creech_dormant.jpg",
+    "modalBack": "cards/nommsters/ziotech_Creech_energized.jpg"
   },
   {
     "name": "Cullmantis",
     "id": "cullmantis",
-    "guild": "Sylvani",
+    "guild": "ziotech",
     "cost": 0,
-    "front": "cards/nommsters/sylvani_Cullmantis_dormant_thumb.jpg",
-    "back": "cards/nommsters/sylvani_Cullmantis_energized_thumb.jpg",
-    "modalFront": "cards/nommsters/sylvani_Cullmantis_dormant.jpg",
-    "modalBack": "cards/nommsters/sylvani_Cullmantis_energized.jpg"
+    "front": "cards/nommsters/ziotech_Cullmantis_dormant_thumb.jpg",
+    "back": "cards/nommsters/ziotech_Cullmantis_energized_thumb.jpg",
+    "modalFront": "cards/nommsters/ziotech_Cullmantis_dormant.jpg",
+    "modalBack": "cards/nommsters/ziotech_Cullmantis_energized.jpg"
   },
   {
     "name": "Flashynx",
     "id": "flashynx",
-    "guild": "Sylvani",
+    "guild": "ziotech",
     "cost": 0,
-    "front": "cards/nommsters/sylvani_Flashynx_dormant_thumb.jpg",
-    "back": "cards/nommsters/sylvani_Flashynx_energized_thumb.jpg",
-    "modalFront": "cards/nommsters/sylvani_Flashynx_dormant.jpg",
-    "modalBack": "cards/nommsters/sylvani_Flashynx_energized.jpg"
+    "front": "cards/nommsters/ziotech_Flashynx_dormant_thumb.jpg",
+    "back": "cards/nommsters/ziotech_Flashynx_energized_thumb.jpg",
+    "modalFront": "cards/nommsters/ziotech_Flashynx_dormant.jpg",
+    "modalBack": "cards/nommsters/ziotech_Flashynx_energized.jpg"
   },
   {
     "name": "Slivver",
     "id": "slivver",
-    "guild": "Sylvani",
+    "guild": "ziotech",
     "cost": 0,
-    "front": "cards/nommsters/sylvani_Slivver_dormant_thumb.jpg",
-    "back": "cards/nommsters/sylvani_Slivver_energized_thumb.jpg",
-    "modalFront": "cards/nommsters/sylvani_Slivver_dormant.jpg",
-    "modalBack": "cards/nommsters/sylvani_Slivver_energized.jpg"
+    "front": "cards/nommsters/ziotech_Slivver_dormant_thumb.jpg",
+    "back": "cards/nommsters/ziotech_Slivver_energized_thumb.jpg",
+    "modalFront": "cards/nommsters/ziotech_Slivver_dormant.jpg",
+    "modalBack": "cards/nommsters/ziotech_Slivver_energized.jpg"
   },
   {
     "name": "Slyjack",
     "id": "slyjack",
-    "guild": "Sylvani",
+    "guild": "ziotech",
     "cost": 0,
-    "front": "cards/nommsters/sylvani_Slyjack_dormant_thumb.jpg",
-    "back": "cards/nommsters/sylvani_Slyjack_energized_thumb.jpg",
-    "modalFront": "cards/nommsters/sylvani_Slyjack_dormant.jpg",
-    "modalBack": "cards/nommsters/sylvani_Slyjack_energized.jpg"
+    "front": "cards/nommsters/ziotech_Slyjack_dormant_thumb.jpg",
+    "back": "cards/nommsters/ziotech_Slyjack_energized_thumb.jpg",
+    "modalFront": "cards/nommsters/ziotech_Slyjack_dormant.jpg",
+    "modalBack": "cards/nommsters/ziotech_Slyjack_energized.jpg"
   },
   {
     "name": "Zlayer",
     "id": "zlayer",
-    "guild": "Sylvani",
+    "guild": "ziotech",
     "cost": 0,
-    "front": "cards/nommsters/sylvani_Zlayer_dormant_thumb.jpg",
-    "back": "cards/nommsters/sylvani_Zlayer_energized_thumb.jpg",
-    "modalFront": "cards/nommsters/sylvani_Zlayer_dormant.jpg",
-    "modalBack": "cards/nommsters/sylvani_Zlayer_energized.jpg"
+    "front": "cards/nommsters/ziotech_Zlayer_dormant_thumb.jpg",
+    "back": "cards/nommsters/ziotech_Zlayer_energized_thumb.jpg",
+    "modalFront": "cards/nommsters/ziotech_Zlayer_dormant.jpg",
+    "modalBack": "cards/nommsters/ziotech_Zlayer_energized.jpg"
   },
   {
     "name": "Dreemie",
     "id": "dreemie",
-    "guild": "Veralyn",
+    "guild": "wildkind",
     "cost": 0,
-    "front": "cards/nommsters/veralyn_Dreemie_dormant_thumb.jpg",
-    "back": "cards/nommsters/veralyn_Dreemie_energized_thumb.jpg",
-    "modalFront": "cards/nommsters/veralyn_Dreemie_dormant.jpg",
-    "modalBack": "cards/nommsters/veralyn_Dreemie_energized.jpg"
+    "front": "cards/nommsters/wildkind_Dreemie_dormant_thumb.jpg",
+    "back": "cards/nommsters/wildkind_Dreemie_energized_thumb.jpg",
+    "modalFront": "cards/nommsters/wildkind_Dreemie_dormant.jpg",
+    "modalBack": "cards/nommsters/wildkind_Dreemie_energized.jpg"
   },
   {
     "name": "Fumblecap",
     "id": "fumblecap",
-    "guild": "Veralyn",
+    "guild": "wildkind",
     "cost": 0,
-    "front": "cards/nommsters/veralyn_Fumblecap_dormant_thumb.jpg",
-    "back": "cards/nommsters/veralyn_Fumblecap_energized_thumb.jpg",
-    "modalFront": "cards/nommsters/veralyn_Fumblecap_dormant.jpg",
-    "modalBack": "cards/nommsters/veralyn_Fumblecap_energized.jpg"
+    "front": "cards/nommsters/wildkind_Fumblecap_dormant_thumb.jpg",
+    "back": "cards/nommsters/wildkind_Fumblecap_energized_thumb.jpg",
+    "modalFront": "cards/nommsters/wildkind_Fumblecap_dormant.jpg",
+    "modalBack": "cards/nommsters/wildkind_Fumblecap_energized.jpg"
   },
   {
     "name": "Glarewolf",
     "id": "glarewolf",
-    "guild": "Veralyn",
+    "guild": "wildkind",
     "cost": 0,
-    "front": "cards/nommsters/veralyn_Glarewolf_dormant_thumb.jpg",
-    "back": "cards/nommsters/veralyn_Glarewolf_energized_thumb.jpg",
-    "modalFront": "cards/nommsters/veralyn_Glarewolf_dormant.jpg",
-    "modalBack": "cards/nommsters/veralyn_Glarewolf_energized.jpg"
+    "front": "cards/nommsters/wildkind_Glarewolf_dormant_thumb.jpg",
+    "back": "cards/nommsters/wildkind_Glarewolf_energized_thumb.jpg",
+    "modalFront": "cards/nommsters/wildkind_Glarewolf_dormant.jpg",
+    "modalBack": "cards/nommsters/wildkind_Glarewolf_energized.jpg"
   },
   {
     "name": "Jibbletart",
     "id": "jibbletart",
-    "guild": "Veralyn",
+    "guild": "wildkind",
     "cost": 0,
-    "front": "cards/nommsters/veralyn_Jibbletart_dormant_thumb.jpg",
-    "back": "cards/nommsters/veralyn_Jibbletart_energized_thumb.jpg",
-    "modalFront": "cards/nommsters/veralyn_Jibbletart_dormant.jpg",
-    "modalBack": "cards/nommsters/veralyn_Jibbletart_energized.jpg"
+    "front": "cards/nommsters/wildkind_Jibbletart_dormant_thumb.jpg",
+    "back": "cards/nommsters/wildkind_Jibbletart_energized_thumb.jpg",
+    "modalFront": "cards/nommsters/wildkind_Jibbletart_dormant.jpg",
+    "modalBack": "cards/nommsters/wildkind_Jibbletart_energized.jpg"
   },
   {
     "name": "Palmer",
     "id": "palmer",
-    "guild": "Veralyn",
+    "guild": "wildkind",
     "cost": 0,
-    "front": "cards/nommsters/veralyn_Palmer_dormant_thumb.jpg",
-    "back": "cards/nommsters/veralyn_Palmer_energized_thumb.jpg",
-    "modalFront": "cards/nommsters/veralyn_Palmer_dormant.jpg",
-    "modalBack": "cards/nommsters/veralyn_Palmer_energized.jpg"
+    "front": "cards/nommsters/wildkind_Palmer_dormant_thumb.jpg",
+    "back": "cards/nommsters/wildkind_Palmer_energized_thumb.jpg",
+    "modalFront": "cards/nommsters/wildkind_Palmer_dormant.jpg",
+    "modalBack": "cards/nommsters/wildkind_Palmer_energized.jpg"
   },
   {
     "name": "Pebbles",
     "id": "pebbles",
-    "guild": "Veralyn",
+    "guild": "Wildkind",
     "cost": 0,
-    "front": "cards/nommsters/veralyn_Pebbles_dormant_thumb.jpg",
-    "back": "cards/nommsters/veralyn_Pebbles_energized_thumb.jpg",
-    "modalFront": "cards/nommsters/veralyn_Pebbles_dormant.jpg",
-    "modalBack": "cards/nommsters/veralyn_Pebbles_energized.jpg"
+    "front": "cards/nommsters/wildkind_Pebbles_dormant_thumb.jpg",
+    "back": "cards/nommsters/wildkind_Pebbles_energized_thumb.jpg",
+    "modalFront": "cards/nommsters/wildkind.jpg",
+    "modalBack": "cards/nommsters/wildkind.jpg"
   },
   {
     "name": "Tuskham",
     "id": "tuskham",
-    "guild": "Veralyn",
+    "guild": "wildkind",
     "cost": 0,
-    "front": "cards/nommsters/veralyn_Tuskham_dormant_thumb.jpg",
-    "back": "cards/nommsters/veralyn_Tuskham_energized_thumb.jpg",
-    "modalFront": "cards/nommsters/veralyn_Tuskham_dormant.jpg",
-    "modalBack": "cards/nommsters/veralyn_Tuskham_energized.jpg"
+    "front": "cards/nommsters/wildkind_Tuskham_dormant_thumb.jpg",
+    "back": "cards/nommsters/wildkind_Tuskham_energized_thumb.jpg",
+    "modalFront": "cards/nommsters/wildkind_Tuskham_dormant.jpg",
+    "modalBack": "cards/nommsters/wildkind_Tuskham_energized.jpg"
   }
 ]

@@ -36,51 +36,126 @@
 <body class="bg-gray-100 p-6">
   <div id="app" class="max-w-5xl mx-auto">
     <h1 class="text-3xl font-bold text-center mb-2">Nommsters</h1>
-    <div class="text-center mb-6">
-      <a href="index.html" class="text-blue-600 hover:underline text-lg">&larr; Back to Gallery</a>
-    </div>
 
-    <!-- Filter Section -->
+    <!-- Sticky toolbar -->
+    <div class="sticky top-0 z-30 bg-gray-100/95 backdrop-blur border-b -mx-6 px-6 py-2 mb-4">
 
-    <button 
-      v-if="showDeck"
-      @click="openDeckCodeModal" 
-      class="px-4 py-2 bg-green-500 text-white rounded shadow mb-4">
-      Generate Deck Code
-    </button>
+      <!-- Lean banner row -->
+      <div class="flex items-center justify-between gap-2 mb-2">
+        <a href="index.html" class="text-blue-600 hover:underline text-sm font-semibold">
+          ← Back to Gallery
+        </a>
 
-    <!-- Guild Filter Buttons with Dynamic Colors -->
-    <div class="flex flex-wrap gap-2 justify-center mb-6">
-      <button 
-        v-for="guild in guilds" 
-        :key="guild" 
-        @click="toggleGuild(guild)"
-        class="px-4 py-2 rounded border shadow flex items-center gap-2 transition-all"
-        :style="{
-          backgroundColor: selectedGuilds.includes(guild) ? guildColors[guild] : '#e5e5e5',
-          color: selectedGuilds.includes(guild) ? 'white' : 'black'
-        }">
-
-        <!-- Non-Clickable Checkbox -->
-        <input 
-          type="checkbox" 
-          :checked="selectedGuilds.includes(guild)" 
-          class="w-4 h-4 pointer-events-none"
+        <button
+          @click="startRandomPick"
+          :disabled="isPicking"
+          class="px-3 py-1 text-sm bg-purple-600 text-white rounded shadow disabled:opacity-50"
         >
+          {{ isPicking ? 'Picking…' : 'Random Pick' }}
+        </button>
+      </div>
 
-        {{ guild }}
-      </button>
-    </div>
+      <!-- Mobile toggles row -->
+      <div class="sm:hidden flex justify-center gap-2 mb-2">
+    
+        <button
+          @click="showMobileGuilds = !showMobileGuilds"
+          class="px-3 py-1 text-sm rounded-md border bg-white shadow-sm flex items-center gap-2"
+        >
+          Guilds
+          <span class="inline-block transition-transform" :class="showMobileGuilds ? 'rotate-180' : ''">▼</span>
+        </button>
+        
+        <button
+          @click="showMobileFilters = !showMobileFilters"
+          class="px-3 py-1 text-sm rounded-md border bg-white shadow-sm flex items-center gap-2"
+        >
+          More filters
+          <span class="inline-block transition-transform" :class="showMobileFilters ? 'rotate-180' : ''">▼</span>
+        </button>
 
-    <!-- Random Pick -->
-    <div class="flex justify-center mb-6">
-      <button
-        @click="startRandomPick"
-        :disabled="isPicking"
-        class="px-4 py-2 bg-purple-600 text-white rounded shadow disabled:opacity-50"
+      </div>
+
+      <!-- Mobile: collapsible filters -->
+      <div v-if="showMobileFilters" class="sm:hidden mb-2">
+        <div class="flex flex-col gap-2 bg-white border rounded-md p-2 shadow-sm">
+          <input
+            v-model="searchQuery"
+            type="text"
+            placeholder="Search Nommsters…"
+            class="w-full px-2 py-1 text-sm rounded border"
+          />
+
+          <label class="flex items-center text-sm">
+            <input type="checkbox" v-model="showFavoritesOnly" class="mr-2">
+            Only show in my deck
+          </label>
+
+          <label class="flex items-center text-sm">
+            <input type="checkbox" v-model="showDeck" class="mr-2">
+            Show only selected
+          </label>
+
+          <button
+            @click="openDeckCodeModal"
+            class="px-3 py-2 bg-green-600 text-white rounded shadow text-sm"
+          >
+            Copy Deck Code
+          </button>
+        </div>
+      </div>
+
+      <!-- Desktop: filters always visible -->
+      <div class="hidden sm:flex flex-wrap items-center justify-center gap-2 mb-2">
+        <input
+          v-model="searchQuery"
+          type="text"
+          placeholder="Search Nommsters…"
+          class="px-2 py-1 text-sm rounded border"
+        />
+
+        <label class="flex items-center text-sm">
+          <input type="checkbox" v-model="showFavoritesOnly" class="mr-2">
+          Only show in my deck
+        </label>
+
+        <label class="flex items-center text-sm">
+          <input type="checkbox" v-model="showDeck" class="mr-2">
+          Show only selected
+        </label>
+
+        <button
+          @click="openDeckCodeModal"
+          class="px-3 py-1 text-sm bg-green-600 text-white rounded shadow-sm"
+        >
+          Copy Deck Code
+        </button>
+      </div>
+
+      <!-- Guild chips (desktop always, mobile collapsible) -->
+      <div
+        class="flex flex-wrap gap-2 justify-center"
+        :class="showMobileGuilds ? '' : 'hidden sm:flex'"
       >
-        {{ isPicking ? 'Picking…' : 'Pick a Random Nommster' }}
-      </button>
+        <button 
+          v-for="guild in guilds" 
+          :key="guild" 
+          @click="toggleGuild(guild)"
+          class="px-2 py-0.5 text-sm rounded-full border shadow-sm flex items-center gap-2 transition-all"
+          :style="{
+            backgroundColor: selectedGuilds.includes(guild) ? guildColors[guild] : '#e5e5e5',
+            color: selectedGuilds.includes(guild) ? 'white' : 'black'
+          }">
+
+          <input 
+            type="checkbox" 
+            :checked="selectedGuilds.includes(guild)" 
+            class="w-3.5 h-3.5 pointer-events-none"
+          >
+          {{ guild }}
+        </button>
+      </div>
+
     </div>
 
     <!-- Random Pick Overlay -->
@@ -130,8 +205,8 @@
     </div>  
 
 
-    <div v-for="card in filteredNommsters" :key="card.id" class="mb-8">
-      <div class="flex items-center gap-6">
+    <div class="grid gap-4 grid-cols-[repeat(auto-fit,minmax(280px,1fr))]">
+      <div v-for="card in filteredNommsters" :key="card.id" class="bg-white p-4 rounded shadow">
         <!-- Card flip container -->
         <div 
           class="relative w-64 h-64 flip-card cursor-pointer" 
@@ -153,32 +228,46 @@
         </div>
 
         <!-- Card Info -->
-        <div>
-          <h2 class="text-xl font-semibold mb-2">{{ card.name }}</h2>
-          <div class="flex items-center gap-2 mb-3">
+        <div class="w-64">
+
+          <!-- Name + Add to Deck row -->
+          <div class="flex items-center justify-between gap-2 mb-2">
+            <h2 class="text-lg font-semibold leading-tight">
+              {{ card.name }}
+            </h2>
+          </div>
+
+
+          <!-- Dormant / Energized / ADD -->
+          <div class="flex items-center gap-2 mb-2">
             <button
-              class="px-3 py-1 rounded text-white"
-              :style="{
-                backgroundColor: !flippedCards.includes(card.id) ? guildColors[card.guild] : '#ccc',
-              }"
+              class="px-3 py-1 rounded text-white text-sm"
+              :style="{ backgroundColor: !flippedCards.includes(card.id) ? guildColors[card.guild] : '#ccc' }"
               @click="setFlipped(card.id, false)"
-            >Dormant</button>
+            >
+              Dormant
+            </button>
 
             <button
-              class="px-3 py-1 rounded text-white"
-              :style="{
-                backgroundColor: flippedCards.includes(card.id) ? guildColors[card.guild] : '#ccc',
-              }"
+              class="px-3 py-1 rounded text-white text-sm"
+              :style="{ backgroundColor: flippedCards.includes(card.id) ? guildColors[card.guild] : '#ccc' }"
               @click="setFlipped(card.id, true)"
-            >Energized</button>
+            >
+              Energized
+            </button>
+
+            <button
+              class="flex-1 px-3 py-1.5 rounded text-white shadow transition-all text-sm whitespace-nowrap text-center"
+              :style="{ backgroundColor: deck.includes(card.id) ? (guildColors[card.guild] || '#111') : '#2563eb' }"
+              @click="toggleDeck(card.id)"
+            >
+              {{ deck.includes(card.id) ? 'In my deck!' : 'Add' }}
+            </button>
+
           </div>
-          <button
-            class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
-            @click="toggleDeck(card.id)"
-          >
-            {{ deck.includes(card.id) ? 'In My Deck' : 'Add to Deck' }}
-          </button>
+
         </div>
+
       </div>
     </div>
 
@@ -193,6 +282,17 @@
         >
           Flip
         </button>
+        <button
+          class="absolute top-2 left-20 px-3 py-1 rounded text-white text-sm shadow"
+          :style="{
+            backgroundColor: deck.includes(modalCard.id) ? (guildColors[modalCard.guild] || '#111') : '#2563eb'
+          }"
+          @click.stop="toggleDeck(modalCard.id)"
+        >
+          {{ deck.includes(modalCard.id) ? 'In my deck!' : 'Add to Deck' }}
+        </button>
+
+        
         <img
           @click="toggleModalFlip"
           :src="modalState === 'dormant' ? modalCard.modalFront : modalCard.modalBack"
@@ -208,26 +308,48 @@
   <script>
     const { createApp } = Vue;
 
+    function canonicalGuild(g) {
+      const key = (g ?? '').toString().trim().toLowerCase();
+
+      const map = {
+        axalon: 'Axalon',
+        burlindor: 'Burlindor',
+        coronis: 'Coronis',
+        flaria: 'Flaria',
+        ziotech: 'Ziotech',
+        wildkind: 'Wildkind',
+
+        // optional legacy aliases (only keep if you still have old data around)
+        sylvani: 'Ziotech',
+        veralyn: 'Wildkind',
+      };
+
+      return map[key] || (key ? key.charAt(0).toUpperCase() + key.slice(1) : '');
+    }
+
+
     createApp({
       data() {
         return {
           nommsters: [],
+          showMobileFilters: false,
+          showMobileGuilds: false,
           flippedCards: [],
-          deck: [],
+          deck: JSON.parse(localStorage.getItem('nommsterDeckIds') || '[]'),
           modalCard: null,
           modalState: 'dormant',
           searchQuery: '',
           showFavoritesOnly: false,
           showDeck: false,
           selectedGuilds: [],
-          guilds: ["Axalon", "Burlindor", "Coronis", "Flaria", "Sylvani", "Veralyn"],
+          guilds: ["Axalon", "Burlindor", "Coronis", "Flaria", "Ziotech", "Wildkind"],
           guildColors: {
             Axalon: "#1bb829",
             Burlindor: "#e28416",
             Coronis: "#ffef03",
             Flaria: "#ce9dde",
-            Sylvani: "#2c4dea",
-            Veralyn: "#c60757"
+            Ziotech: "#2c4dea",
+            Wildkind: "#c60757"
           },
           // random pick UI
           pickerOpen: false,
@@ -256,10 +378,13 @@
         fetch('nommsters_v13.json')
           .then(res => res.json())
           .then(data => {
-            this.nommsters = data.sort((a, b) => {
-              if (a.guild === b.guild) {
-                return a.name.localeCompare(b.name);
-              }
+            const normalized = data.map(n => ({
+              ...n,
+              guild: canonicalGuild(n.guild),
+            }));
+
+            this.nommsters = normalized.sort((a, b) => {
+              if (a.guild === b.guild) return a.name.localeCompare(b.name);
               return a.guild.localeCompare(b.guild);
             });
 
@@ -268,6 +393,7 @@
           .catch(err => {
             console.error("Failed to load json", err);
           });
+
       },
       methods: {
         toggleFlip(id) {
@@ -290,11 +416,18 @@
         },
         toggleDeck(id) {
           const index = this.deck.indexOf(id);
-          if (index === -1) {
-            this.deck.push(id);
-          } else {
-            this.deck.splice(index, 1);
-          }
+          if (index === -1) this.deck.push(id);
+          else this.deck.splice(index, 1);
+
+          // Persist IDs
+          localStorage.setItem('nommsterDeckIds', JSON.stringify(this.deck));
+
+          // Persist lightweight metadata for index.html to read
+          const meta = this.nommsters
+            .filter(n => this.deck.includes(n.id))
+            .map(n => ({ id: n.id, name: n.name, guild: n.guild }));
+
+          localStorage.setItem('nommsterDeck', JSON.stringify(meta));
         },
         toggleDeckView() {
           this.showDeck = !this.showDeck;
@@ -393,8 +526,9 @@
             this.openModal(card, isFlipped);
           }
         },
+        
+      },
 
-      }
     }).mount('#app');
   </script>
 </body>
