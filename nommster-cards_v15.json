@@ -1,0 +1,182 @@
+[
+  {
+    "name": "Sniffin",
+    "id": "sniffin",
+    "guild": "Axalon",
+    "cost": 9,
+    "front": "cards/nommsters/Sniffin_dormant_thumb.jpg",
+    "back": "cards/nommsters/Sniffin_energized_thumb.jpg",
+    "modalFront": "cards/nommsters/Sniffin_dormant.jpg",
+    "modalBack": "cards/nommsters/Sniffin_energized.jpg"
+  },
+  {
+    "name": "Glymander",
+    "id": "glymander",
+    "guild": "Axalon",
+    "cost": 11,
+    "front": "cards/nommsters/Glymander_dormant_thumb.jpg",
+    "back": "cards/nommsters/Glymander_energized_thumb.jpg",
+    "modalFront": "cards/nommsters/Glymander_dormant.jpg",
+    "modalBack": "cards/nommsters/Glymander_energized.jpg"
+  },
+  {
+    "name": "Frisklaw",
+    "id": "frisklaw",
+    "guild": "Axalon",
+    "cost": 10,
+    "front": "cards/nommsters/Frisklaw_dormant_thumb.jpg",
+    "back": "cards/nommsters/Frisklaw_energized_thumb.jpg",
+    "modalFront": "cards/nommsters/Frisklaw_dormant.jpg",
+    "modalBack": "cards/nommsters/Frisklaw_energized.jpg"
+  },
+  {
+    "name": "Mugchomp",
+    "id": "mugchomp",
+    "guild": "Burlindor",
+    "cost": 9,
+    "front": "cards/nommsters/Mugchomp_dormant_thumb.jpg",
+    "back": "cards/nommsters/Mugchomp_energized_thumb.jpg",
+    "modalFront": "cards/nommsters/Mugchomp_dormant.jpg",
+    "modalBack": "cards/nommsters/Mugchomp_energized.jpg"
+  },
+  {
+    "name": "Buzzrip",
+    "id": "buzzrip",
+    "guild": "Burlindor",
+    "cost": 10,
+    "front": "cards/nommsters/Buzzrip_dormant_thumb.jpg",
+    "back": "cards/nommsters/Buzzrip_energized_thumb.jpg",
+    "modalFront": "cards/nommsters/Buzzrip_dormant.jpg",
+    "modalBack": "cards/nommsters/Buzzrip_energized.jpg"
+  },
+  {
+    "name": "Burrowork",
+    "id": "burrowork",
+    "guild": "Burlindor",
+    "cost": 13,
+    "front": "cards/nommsters/Burrowork_dormant_thumb.jpg",
+    "back": "cards/nommsters/Burrowork_energized_thumb.jpg",
+    "modalFront": "cards/nommsters/Burrowork_dormant.jpg",
+    "modalBack": "cards/nommsters/Burrowork_energized.jpg"
+  },
+  {
+    "name": "Bravalanche",
+    "id": "bravalanche",
+    "guild": "Coronis",
+    "cost": 11,
+    "front": "cards/nommsters/Bravalanche_dormant_thumb.jpg",
+    "back": "cards/nommsters/Bravalanche_energized_thumb.jpg",
+    "modalFront": "cards/nommsters/Bravalanche_dormant.jpg",
+    "modalBack": "cards/nommsters/Bravalanche_energized.jpg"
+  },
+  {
+    "name": "Glintzy",
+    "id": "glintzy",
+    "guild": "Coronis",
+    "cost": 12,
+    "front": "cards/nommsters/Glintzy_dormant_thumb.jpg",
+    "back": "cards/nommsters/Glintzy_energized_thumb.jpg",
+    "modalFront": "cards/nommsters/Glintzy_dormant.jpg",
+    "modalBack": "cards/nommsters/Glintzy_energized.jpg"
+  },
+  {
+    "name": "Glittermaw",
+    "id": "glittermaw",
+    "guild": "Coronis",
+    "cost": 11,
+    "front": "cards/nommsters/Glittermaw_dormant_thumb.jpg",
+    "back": "cards/nommsters/Glittermaw_energized_thumb.jpg",
+    "modalFront": "cards/nommsters/Glittermaw_dormant.jpg",
+    "modalBack": "cards/nommsters/Glittermaw_energized.jpg"
+  },
+  {
+    "name": "Chromacorn",
+    "id": "chromacorn",
+    "guild": "Flaria",
+    "cost": 11,
+    "front": "cards/nommsters/Chromacorn_dormant_thumb.jpg",
+    "back": "cards/nommsters/Chromacorn_energized_thumb.jpg",
+    "modalFront": "cards/nommsters/Chromacorn_dormant.jpg",
+    "modalBack": "cards/nommsters/Chromacorn_energized.jpg"
+  },
+  {
+    "name": "Parette",
+    "id": "parette",
+    "guild": "Flaria",
+    "cost": 9,
+    "front": "cards/nommsters/Parette_dormant_thumb.jpg",
+    "back": "cards/nommsters/Parette_energized_thumb.jpg",
+    "modalFront": "cards/nommsters/Parette_dormant.jpg",
+    "modalBack": "cards/nommsters/Parette_energized.jpg"
+  },
+  {
+    "name": "Zoompuff",
+    "id": "zoompuff",
+    "guild": "Flaria",
+    "cost": 9,
+    "front": "cards/nommsters/Zoompuff_dormant_thumb.jpg",
+    "back": "cards/nommsters/Zoompuff_energized_thumb.jpg",
+    "modalFront": "cards/nommsters/Zoompuff_dormant.jpg",
+    "modalBack": "cards/nommsters/Zoompuff_energized.jpg"
+  },
+  {
+    "name": "Zybyte",
+    "id": "zybyte",
+    "guild": "Ziotech",
+    "cost": 9,
+    "front": "cards/nommsters/Zybyte_dormant_thumb.jpg",
+    "back": "cards/nommsters/Zybyte_energized_thumb.jpg",
+    "modalFront": "cards/nommsters/Zybyte_dormant.jpg",
+    "modalBack": "cards/nommsters/Zybyte_energized.jpg"
+  },
+  {
+    "name": "Slyjack",
+    "id": "slyjack",
+    "guild": "Ziotech",
+    "cost": 4,
+    "front": "cards/nommsters/Slyjack_dormant_thumb.jpg",
+    "back": "cards/nommsters/Slyjack_energized_thumb.jpg",
+    "modalFront": "cards/nommsters/Slyjack_dormant.jpg",
+    "modalBack": "cards/nommsters/Slyjack_energized.jpg"
+  },
+  {
+    "name": "Cullmantis",
+    "id": "cullmantis",
+    "guild": "Ziotech",
+    "cost": 10,
+    "front": "cards/nommsters/Cullmantis_dormant_thumb.jpg",
+    "back": "cards/nommsters/Cullmantis_energized_thumb.jpg",
+    "modalFront": "cards/nommsters/Cullmantis_dormant.jpg",
+    "modalBack": "cards/nommsters/Cullmantis_energized.jpg"
+  },
+  {
+    "name": "Dreemie",
+    "id": "dreemie",
+    "guild": "Wildkind",
+    "cost": 10,
+    "front": "cards/nommsters/Dreemie_dormant_thumb.jpg",
+    "back": "cards/nommsters/Dreemie_energized_thumb.jpg",
+    "modalFront": "cards/nommsters/Dreemie_dormant.jpg",
+    "modalBack": "cards/nommsters/Dreemie_energized.jpg"
+  },
+  {
+    "name": "Glarewolf",
+    "id": "glarewolf",
+    "guild": "Wildkind",
+    "cost": 10,
+    "front": "cards/nommsters/Glarewolf_dormant_thumb.jpg",
+    "back": "cards/nommsters/Glarewolf_energized_thumb.jpg",
+    "modalFront": "cards/nommsters/Glarewolf_dormant.jpg",
+    "modalBack": "cards/nommsters/Glarewolf_energized.jpg"
+  },
+  {
+    "name": "Palmer",
+    "id": "palmer",
+    "guild": "Wildkind",
+    "cost": 11,
+    "front": "cards/nommsters/Palmer_dormant_thumb.jpg",
+    "back": "cards/nommsters/Palmer_energized_thumb.jpg",
+    "modalFront": "cards/nommsters/Palmer_dormant.jpg",
+    "modalBack": "cards/nommsters/Palmer_energized.jpg"
+  }
+]

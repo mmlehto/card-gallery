@@ -575,7 +575,7 @@ createApp({
 
     async fetchCards() {
       try {
-        const response = await fetch('cards_v14.json');
+        const response = await fetch('cards_v15.json');
         const data = await response.json();
 
         this.cardsVersion = data.version || "";
